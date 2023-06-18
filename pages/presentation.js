@@ -35,10 +35,10 @@ export default function PresentationPage() {
   });
   const classes = useStyles();
   return (
-    <div>
+    <div> 
       <Header
-        brand="NextJS Material Kit PRO"
-        links={<HeaderLinks dropdownHoverColor="info" />}
+        brand="Camper Camp 🏕"
+        // links={<HeaderLinks dropdownHoverColor="info" />}
         fixed
         color="transparent"
         changeColorOnScroll={{
@@ -46,17 +46,17 @@ export default function PresentationPage() {
           color: "info"
         }}
       />
-      <Parallax image="/img/nextjs_header.jpg" className={classes.parallax}>
+      <Parallax image="/img/camp.jpeg" className={classes.parallax}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
                 <h1>
-                  NextJS Material Kit
-                  <span className={classes.proBadge}>PRO</span>
+                  Camper Camp
+                  {/* <span className={classes.proBadge}>PRO</span> */}
                 </h1>
                 <h3 className={classes.title}>
-                  A Badass Material-UI Kit based on Material Design.
+                    It is not quite just a parking lot
                 </h3>
               </div>
             </GridItem>

@@ -9,6 +9,13 @@ import Apps from "@mui/icons-material/Apps";
 import ViewDay from "@mui/icons-material/ViewDay";
 import ViewCarousel from "@mui/icons-material/ViewCarousel";
 import makeStyles from "@mui/styles/makeStyles";
+// @material-ui/icons
+import AirportShuttleIcon from '@mui/icons-material/AirportShuttle';
+import AlarmOnIcon from '@mui/icons-material/AlarmOn';
+import CameraOutdoorIcon from '@mui/icons-material/CameraOutdoor';
+import IcecreamIcon from '@mui/icons-material/Icecream';
+import SettingsIcon from '@mui/icons-material/Settings';
+import LocalCarWashIcon from '@mui/icons-material/LocalCarWash';
 
 import descriptionStyle from "/styles/jss/nextjs-material-kit-pro/pages/presentationSections/descriptionStyle.js";
 
@@ -22,16 +29,12 @@ export default function SectionDescription() {
         <GridContainer justifyContent="center">
           <GridItem md={8} sm={8}>
             <h4 className={classes.description}>
-              NextJS Material Kit PRO is a Material-UI and NextJS Kit with a
-              fresh, new design inspired by Google{"'"}s Material Design. You
-              asked for it, so we built it. It{"'"}s a great pleasure to
-              introduce to you the material concepts in an easy to use and
-              beautiful set of components.
+              A nice and safe place for your camper or a car. You can stay for couple of hours, entire day or event the entire night. 
             </h4>
           </GridItem>
         </GridContainer>
         <div className={classes.features}>
-          <GridContainer>
+          {/* <GridContainer>
             <GridItem md={4} sm={4}>
               <InfoArea
                 title="Huge Number of Components"
@@ -59,7 +62,63 @@ export default function SectionDescription() {
                 vertical={true}
               />
             </GridItem>
-          </GridContainer>
+          </GridContainer> */}
+          <GridContainer>
+          <GridItem xs={12} sm={12} md={4}>
+            <InfoArea
+              title="Camper Parking Lot"
+              description="A parking lot where you can park your camper van as well as do the entire service."
+              icon={AirportShuttleIcon}
+              iconColor="rose"
+              vertical
+            />
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <InfoArea
+              title="No Time Limit"
+              description="You can stay as long as you want. No time limit just let us know"
+              icon={AlarmOnIcon}
+              iconColor="success"
+              vertical
+            />
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <InfoArea
+              title="Monitored 24/7"
+              description="The parking lot is fully monitored for the entire stay of yours."
+              icon={CameraOutdoorIcon}
+              iconColor="primary"
+              vertical
+            />
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <InfoArea
+              title="Car/Camper Wash"
+              description="For extra pay we can offer you a full car wash service while you are stayig."
+              icon={LocalCarWashIcon}
+              iconColor="info"
+              vertical
+            />
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <InfoArea
+              title="Snack"
+              description="There will be always opportunity to grab a snack while being on the go."
+              icon={IcecreamIcon}
+              iconColor="warning"
+              vertical
+            />
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <InfoArea
+              title="Service"
+              description="The parking lot is adapted to camper vans, meaning you will be able to empty and refill you tanks :)"
+              icon={SettingsIcon}
+              iconColor="danger"
+              vertical
+            />
+          </GridItem>
+        </GridContainer>
         </div>
       </div>
     </div>
