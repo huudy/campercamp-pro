@@ -31,8 +31,8 @@ export default function PricingPage() {
   return (
     <div>
       <Header
-        brand="NextJS Material Kit PRO"
-        links={<HeaderLinks dropdownHoverColor="info" />}
+        brand="Camper Camp 🏕" 
+        // links={<HeaderLinks dropdownHoverColor="info" />}
         fixed
         color="transparent"
         changeColorOnScroll={{
@@ -53,11 +53,9 @@ export default function PricingPage() {
                 classes.textCenter
               )}
             >
-              <h1 className={classes.title}>Let{"'"}s get started</h1>
+              <h1 className={classes.title}>Let{"'"}s see our prices</h1>
               <h4>
-                To get started, you will need to choose a plan for your needs.
-                You can opt in for the monthly of annual options and go with one
-                fo the three listed below.
+                We offer all kinds of fares for your stay with us. We also have a lot of extra services that you can use in bundle or seperately. Get familiar with our fares below:
               </h4>
             </GridItem>
           </GridContainer>
@@ -70,7 +68,7 @@ export default function PricingPage() {
           <SectionFeatures />
         </div>
       </div>
-      <Footer
+      {/* <Footer
         content={
           <div>
             <div className={classes.left}>
@@ -125,7 +123,7 @@ export default function PricingPage() {
             </div>
           </div>
         }
-      />
+      /> */}
     </div>
   );
 }

@@ -23,6 +23,8 @@ import landingPageStyle from "/styles/jss/nextjs-material-kit-pro/pages/landingP
 import SectionProduct from "/pages-sections/landing-page/SectionProduct.js";
 import SectionTeam from "/pages-sections/landing-page/SectionTeam.js";
 import SectionWork from "/pages-sections/landing-page/SectionWork.js";
+import SectionDescription from "/pages-sections/presentation-page/SectionDescription.js";
+
 
 const useStyles = makeStyles(landingPageStyle);
 
@@ -36,8 +38,8 @@ export default function LandingPage({ ...rest }) {
     <div>
       <Header
         color="transparent"
-        brand="NextJS Material Kit PRO"
-        links={<HeaderLinks dropdownHoverColor="info" />}
+        brand="Camper Camp 🏕" 
+        // links={<HeaderLinks dropdownHoverColor="info" />}
         fixed
         changeColorOnScroll={{
           height: 300,
@@ -45,26 +47,22 @@ export default function LandingPage({ ...rest }) {
         }}
         {...rest}
       />
-      <Parallax image="/img/bg8.jpg" filter="dark">
+      <Parallax image="/img/camp.jpeg" filter="dark">
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={6} md={6}>
-              <h1 className={classes.title}>Your Story Starts With Us.</h1>
+              <h1 className={classes.title}>Camper Camp.</h1>
               <h4>
-                Every landing page needs a small description after the big bold
-                title, that{"'"}s why we added this text here. Add here all the
-                information that can make you or your product create the first
-                impression.
+                It is not quite just a parking lot.
               </h4>
               <br />
               <Button
                 color="danger"
                 size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
-                target="_blank"
+                href="/pricing"
               >
                 <i className="fas fa-play" />
-                Watch video
+                See the prices
               </Button>
             </GridItem>
           </GridContainer>
@@ -72,12 +70,14 @@ export default function LandingPage({ ...rest }) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <SectionProduct />
-          <SectionTeam />
+                  <SectionDescription />
+
+          {/* <SectionProduct />
+          <SectionTeam /> */}
           <SectionWork />
         </div>
       </div>
-      <Footer
+      {/* <Footer
         content={
           <div>
             <div className={classes.left}>
@@ -132,7 +132,7 @@ export default function LandingPage({ ...rest }) {
             </div>
           </div>
         }
-      />
+      /> */}
     </div>
   );
 }

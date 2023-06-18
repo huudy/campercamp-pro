@@ -66,7 +66,7 @@ export default function Header(props) {
     <AppBar className={appBarClasses}>
       <Toolbar className={classes.container}>
         <Button className={classes.title}>
-          <Link href="/presentation">
+          <Link href="/landing-page">
             <a>{brand}</a>
           </Link>
         </Button>

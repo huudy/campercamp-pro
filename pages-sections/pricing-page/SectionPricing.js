@@ -28,7 +28,7 @@ export default function SectionPricing() {
             classes.textCenter
           )}
         >
-          <NavPills
+          {/* <NavPills
             alignCenter
             color="primary"
             tabs={[
@@ -39,7 +39,7 @@ export default function SectionPricing() {
                 tabButton: "yearly"
               }
             ]}
-          />
+          /> */}
         </GridItem>
       </GridContainer>
       <GridContainer>

@@ -74,7 +74,7 @@ export default function PresentationPage() {
         <SectionOverview />
       </div>
       <SectionPricing />
-      <Footer
+      {/* <Footer
         theme="white"
         content={
           <div>
@@ -165,7 +165,7 @@ export default function PresentationPage() {
             </div>
           </div>
         }
-      />
+      /> */}
     </div>
   );
 }
