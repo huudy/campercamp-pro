@@ -25,6 +25,8 @@ class MyDocument extends Document {
             href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
             rel="stylesheet"
           />
+          <script defer data-site="24campercamp.pl" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+
         </Head>
         <body>
           <div id="page-transition"></div>
