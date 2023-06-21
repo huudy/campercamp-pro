@@ -108,7 +108,7 @@ export default class MyApp extends App {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          {/* <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE" /> */}
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGn2uPjVVzMknvMb9kqDEJwgA2Tktm3mo" />
           <script defer data-site="24campercamp.pl" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
           <title>Camper Camp 🏕 </title>
         </Head>
