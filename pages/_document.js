@@ -1,4 +1,5 @@
 import React from "react";
+import Script from 'next/script';
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheets } from "@mui/styles";
 
@@ -27,7 +28,7 @@ class MyDocument extends Document {
           />
           {/* <script defer data-site="24campercamp.pl" src="https://api.nepcha.com/js/nepcha-analytics.js"></script> */}
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8715803075448307"
-            crossorigin="anonymous"></script>
+            crossOrigin="anonymous"></script>
         </Head>
         <body>
           <div id="page-transition"></div>
