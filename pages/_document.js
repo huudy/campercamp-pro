@@ -25,7 +25,10 @@ class MyDocument extends Document {
             href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
             rel="stylesheet"
           />
-          
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGn2uPjVVzMknvMb9kqDEJwgA2Tktm3mo" />
+          <script defer data-site="24campercamp.pl" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8715803075448307"
+     crossorigin="anonymous"></script>
 
         </Head>
         <body>
