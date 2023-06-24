@@ -36,12 +36,12 @@ export default function SectionPricing() {
                 <li>
                   <b>12</b> Hours
                 </li>
-                {/* <li>
-                          <b>55</b> Personal Contacts
-                        </li>
-                        <li>
-                          <b>Car Wash</b> Messages
-                        </li> */}
+                 <li>
+                  Access to <b>Vaccum</b> paid
+                </li>
+                <li>
+                  Access to <b>Car Wash</b> paid
+                </li>
               </ul>
               <Button color='warning'>Reserve</Button>
             </CardBody>
@@ -67,6 +67,12 @@ export default function SectionPricing() {
                 <li>
                   <b>12</b> Hours
                 </li>
+                 <li>
+                  Access to <b>Vaccum</b> paid
+                </li>
+                <li>
+                  Access to <b>Car Wash</b> paid
+                </li>
               </ul>
               <Button color='warning'>Reserve</Button>
             </CardBody>
@@ -80,9 +86,6 @@ export default function SectionPricing() {
                 70 <small>PLN</small>
               </h1>
               <ul>
-                <li>
-                  <b>24h </b>
-                </li>
                 <li>
                   <b>24</b> Hours
                 </li>
@@ -123,11 +126,11 @@ export default function SectionPricing() {
                 <li>
                   <b>12</b> Hours
                 </li>
-                <li>
-                  <b>55</b> Personal Contacts
+                 <li>
+                  Access to <b>Vaccum</b> paid
                 </li>
                 <li>
-                  <b>Car Wash</b> Messages
+                  Access to <b>Car Wash</b> paid
                 </li>
               </ul>
               <Button color='warning'>Reserve</Button>
@@ -149,16 +152,16 @@ export default function SectionPricing() {
               </h1>
               <ul>
                 <li>
-                  <b>80</b> Projects
+                  From <b>9-21</b>
                 </li>
                 <li>
-                  <b>5</b> Team Members
+                  <b>12</b> Hours
+                </li>
+                 <li>
+                  Access to <b>Vaccum</b> paid
                 </li>
                 <li>
-                  <b>55</b> Personal Contacts
-                </li>
-                <li>
-                  <b>Car Wash</b> Messages
+                  Access to <b>Car Wash</b> paid
                 </li>
               </ul>
               <Button color='warning'>Reserve</Button>
@@ -174,16 +177,13 @@ export default function SectionPricing() {
               </h1>
               <ul>
                 <li>
-                  <b>500</b> Project
+                  <b>24</b> Hours
                 </li>
                 <li>
-                  <b>50</b> Team Members
+                  Access to <b>Vaccum</b> free
                 </li>
                 <li>
-                  <b>125</b> Personal Contacts
-                </li>
-                <li>
-                  <b>15.000</b> Messages
+                  Access to <b>Car Wash</b> free
                 </li>
               </ul>
               <Button href='#pablo' color='white' round>
