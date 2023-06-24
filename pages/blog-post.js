@@ -1,27 +1,27 @@
-/*eslint-disable*/ import React from "react";
+/*eslint-disable*/ import React from 'react';
 // nodejs library to set properties for components
-import PropTypes from "prop-types";
-import makeStyles from "@mui/styles/makeStyles";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
+import PropTypes from 'prop-types';
+import makeStyles from '@mui/styles/makeStyles';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
 // @mui/icons-material
-import FormatAlignLeft from "@mui/icons-material/FormatAlignLeft";
-import Favorite from "@mui/icons-material/Favorite";
+import FormatAlignLeft from '@mui/icons-material/FormatAlignLeft';
+import Favorite from '@mui/icons-material/Favorite';
 // core components
-import Header from "/components/Header/Header.js";
-import HeaderLinks from "/components/Header/HeaderLinks.js";
-import Parallax from "/components/Parallax/Parallax.js";
-import Footer from "/components/Footer/Footer.js";
-import GridContainer from "/components/Grid/GridContainer.js";
-import GridItem from "/components/Grid/GridItem.js";
-import Button from "/components/CustomButtons/Button.js";
+import Header from '/components/Header/Header.js';
+import HeaderLinks from '/components/Header/HeaderLinks.js';
+import Parallax from '/components/Parallax/Parallax.js';
+import Footer from '/components/Footer/Footer.js';
+import GridContainer from '/components/Grid/GridContainer.js';
+import GridItem from '/components/Grid/GridItem.js';
+import Button from '/components/CustomButtons/Button.js';
 // sections for this page
-import SectionText from "/pages-sections/blog-post/SectionText.js";
-import SectionBlogInfo from "/pages-sections/blog-post/SectionBlogInfo.js";
-import SectionComments from "/pages-sections/blog-post/SectionComments.js";
-import SectionSimilarStories from "/pages-sections/blog-post/SectionSimilarStories.js";
+import SectionText from '/pages-sections/blog-post/SectionText.js';
+import SectionBlogInfo from '/pages-sections/blog-post/SectionBlogInfo.js';
+import SectionComments from '/pages-sections/blog-post/SectionComments.js';
+import SectionSimilarStories from '/pages-sections/blog-post/SectionSimilarStories.js';
 
-import blogPostPageStyle from "/styles/jss/nextjs-material-kit-pro/pages/blogPostPageStyle.js";
+import blogPostPageStyle from '/styles/jss/nextjs-material-kit-pro/pages/blogPostPageStyle.js';
 
 const useStyles = makeStyles(blogPostPageStyle);
 
@@ -34,28 +34,25 @@ export default function BlogPostPage() {
   return (
     <div>
       <Header
-        brand="NextJS Material Kit PRO"
-        links={<HeaderLinks dropdownHoverColor="info" />}
+        brand='CamperCamp'
+        links={<HeaderLinks dropdownHoverColor='info' />}
         fixed
-        color="transparent"
+        color='transparent'
         changeColorOnScroll={{
           height: 300,
-          color: "info",
+          color: 'info'
         }}
       />
-      <Parallax image="/img/bg5.jpg" filter="dark">
+      <Parallax image='/img/bg5.jpg' filter='dark'>
         <div className={classes.container}>
-          <GridContainer justifyContent="center">
+          <GridContainer justifyContent='center'>
             <GridItem md={8} className={classes.textCenter}>
-              <h1 className={classes.title}>
-                How We Built the Most Successful Castle Ever
-              </h1>
+              <h1 className={classes.title}>How We Built the Most Successful Castle Ever</h1>
               <h4 className={classes.subtitle}>
-                The last 48 hours of my life were total madness. This is what I
-                did.
+                The last 48 hours of my life were total madness. This is what I did.
               </h4>
               <br />
-              <Button color="rose" size="lg" round>
+              <Button color='rose' size='lg' round>
                 <FormatAlignLeft /> Read Article
               </Button>
             </GridItem>
@@ -77,8 +74,8 @@ export default function BlogPostPage() {
               <List className={classes.list}>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/?ref=njsmkp-blog-post"
-                    target="_blank"
+                    href='https://www.creative-tim.com/?ref=njsmkp-blog-post'
+                    target='_blank'
                     className={classes.block}
                   >
                     Creative Tim
@@ -86,8 +83,8 @@ export default function BlogPostPage() {
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/presentation?ref=njsmkp-blog-post"
-                    target="_blank"
+                    href='https://www.creative-tim.com/presentation?ref=njsmkp-blog-post'
+                    target='_blank'
                     className={classes.block}
                   >
                     About us
@@ -95,8 +92,8 @@ export default function BlogPostPage() {
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://blog.creative-tim.com/?ref=njsmkp-blog-post"
-                    target="_blank"
+                    href='https://blog.creative-tim.com/?ref=njsmkp-blog-post'
+                    target='_blank'
                     className={classes.block}
                   >
                     Blog
@@ -104,8 +101,8 @@ export default function BlogPostPage() {
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/license?ref=njsmkp-blog-post"
-                    target="_blank"
+                    href='https://www.creative-tim.com/license?ref=njsmkp-blog-post'
+                    target='_blank'
                     className={classes.block}
                   >
                     Licenses
@@ -114,14 +111,11 @@ export default function BlogPostPage() {
               </List>
             </div>
             <div className={classes.right}>
-              &copy; {1900 + new Date().getYear()} , made with{" "}
-              <Favorite className={classes.icon} /> by{" "}
-              <a
-                href="https://www.creative-tim.com?ref=njsmkp-blog-post"
-                target="_blank"
-              >
+              &copy; {1900 + new Date().getYear()} , made with <Favorite className={classes.icon} />{' '}
+              by{' '}
+              <a href='https://www.creative-tim.com?ref=njsmkp-blog-post' target='_blank'>
                 Creative Tim
-              </a>{" "}
+              </a>{' '}
               for a better web.
             </div>
           </div>

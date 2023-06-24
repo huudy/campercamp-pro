@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react';
 // nodejs library to set properties for components
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 import makeStyles from '@mui/styles/makeStyles';
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
 
 // @mui/icons-material
-import ExpandMore from "@mui/icons-material/ExpandMore";
+import ExpandMore from '@mui/icons-material/ExpandMore';
 
-import styles from "/styles/jss/nextjs-material-kit-pro/components/accordionStyle.js";
+import styles from '/styles/jss/nextjs-material-kit-pro/components/accordionStyle.js';
 
 const useStyles = makeStyles(styles);
 
@@ -17,9 +17,7 @@ export default function CustomAccordion(props) {
   const [active, setActive] = React.useState(
     props.active.length === undefined ? [props.active] : props.active
   );
-  const [single] = React.useState(
-    props.active.length === undefined ? true : false
-  );
+  const [single] = React.useState(props.active.length === undefined ? true : false);
   const handleChange = (panel) => () => {
     let newArray;
 
@@ -57,11 +55,9 @@ export default function CustomAccordion(props) {
             <AccordionSummary
               expandIcon={<ExpandMore />}
               classes={{
-                root: `${classes.accordionSummary} ${
-                  classes[activeColor + "AccordionSummary"]
-                }`,
+                root: `${classes.accordionSummary} ${classes[activeColor + 'AccordionSummary']}`,
                 expanded: `${classes.accordionSummaryExpaned} ${
-                  classes[activeColor + "AccordionSummaryExpaned"]
+                  classes[activeColor + 'AccordionSummaryExpaned']
                 }`,
                 content: classes.accordionSummaryContent,
                 expandIcon: classes.accordionSummaryExpandIcon
@@ -69,9 +65,7 @@ export default function CustomAccordion(props) {
             >
               <h4 className={classes.title}>{prop.title}</h4>
             </AccordionSummary>
-            <AccordionDetails className={classes.accordionDetails}>
-              {prop.content}
-            </AccordionDetails>
+            <AccordionDetails className={classes.accordionDetails}>{prop.content}</AccordionDetails>
           </Accordion>
         );
       })}
@@ -81,15 +75,12 @@ export default function CustomAccordion(props) {
 
 CustomAccordion.defaultProps = {
   active: -1,
-  activeColor: "primary"
+  activeColor: 'primary'
 };
 
 CustomAccordion.propTypes = {
   // index of the default active collapse
-  active: PropTypes.oneOfType([
-    PropTypes.number,
-    PropTypes.arrayOf(PropTypes.number)
-  ]),
+  active: PropTypes.oneOfType([PropTypes.number, PropTypes.arrayOf(PropTypes.number)]),
   collapses: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
@@ -97,12 +88,12 @@ CustomAccordion.propTypes = {
     })
   ).isRequired,
   activeColor: PropTypes.oneOf([
-    "primary",
-    "secondary",
-    "warning",
-    "danger",
-    "success",
-    "info",
-    "rose"
+    'primary',
+    'secondary',
+    'warning',
+    'danger',
+    'success',
+    'info',
+    'rose'
   ])
 };

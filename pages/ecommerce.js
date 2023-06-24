@@ -1,30 +1,30 @@
 /*eslint-disable*/
-import React from "react";
+import React from 'react';
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import classNames from 'classnames';
 import makeStyles from '@mui/styles/makeStyles';
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import InputAdornment from "@mui/material/InputAdornment";
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import InputAdornment from '@mui/material/InputAdornment';
 // @material-ui icons
-import Mail from "@mui/icons-material/Mail";
+import Mail from '@mui/icons-material/Mail';
 // core components
-import Header from "/components/Header/Header.js";
-import HeaderLinks from "/components/Header/HeaderLinks.js";
-import GridContainer from "/components/Grid/GridContainer.js";
-import GridItem from "/components/Grid/GridItem.js";
-import Parallax from "/components/Parallax/Parallax.js";
-import Button from "/components/CustomButtons/Button.js";
-import Card from "/components/Card/Card.js";
-import CardBody from "/components/Card/CardBody.js";
-import CustomInput from "/components/CustomInput/CustomInput.js";
-import Footer from "/components/Footer/Footer.js";
+import Header from '/components/Header/Header.js';
+import HeaderLinks from '/components/Header/HeaderLinks.js';
+import GridContainer from '/components/Grid/GridContainer.js';
+import GridItem from '/components/Grid/GridItem.js';
+import Parallax from '/components/Parallax/Parallax.js';
+import Button from '/components/CustomButtons/Button.js';
+import Card from '/components/Card/Card.js';
+import CardBody from '/components/Card/CardBody.js';
+import CustomInput from '/components/CustomInput/CustomInput.js';
+import Footer from '/components/Footer/Footer.js';
 // sections for this page
-import SectionLatestOffers from "/pages-sections/ecommerce/SectionLatestOffers.js";
-import SectionProducts from "/pages-sections/ecommerce/SectionProducts.js";
-import SectionBlog from "/pages-sections/ecommerce/SectionBlog.js";
+import SectionLatestOffers from '/pages-sections/ecommerce/SectionLatestOffers.js';
+import SectionProducts from '/pages-sections/ecommerce/SectionProducts.js';
+import SectionBlog from '/pages-sections/ecommerce/SectionBlog.js';
 
-import styles from "/styles/jss/nextjs-material-kit-pro/pages/ecommerceStyle.js";
+import styles from '/styles/jss/nextjs-material-kit-pro/pages/ecommerceStyle.js';
 
 const useStyles = makeStyles(styles);
 
@@ -37,32 +37,28 @@ export default function EcommercePage() {
   return (
     <div>
       <Header
-        brand="NextJS Material Kit PRO"
-        links={<HeaderLinks dropdownHoverColor="info" />}
+        brand='CamperCamp'
+        links={<HeaderLinks dropdownHoverColor='info' />}
         fixed
-        color="transparent"
+        color='transparent'
         changeColorOnScroll={{
           height: 300,
-          color: "info"
+          color: 'info'
         }}
       />
-      <Parallax image="/img/examples/clark-street-merc.jpg" filter="dark" small>
+      <Parallax image='/img/examples/clark-street-merc.jpg' filter='dark' small>
         <div className={classes.container}>
           <GridContainer>
             <GridItem
               md={8}
               sm={8}
-              className={classNames(
-                classes.mlAuto,
-                classes.mrAuto,
-                classes.textCenter
-              )}
+              className={classNames(classes.mlAuto, classes.mrAuto, classes.textCenter)}
             >
               <div className={classes.brand}>
                 <h1 className={classes.title}>Ecommerce Page!</h1>
                 <h4>
-                  Free global delivery for all products. Use coupon{" "}
-                  <b>25summer</b> for an extra 25% Off
+                  Free global delivery for all products. Use coupon <b>25summer</b> for an extra 25%
+                  Off
                 </h4>
               </div>
             </GridItem>
@@ -76,25 +72,17 @@ export default function EcommercePage() {
       </div>
       <SectionBlog />
       <div
-        className={classNames(
-          classes.subscribeLine,
-          classes.subscribeLineImage
-        )}
+        className={classNames(classes.subscribeLine, classes.subscribeLineImage)}
         style={{ backgroundImage: "url('/img/examples/ecommerce-header.jpg')" }}
       >
         <div className={classes.container}>
           <GridContainer>
-            <GridItem
-              xs={12}
-              sm={6}
-              md={6}
-              className={classNames(classes.mlAuto, classes.mrAuto)}
-            >
+            <GridItem xs={12} sm={6} md={6} className={classNames(classes.mlAuto, classes.mrAuto)}>
               <div className={classes.textCenter}>
                 <h3 className={classes.title}>Subscribe to our Newsletter</h3>
                 <p className={classes.description}>
-                  Join our newsletter and get news in your inbox every week! We
-                  hate spam too, so no worries about this.
+                  Join our newsletter and get news in your inbox every week! We hate spam too, so no
+                  worries about this.
                 </p>
               </div>
               <Card raised className={classes.card}>
@@ -103,27 +91,23 @@ export default function EcommercePage() {
                     <GridContainer>
                       <GridItem xs={12} sm={6} md={6} lg={8}>
                         <CustomInput
-                          id="emailPreFooter"
+                          id='emailPreFooter'
                           formControlProps={{
                             fullWidth: true,
                             className: classes.cardForm
                           }}
                           inputProps={{
                             startAdornment: (
-                              <InputAdornment position="start">
+                              <InputAdornment position='start'>
                                 <Mail />
                               </InputAdornment>
                             ),
-                            placeholder: "Your Email..."
+                            placeholder: 'Your Email...'
                           }}
                         />
                       </GridItem>
                       <GridItem xs={12} sm={6} md={6} lg={4}>
-                        <Button
-                          color="rose"
-                          block
-                          className={classes.subscribeButton}
-                        >
+                        <Button color='rose' block className={classes.subscribeButton}>
                           subscribe
                         </Button>
                       </GridItem>
@@ -137,15 +121,15 @@ export default function EcommercePage() {
       </div>
 
       <Footer
-        theme="dark"
+        theme='dark'
         content={
           <div>
             <div className={classes.left}>
               <List className={classes.list}>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="http://blog.creative-tim.com/?ref=njsmkp-e-ecommerce"
-                    target="_blank"
+                    href='http://blog.creative-tim.com/?ref=njsmkp-e-ecommerce'
+                    target='_blank'
                     className={classes.block}
                   >
                     Blog
@@ -153,35 +137,27 @@ export default function EcommercePage() {
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/presentation?ref=njsmkp-e-ecommerce"
-                    target="_blank"
+                    href='https://www.creative-tim.com/presentation?ref=njsmkp-e-ecommerce'
+                    target='_blank'
                     className={classes.block}
                   >
                     Presentation
                   </a>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="#pablito"
-                    onClick={(e) => e.preventDefault()}
-                    className={classes.block}
-                  >
+                  <a href='#pablito' onClick={(e) => e.preventDefault()} className={classes.block}>
                     Discover
                   </a>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="#pablito"
-                    onClick={(e) => e.preventDefault()}
-                    className={classes.block}
-                  >
+                  <a href='#pablito' onClick={(e) => e.preventDefault()} className={classes.block}>
                     Payment
                   </a>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/contact-us?ref=njsmkp-e-ecommerce"
-                    target="_blank"
+                    href='https://www.creative-tim.com/contact-us?ref=njsmkp-e-ecommerce'
+                    target='_blank'
                     className={classes.block}
                   >
                     Contact us
@@ -190,14 +166,14 @@ export default function EcommercePage() {
               </List>
             </div>
             <div className={classes.right}>
-              Copyright &copy; {1900 + new Date().getYear()}{" "}
+              Copyright &copy; {1900 + new Date().getYear()}{' '}
               <a
-                href="https://www.creative-tim.com?ref=njsmkp-e-ecommerce"
-                target="_blank"
+                href='https://www.creative-tim.com?ref=njsmkp-e-ecommerce'
+                target='_blank'
                 className={classes.aClasses}
               >
                 Creative Tim
-              </a>{" "}
+              </a>{' '}
               All Rights Reserved.
             </div>
           </div>
@@ -207,32 +183,29 @@ export default function EcommercePage() {
           <GridItem xs={12} sm={4} md={4}>
             <h5>About Us</h5>
             <p>
-              Creative Tim is a startup that creates design tools that make the
-              web development process faster and easier.{" "}
+              Creative Tim is a startup that creates design tools that make the web development
+              process faster and easier.{' '}
             </p>
             <p>
-              We love the web and care deeply for how users interact with a
-              digital product. We power businesses and individuals to create
-              better looking web projects around the world.{" "}
+              We love the web and care deeply for how users interact with a digital product. We
+              power businesses and individuals to create better looking web projects around the
+              world.{' '}
             </p>
           </GridItem>
           <GridItem xs={12} sm={4} md={4}>
             <h5>Social Feed</h5>
             <div className={classes.socialFeed}>
               <div>
-                <i className="fab fa-twitter" />
+                <i className='fab fa-twitter' />
                 <p>How to handle ethical disagreements with your clients.</p>
               </div>
               <div>
-                <i className="fab fa-twitter" />
+                <i className='fab fa-twitter' />
                 <p>The tangible benefits of designing at 1x pixel density.</p>
               </div>
               <div>
-                <i className="fab fa-facebook-square" />
-                <p>
-                  A collection of 25 stunning sites that you can use for
-                  inspiration.
-                </p>
+                <i className='fab fa-facebook-square' />
+                <p>A collection of 25 stunning sites that you can use for inspiration.</p>
               </div>
             </div>
           </GridItem>
@@ -240,76 +213,44 @@ export default function EcommercePage() {
             <h5>Instagram Feed</h5>
             <div className={classes.galleryFeed}>
               <img
-                src="/img/faces/card-profile6-square.jpg"
-                className={classNames(
-                  classes.img,
-                  classes.imgRaised,
-                  classes.imgRounded
-                )}
-                alt="..."
+                src='/img/faces/card-profile6-square.jpg'
+                className={classNames(classes.img, classes.imgRaised, classes.imgRounded)}
+                alt='...'
               />
               <img
-                src="/img/faces/christian.jpg"
-                className={classNames(
-                  classes.img,
-                  classes.imgRaised,
-                  classes.imgRounded
-                )}
-                alt="..."
+                src='/img/faces/christian.jpg'
+                className={classNames(classes.img, classes.imgRaised, classes.imgRounded)}
+                alt='...'
               />
               <img
-                src="/img/faces/card-profile4-square.jpg"
-                className={classNames(
-                  classes.img,
-                  classes.imgRaised,
-                  classes.imgRounded
-                )}
-                alt="..."
+                src='/img/faces/card-profile4-square.jpg'
+                className={classNames(classes.img, classes.imgRaised, classes.imgRounded)}
+                alt='...'
               />
               <img
-                src="/img/faces/card-profile1-square.jpg"
-                className={classNames(
-                  classes.img,
-                  classes.imgRaised,
-                  classes.imgRounded
-                )}
-                alt="..."
+                src='/img/faces/card-profile1-square.jpg'
+                className={classNames(classes.img, classes.imgRaised, classes.imgRounded)}
+                alt='...'
               />
               <img
-                src="/img/faces/marc.jpg"
-                className={classNames(
-                  classes.img,
-                  classes.imgRaised,
-                  classes.imgRounded
-                )}
-                alt="..."
+                src='/img/faces/marc.jpg'
+                className={classNames(classes.img, classes.imgRaised, classes.imgRounded)}
+                alt='...'
               />
               <img
-                src="/img/faces/kendall.jpg"
-                className={classNames(
-                  classes.img,
-                  classes.imgRaised,
-                  classes.imgRounded
-                )}
-                alt="..."
+                src='/img/faces/kendall.jpg'
+                className={classNames(classes.img, classes.imgRaised, classes.imgRounded)}
+                alt='...'
               />
               <img
-                src="/img/faces/card-profile5-square.jpg"
-                className={classNames(
-                  classes.img,
-                  classes.imgRaised,
-                  classes.imgRounded
-                )}
-                alt="..."
+                src='/img/faces/card-profile5-square.jpg'
+                className={classNames(classes.img, classes.imgRaised, classes.imgRounded)}
+                alt='...'
               />
               <img
-                src="/img/faces/card-profile2-square.jpg"
-                className={classNames(
-                  classes.img,
-                  classes.imgRaised,
-                  classes.imgRounded
-                )}
-                alt="..."
+                src='/img/faces/card-profile2-square.jpg'
+                className={classNames(classes.img, classes.imgRaised, classes.imgRounded)}
+                alt='...'
               />
             </div>
           </GridItem>

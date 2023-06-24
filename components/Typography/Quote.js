@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import classNames from 'classnames';
 // nodejs library to set properties for components
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 import makeStyles from '@mui/styles/makeStyles';
 // core components
-import styles from "/styles/jss/nextjs-material-kit-pro/components/typographyStyle.js";
+import styles from '/styles/jss/nextjs-material-kit-pro/components/typographyStyle.js';
 
 const useStyles = makeStyles(styles);
 

@@ -1,21 +1,21 @@
-import React from "react";
+import React from 'react';
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import classNames from 'classnames';
 // nodejs library to set properties for components
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 import makeStyles from '@mui/styles/makeStyles';
 // import Card from "@mui/material/Card";
 // import CardContent from "@mui/material/Card/CardContent";
 // import CardHeader from "@mui/material/Card/CardHeader";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
 
 // core components
-import Card from "/components/Card/Card.js";
-import CardBody from "/components/Card/CardBody.js";
-import CardHeader from "/components/Card/CardHeader.js";
-import styles from "/styles/jss/nextjs-material-kit-pro/components/customTabsStyle.js";
+import Card from '/components/Card/Card.js';
+import CardBody from '/components/Card/CardBody.js';
+import CardHeader from '/components/Card/CardHeader.js';
+import styles from '/styles/jss/nextjs-material-kit-pro/components/customTabsStyle.js';
 
 const useStyles = makeStyles(styles);
 
@@ -37,9 +37,7 @@ export default function CustomTabs(props) {
   return (
     <Card plain={plainTabs}>
       <CardHeader color={headerColor} plain={plainTabs}>
-        {title !== undefined ? (
-          <div className={cardTitle}>{"title"}</div>
-        ) : null}
+        {title !== undefined ? <div className={cardTitle}>{'title'}</div> : null}
         <Tabs
           classes={{
             root: classes.customTabsRoot,
@@ -48,7 +46,7 @@ export default function CustomTabs(props) {
           }}
           value={value}
           onChange={handleChange}
-          textColor="inherit"
+          textColor='inherit'
         >
           {tabs.map((prop, key) => {
             var icon = {};
@@ -100,18 +98,11 @@ export default function CustomTabs(props) {
 }
 
 CustomTabs.defaultProps = {
-  headerColor: "purple"
+  headerColor: 'purple'
 };
 
 CustomTabs.propTypes = {
-  headerColor: PropTypes.oneOf([
-    "warning",
-    "success",
-    "danger",
-    "info",
-    "primary",
-    "rose"
-  ]),
+  headerColor: PropTypes.oneOf(['warning', 'success', 'danger', 'info', 'primary', 'rose']),
   title: PropTypes.string,
   tabs: PropTypes.arrayOf(
     PropTypes.shape({

@@ -1,24 +1,18 @@
 /*eslint-disable*/
-import React from "react";
+import React from 'react';
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import classNames from 'classnames';
 import makeStyles from '@mui/styles/makeStyles';
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-// @mui/icons-material
-import Favorite from "@mui/icons-material/Favorite";
 // core components
-import Header from "/components/Header/Header.js";
-import HeaderLinks from "/components/Header/HeaderLinks.js";
-import Parallax from "/components/Parallax/Parallax.js";
-import GridContainer from "/components/Grid/GridContainer.js";
-import GridItem from "/components/Grid/GridItem.js";
-import Footer from "/components/Footer/Footer.js";
+import Header from '/components/Header/Header.js';
+import Parallax from '/components/Parallax/Parallax.js';
+import GridContainer from '/components/Grid/GridContainer.js';
+import GridItem from '/components/Grid/GridItem.js';
 // sections for this page
-import SectionPricing from "/pages-sections/pricing-page/SectionPricing.js";
-import SectionFeatures from "/pages-sections/pricing-page/SectionFeatures.js";
+import SectionPricing from '/pages-sections/pricing-page/SectionPricing.js';
+import SectionFeatures from '/pages-sections/pricing-page/SectionFeatures.js';
 
-import pricingStyle from "/styles/jss/nextjs-material-kit-pro/pages/pricingStyle.js";
+import pricingStyle from '/styles/jss/nextjs-material-kit-pro/pages/pricingStyle.js';
 
 const useStyles = makeStyles(pricingStyle);
 
@@ -31,99 +25,42 @@ export default function PricingPage() {
   return (
     <div>
       <Header
-        brand="Camper Camp 🏕" 
+        brand='Camper Camp 🏕'
         // links={<HeaderLinks dropdownHoverColor="info" />}
         fixed
-        color="transparent"
+        color='transparent'
         changeColorOnScroll={{
           height: 300,
-          color: "info"
+          color: 'warning'
         }}
       />
 
-      <Parallax image="/img/bg2.jpg" filter="dark" small>
+      <Parallax image='/img/grand.jpeg' filter='dark' small>
         <div className={classes.container}>
           <GridContainer>
             <GridItem
               md={8}
               sm={8}
-              className={classNames(
-                classes.mlAuto,
-                classes.mrAuto,
-                classes.textCenter
-              )}
+              className={classNames(classes.mlAuto, classes.mrAuto, classes.textCenter)}
             >
-              <h1 className={classes.title}>Let{"'"}s see our prices</h1>
+              <h1 className={classes.title}> Check out our prices </h1>
               <h4>
-                We offer all kinds of fares for your stay with us. We also have a lot of extra services that you can use in bundle or seperately. Get familiar with our fares below:
+                We offer all kinds of fares for your stay with us. We also have a lot of extra
+                services that you can use in bundle or seperately. Get familiar with our fares
+                below:
               </h4>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
+
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <SectionPricing />
           <hr />
-          <SectionFeatures />
+          {/* <SectionFeatures /> */}
         </div>
       </div>
-      {/* <Footer
-        content={
-          <div>
-            <div className={classes.left}>
-              <List className={classes.list}>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/?ref=njsmkp-pricing"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    Creative Tim
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/presentation?ref=njsmkp-pricing"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    About us
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="http://blog.creative-tim.com/?ref=njsmkp-pricing"
-                    className={classes.block}
-                  >
-                    Blog
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/license?ref=njsmkp-pricing"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    Licenses
-                  </a>
-                </ListItem>
-              </List>
-            </div>
-            <div className={classes.right}>
-              &copy; {1900 + new Date().getYear()} , made with{" "}
-              <Favorite className={classes.icon} /> by{" "}
-              <a
-                href="https://www.creative-tim.com?ref=njsmkp-pricing"
-                target="_blank"
-              >
-                Creative Tim
-              </a>{" "}
-              for a better web.
-            </div>
-          </div>
-        }
-      /> */}
     </div>
   );
 }

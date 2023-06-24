@@ -1,17 +1,17 @@
-import React from "react";
+import React from 'react';
 
 import makeStyles from '@mui/styles/makeStyles';
 
 const styles = {
   clearfix: {
-    "&:after,&:before": {
-      display: "table",
-      content: '" "',
+    '&:after,&:before': {
+      display: 'table',
+      content: '" "'
     },
-    "&:after": {
-      clear: "both",
-    },
-  },
+    '&:after': {
+      clear: 'both'
+    }
+  }
 };
 
 const useStyles = makeStyles(styles);

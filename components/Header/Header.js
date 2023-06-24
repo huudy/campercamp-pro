@@ -1,21 +1,21 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import classNames from 'classnames';
 // nodejs library to set properties for components
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 import makeStyles from '@mui/styles/makeStyles';
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Button from "@mui/material/Button";
-import Hidden from "@mui/material/Hidden";
-import Drawer from "@mui/material/Drawer";
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import IconButton from '@mui/material/IconButton';
+import Button from '@mui/material/Button';
+import Hidden from '@mui/material/Hidden';
+import Drawer from '@mui/material/Drawer';
 // @mui/icons-material
-import Menu from "@mui/icons-material/Menu";
-import Close from "@mui/icons-material/Close";
+import Menu from '@mui/icons-material/Menu';
+import Close from '@mui/icons-material/Close';
 // core components
-import styles from "/styles/jss/nextjs-material-kit-pro/components/headerStyle.js";
+import styles from '/styles/jss/nextjs-material-kit-pro/components/headerStyle.js';
 
 const useStyles = makeStyles(styles);
 
@@ -24,11 +24,11 @@ export default function Header(props) {
   const classes = useStyles();
   React.useEffect(() => {
     if (props.changeColorOnScroll) {
-      window.addEventListener("scroll", headerColorChange);
+      window.addEventListener('scroll', headerColorChange);
     }
     return function cleanup() {
       if (props.changeColorOnScroll) {
-        window.removeEventListener("scroll", headerColorChange);
+        window.removeEventListener('scroll', headerColorChange);
       }
     };
   });
@@ -40,18 +40,14 @@ export default function Header(props) {
 
     const windowsScrollTop = window.pageYOffset;
     if (windowsScrollTop > changeColorOnScroll.height) {
+      document.body.getElementsByTagName('header')[0].classList.remove(classes[color]);
       document.body
-        .getElementsByTagName("header")[0]
-        .classList.remove(classes[color]);
-      document.body
-        .getElementsByTagName("header")[0]
+        .getElementsByTagName('header')[0]
         .classList.add(classes[changeColorOnScroll.color]);
     } else {
+      document.body.getElementsByTagName('header')[0].classList.add(classes[color]);
       document.body
-        .getElementsByTagName("header")[0]
-        .classList.add(classes[color]);
-      document.body
-        .getElementsByTagName("header")[0]
+        .getElementsByTagName('header')[0]
         .classList.remove(classes[changeColorOnScroll.color]);
     }
   };
@@ -66,27 +62,28 @@ export default function Header(props) {
     <AppBar className={appBarClasses}>
       <Toolbar className={classes.container}>
         <Button className={classes.title}>
-          <Link href="/landing-page">
+          <Link href='/landing-page'>
             <a>{brand}</a>
           </Link>
         </Button>
-        <Hidden mdDown implementation="css" className={classes.hidden}>
+        <Hidden mdDown implementation='css' className={classes.hidden}>
           <div className={classes.collapse}>{links}</div>
         </Hidden>
         <Hidden mdUp>
           <IconButton
-            color="inherit"
-            aria-label="open drawer"
+            color='inherit'
+            aria-label='open drawer'
             onClick={handleDrawerToggle}
-            size="large">
+            size='large'
+          >
             <Menu />
           </IconButton>
         </Hidden>
       </Toolbar>
-      <Hidden mdUp implementation="js">
+      <Hidden mdUp implementation='js'>
         <Drawer
-          variant="temporary"
-          anchor={"right"}
+          variant='temporary'
+          anchor={'right'}
           open={mobileOpen}
           classes={{
             paper: classes.drawerPaper
@@ -94,11 +91,12 @@ export default function Header(props) {
           onClose={handleDrawerToggle}
         >
           <IconButton
-            color="inherit"
-            aria-label="open drawer"
+            color='inherit'
+            aria-label='open drawer'
             onClick={handleDrawerToggle}
             className={classes.closeButtonDrawer}
-            size="large">
+            size='large'
+          >
             <Close />
           </IconButton>
           <div className={classes.appResponsive}>{links}</div>
@@ -109,20 +107,20 @@ export default function Header(props) {
 }
 
 Header.defaultProp = {
-  color: "white"
+  color: 'white'
 };
 
 Header.propTypes = {
   color: PropTypes.oneOf([
-    "primary",
-    "info",
-    "success",
-    "warning",
-    "danger",
-    "transparent",
-    "white",
-    "rose",
-    "dark"
+    'primary',
+    'info',
+    'success',
+    'warning',
+    'danger',
+    'transparent',
+    'white',
+    'rose',
+    'dark'
   ]),
   links: PropTypes.node,
   brand: PropTypes.string,
@@ -137,15 +135,15 @@ Header.propTypes = {
   changeColorOnScroll: PropTypes.shape({
     height: PropTypes.number.isRequired,
     color: PropTypes.oneOf([
-      "primary",
-      "info",
-      "success",
-      "warning",
-      "danger",
-      "transparent",
-      "white",
-      "rose",
-      "dark"
+      'primary',
+      'info',
+      'success',
+      'warning',
+      'danger',
+      'transparent',
+      'white',
+      'rose',
+      'dark'
     ]).isRequired
   })
 };

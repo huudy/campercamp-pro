@@ -1,21 +1,21 @@
 /*eslint-disable*/
-import React from "react";
+import React from 'react';
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import classNames from 'classnames';
 import makeStyles from '@mui/styles/makeStyles';
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
 // @mui/icons-material
-import Mail from "@mui/icons-material/Mail";
-import Favorite from "@mui/icons-material/Favorite";
+import Mail from '@mui/icons-material/Mail';
+import Favorite from '@mui/icons-material/Favorite';
 // core components
-import GridContainer from "/components/Grid/GridContainer.js";
-import GridItem from "/components/Grid/GridItem.js";
-import Button from "/components/CustomButtons/Button.js";
-import CustomInput from "/components/CustomInput/CustomInput.js";
-import Footer from "/components/Footer/Footer.js";
+import GridContainer from '/components/Grid/GridContainer.js';
+import GridItem from '/components/Grid/GridItem.js';
+import Button from '/components/CustomButtons/Button.js';
+import CustomInput from '/components/CustomInput/CustomInput.js';
+import Footer from '/components/Footer/Footer.js';
 
-import styles from "/styles/jss/nextjs-material-kit-pro/pages/componentsSections/footerStyle.js";
+import styles from '/styles/jss/nextjs-material-kit-pro/pages/componentsSections/footerStyle.js';
 
 const useStyles = makeStyles(styles);
 
@@ -30,24 +30,24 @@ export default function SectionFooter() {
       </div>
       <div>
         <Footer
-          theme="white"
+          theme='white'
           content={
             <div>
               <div className={classes.left}>
                 <a
-                  href="https://www.creative-tim.com/product/nextjs-material-kit-pro?ref=njsmkp-footer-components"
-                  target="_blank"
+                  href='https://www.creative-tim.com/product/nextjs-material-kit-pro?ref=njsmkp-footer-components'
+                  target='_blank'
                   className={classes.footerBrand}
                 >
-                  NextJS Material Kit PRO
+                  CamperCamp
                 </a>
               </div>
               <div className={classes.pullCenter}>
                 <List className={classes.list}>
                   <ListItem className={classes.inlineBlock}>
                     <a
-                      href="https://www.creative-tim.com/?ref=njsmkp-footer-components"
-                      target="_blank"
+                      href='https://www.creative-tim.com/?ref=njsmkp-footer-components'
+                      target='_blank'
                       className={classes.block}
                     >
                       Creative Tim
@@ -55,8 +55,8 @@ export default function SectionFooter() {
                   </ListItem>
                   <ListItem className={classes.inlineBlock}>
                     <a
-                      href="https://www.creative-tim.com/presentation?ref=njsmkp-footer-components"
-                      target="_blank"
+                      href='https://www.creative-tim.com/presentation?ref=njsmkp-footer-components'
+                      target='_blank'
                       className={classes.block}
                     >
                       About us
@@ -64,7 +64,7 @@ export default function SectionFooter() {
                   </ListItem>
                   <ListItem className={classes.inlineBlock}>
                     <a
-                      href="http://blog.creative-tim.com/?ref=njsmkp-footer-components"
+                      href='http://blog.creative-tim.com/?ref=njsmkp-footer-components'
                       className={classes.block}
                     >
                       Blog
@@ -72,8 +72,8 @@ export default function SectionFooter() {
                   </ListItem>
                   <ListItem className={classes.inlineBlock}>
                     <a
-                      href="https://www.creative-tim.com/license?ref=njsmkp-footer-components"
-                      target="_blank"
+                      href='https://www.creative-tim.com/license?ref=njsmkp-footer-components'
+                      target='_blank'
                       className={classes.block}
                     >
                       Licenses
@@ -85,35 +85,35 @@ export default function SectionFooter() {
                 <ul>
                   <li>
                     <Button
-                      href="https://twitter.com/CreativeTim?ref=creativetim"
-                      target="_blank"
-                      color="twitter"
+                      href='https://twitter.com/CreativeTim?ref=creativetim'
+                      target='_blank'
+                      color='twitter'
                       justIcon
                       simple
                     >
-                      <i className="fab fa-twitter" />
+                      <i className='fab fa-twitter' />
                     </Button>
                   </li>
                   <li>
                     <Button
-                      href="https://dribbble.com/creativetim?ref=creativetim"
-                      target="_blank"
-                      color="dribbble"
+                      href='https://dribbble.com/creativetim?ref=creativetim'
+                      target='_blank'
+                      color='dribbble'
                       justIcon
                       simple
                     >
-                      <i className="fab fa-dribbble" />
+                      <i className='fab fa-dribbble' />
                     </Button>
                   </li>
                   <li>
                     <Button
-                      href="https://instagram.com/CreativeTimOfficial?ref=creativetim"
-                      target="_blank"
-                      color="google"
+                      href='https://instagram.com/CreativeTimOfficial?ref=creativetim'
+                      target='_blank'
+                      color='google'
                       justIcon
                       simple
                     >
-                      <i className="fab fa-google-plus-g" />
+                      <i className='fab fa-google-plus-g' />
                     </Button>
                   </li>
                 </ul>
@@ -130,8 +130,8 @@ export default function SectionFooter() {
                 <List className={classes.list}>
                   <ListItem className={classes.inlineBlock}>
                     <a
-                      href="https://www.creative-tim.com/?ref=njsmkp-footer-components"
-                      target="_blank"
+                      href='https://www.creative-tim.com/?ref=njsmkp-footer-components'
+                      target='_blank'
                       className={classes.block}
                     >
                       Creative Tim
@@ -139,8 +139,8 @@ export default function SectionFooter() {
                   </ListItem>
                   <ListItem className={classes.inlineBlock}>
                     <a
-                      href="https://www.creative-tim.com/presentation?ref=njsmkp-footer-components"
-                      target="_blank"
+                      href='https://www.creative-tim.com/presentation?ref=njsmkp-footer-components'
+                      target='_blank'
                       className={classes.block}
                     >
                       About us
@@ -148,7 +148,7 @@ export default function SectionFooter() {
                   </ListItem>
                   <ListItem className={classes.inlineBlock}>
                     <a
-                      href="http://blog.creative-tim.com/?ref=njsmkp-footer-components"
+                      href='http://blog.creative-tim.com/?ref=njsmkp-footer-components'
                       className={classes.block}
                     >
                       Blog
@@ -156,8 +156,8 @@ export default function SectionFooter() {
                   </ListItem>
                   <ListItem className={classes.inlineBlock}>
                     <a
-                      href="https://www.creative-tim.com/license?ref=njsmkp-footer-components"
-                      target="_blank"
+                      href='https://www.creative-tim.com/license?ref=njsmkp-footer-components'
+                      target='_blank'
                       className={classes.block}
                     >
                       Licenses
@@ -166,15 +166,15 @@ export default function SectionFooter() {
                 </List>
               </div>
               <div className={classes.right}>
-                &copy; {1900 + new Date().getYear()} , made with{" "}
-                <Favorite className={classes.icon} /> by{" "}
+                &copy; {1900 + new Date().getYear()} , made with{' '}
+                <Favorite className={classes.icon} /> by{' '}
                 <a
-                  href="https://www.creative-tim.com?ref=njsmkp-footer-components"
-                  target="_blank"
+                  href='https://www.creative-tim.com?ref=njsmkp-footer-components'
+                  target='_blank'
                   className={classes.aClasses}
                 >
                   Creative Tim
-                </a>{" "}
+                </a>{' '}
                 for a better web.
               </div>
             </div>
@@ -183,24 +183,24 @@ export default function SectionFooter() {
         <br />
         <br />
         <Footer
-          theme="dark"
+          theme='dark'
           content={
             <div>
               <div className={classes.left}>
                 <a
-                  href="https://www.creative-tim.com/product/nextjs-material-kit-pro?ref=njsmkp-footer-components"
-                  target="_blank"
+                  href='https://www.creative-tim.com/product/nextjs-material-kit-pro?ref=njsmkp-footer-components'
+                  target='_blank'
                   className={classes.footerBrand}
                 >
-                  NextJS Material Kit PRO
+                  CamperCamp
                 </a>
               </div>
               <div className={classes.pullCenter}>
                 <List className={classes.list}>
                   <ListItem className={classes.inlineBlock}>
                     <a
-                      href="http://blog.creative-tim.com/?ref=njsmkp-footer-components"
-                      target="_blank"
+                      href='http://blog.creative-tim.com/?ref=njsmkp-footer-components'
+                      target='_blank'
                       className={classes.block}
                     >
                       Blog
@@ -208,8 +208,8 @@ export default function SectionFooter() {
                   </ListItem>
                   <ListItem className={classes.inlineBlock}>
                     <a
-                      href="https://www.creative-tim.com/presentation?ref=njsmkp-footer-components"
-                      target="_blank"
+                      href='https://www.creative-tim.com/presentation?ref=njsmkp-footer-components'
+                      target='_blank'
                       className={classes.block}
                     >
                       Presentation
@@ -217,7 +217,7 @@ export default function SectionFooter() {
                   </ListItem>
                   <ListItem className={classes.inlineBlock}>
                     <a
-                      href="#pablito"
+                      href='#pablito'
                       onClick={(e) => e.preventDefault()}
                       className={classes.block}
                     >
@@ -226,7 +226,7 @@ export default function SectionFooter() {
                   </ListItem>
                   <ListItem className={classes.inlineBlock}>
                     <a
-                      href="#pablito"
+                      href='#pablito'
                       onClick={(e) => e.preventDefault()}
                       className={classes.block}
                     >
@@ -235,8 +235,8 @@ export default function SectionFooter() {
                   </ListItem>
                   <ListItem className={classes.inlineBlock}>
                     <a
-                      href="https://www.creative-tim.com/contact-us?ref=njsmkp-footer-components"
-                      target="_blank"
+                      href='https://www.creative-tim.com/contact-us?ref=njsmkp-footer-components'
+                      target='_blank'
                       className={classes.block}
                     >
                       Contact us
@@ -248,35 +248,35 @@ export default function SectionFooter() {
                 <ul>
                   <li>
                     <Button
-                      href="https://twitter.com/CreativeTim?ref=creativetim"
-                      target="_blank"
-                      color="white"
+                      href='https://twitter.com/CreativeTim?ref=creativetim'
+                      target='_blank'
+                      color='white'
                       justIcon
                       simple
                     >
-                      <i className="fab fa-twitter" />
+                      <i className='fab fa-twitter' />
                     </Button>
                   </li>
                   <li>
                     <Button
-                      href="https://dribbble.com/creativetim?ref=creativetim"
-                      target="_blank"
-                      color="white"
+                      href='https://dribbble.com/creativetim?ref=creativetim'
+                      target='_blank'
+                      color='white'
                       justIcon
                       simple
                     >
-                      <i className="fab fa-dribbble" />
+                      <i className='fab fa-dribbble' />
                     </Button>
                   </li>
                   <li>
                     <Button
-                      href="https://instagram.com/CreativeTimOfficial?ref=creativetim"
-                      target="_blank"
-                      color="white"
+                      href='https://instagram.com/CreativeTimOfficial?ref=creativetim'
+                      target='_blank'
+                      color='white'
                       justIcon
                       simple
                     >
-                      <i className="fab fa-instagram" />
+                      <i className='fab fa-instagram' />
                     </Button>
                   </li>
                 </ul>
@@ -287,67 +287,47 @@ export default function SectionFooter() {
         <br />
         <br />
         <Footer
-          theme="dark"
+          theme='dark'
           content={
             <div>
               <div className={classes.left}>
                 <List className={classes.list}>
                   <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="#pablo"
-                      className={classes.block}
-                      onClick={(e) => e.preventDefault()}
-                    >
+                    <a href='#pablo' className={classes.block} onClick={(e) => e.preventDefault()}>
                       Blog
                     </a>
                   </ListItem>
                   <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="#pablo"
-                      className={classes.block}
-                      onClick={(e) => e.preventDefault()}
-                    >
+                    <a href='#pablo' className={classes.block} onClick={(e) => e.preventDefault()}>
                       Presentation
                     </a>
                   </ListItem>
                   <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="#pablo"
-                      className={classes.block}
-                      onClick={(e) => e.preventDefault()}
-                    >
+                    <a href='#pablo' className={classes.block} onClick={(e) => e.preventDefault()}>
                       Discover
                     </a>
                   </ListItem>
                   <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="#pablo"
-                      className={classes.block}
-                      onClick={(e) => e.preventDefault()}
-                    >
+                    <a href='#pablo' className={classes.block} onClick={(e) => e.preventDefault()}>
                       Payment
                     </a>
                   </ListItem>
                   <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="#pablo"
-                      className={classes.block}
-                      onClick={(e) => e.preventDefault()}
-                    >
+                    <a href='#pablo' className={classes.block} onClick={(e) => e.preventDefault()}>
                       Contact Us
                     </a>
                   </ListItem>
                 </List>
               </div>
               <div className={classes.right}>
-                Copyright &copy; {1900 + new Date().getYear()}{" "}
+                Copyright &copy; {1900 + new Date().getYear()}{' '}
                 <a
-                  href="https://www.creative-tim.com?ref=njsmkp-footer-components"
-                  target="_blank"
+                  href='https://www.creative-tim.com?ref=njsmkp-footer-components'
+                  target='_blank'
                   className={classes.aClasses}
                 >
                   Creative Tim
-                </a>{" "}
+                </a>{' '}
                 All Rights Reserved.
               </div>
             </div>
@@ -357,32 +337,29 @@ export default function SectionFooter() {
             <GridItem xs={12} sm={4} md={4}>
               <h5>About Us</h5>
               <p>
-                Creative Tim is a startup that creates design tools that make
-                the web development process faster and easier.{" "}
+                Creative Tim is a startup that creates design tools that make the web development
+                process faster and easier.{' '}
               </p>
               <p>
-                We love the web and care deeply for how users interact with a
-                digital product. We power businesses and individuals to create
-                better looking web projects around the world.{" "}
+                We love the web and care deeply for how users interact with a digital product. We
+                power businesses and individuals to create better looking web projects around the
+                world.{' '}
               </p>
             </GridItem>
             <GridItem xs={12} sm={4} md={4}>
               <h5>Social Feed</h5>
               <div className={classes.socialFeed}>
                 <div>
-                  <i className="fab fa-twitter" />
+                  <i className='fab fa-twitter' />
                   <p>How to handle ethical disagreements with your clients.</p>
                 </div>
                 <div>
-                  <i className="fab fa-twitter" />
+                  <i className='fab fa-twitter' />
                   <p>The tangible benefits of designing at 1x pixel density.</p>
                 </div>
                 <div>
-                  <i className="fab fa-facebook-square" />
-                  <p>
-                    A collection of 25 stunning sites that you can use for
-                    inspiration.
-                  </p>
+                  <i className='fab fa-facebook-square' />
+                  <p>A collection of 25 stunning sites that you can use for inspiration.</p>
                 </div>
               </div>
             </GridItem>
@@ -390,76 +367,44 @@ export default function SectionFooter() {
               <h5>Instagram Feed</h5>
               <div className={classes.galleryFeed}>
                 <img
-                  src="/img/faces/card-profile6-square.jpg"
-                  className={classNames(
-                    classes.img,
-                    classes.imgRaised,
-                    classes.imgRounded
-                  )}
-                  alt="..."
+                  src='/img/faces/card-profile6-square.jpg'
+                  className={classNames(classes.img, classes.imgRaised, classes.imgRounded)}
+                  alt='...'
                 />
                 <img
-                  src="/img/faces/christian.jpg"
-                  className={classNames(
-                    classes.img,
-                    classes.imgRaised,
-                    classes.imgRounded
-                  )}
-                  alt="..."
+                  src='/img/faces/christian.jpg'
+                  className={classNames(classes.img, classes.imgRaised, classes.imgRounded)}
+                  alt='...'
                 />
                 <img
-                  src="/img/faces/card-profile4-square.jpg"
-                  className={classNames(
-                    classes.img,
-                    classes.imgRaised,
-                    classes.imgRounded
-                  )}
-                  alt="..."
+                  src='/img/faces/card-profile4-square.jpg'
+                  className={classNames(classes.img, classes.imgRaised, classes.imgRounded)}
+                  alt='...'
                 />
                 <img
-                  src="/img/faces/card-profile1-square.jpg"
-                  className={classNames(
-                    classes.img,
-                    classes.imgRaised,
-                    classes.imgRounded
-                  )}
-                  alt="..."
+                  src='/img/faces/card-profile1-square.jpg'
+                  className={classNames(classes.img, classes.imgRaised, classes.imgRounded)}
+                  alt='...'
                 />
                 <img
-                  src="/img/faces/marc.jpg"
-                  className={classNames(
-                    classes.img,
-                    classes.imgRaised,
-                    classes.imgRounded
-                  )}
-                  alt="..."
+                  src='/img/faces/marc.jpg'
+                  className={classNames(classes.img, classes.imgRaised, classes.imgRounded)}
+                  alt='...'
                 />
                 <img
-                  src="/img/faces/kendall.jpg"
-                  className={classNames(
-                    classes.img,
-                    classes.imgRaised,
-                    classes.imgRounded
-                  )}
-                  alt="..."
+                  src='/img/faces/kendall.jpg'
+                  className={classNames(classes.img, classes.imgRaised, classes.imgRounded)}
+                  alt='...'
                 />
                 <img
-                  src="/img/faces/card-profile5-square.jpg"
-                  className={classNames(
-                    classes.img,
-                    classes.imgRaised,
-                    classes.imgRounded
-                  )}
-                  alt="..."
+                  src='/img/faces/card-profile5-square.jpg'
+                  className={classNames(classes.img, classes.imgRaised, classes.imgRounded)}
+                  alt='...'
                 />
                 <img
-                  src="/img/faces/card-profile1-square.jpg"
-                  className={classNames(
-                    classes.img,
-                    classes.imgRaised,
-                    classes.imgRounded
-                  )}
-                  alt="..."
+                  src='/img/faces/card-profile1-square.jpg'
+                  className={classNames(classes.img, classes.imgRaised, classes.imgRounded)}
+                  alt='...'
                 />
               </div>
             </GridItem>
@@ -468,16 +413,13 @@ export default function SectionFooter() {
         <br />
         <br />
         <Footer
-          theme="white"
+          theme='white'
           content={
             <div className={classNames(classes.pullCenter, classes.copyRight)}>
-              Copyright &copy; {1900 + new Date().getYear()}{" "}
-              <a
-                href="https://www.creative-tim.com?ref=njsmkp-footer-components"
-                target="_blank"
-              >
+              Copyright &copy; {1900 + new Date().getYear()}{' '}
+              <a href='https://www.creative-tim.com?ref=njsmkp-footer-components' target='_blank'>
                 Creative Tim
-              </a>{" "}
+              </a>{' '}
               All Rights Reserved.
             </div>
           }
@@ -488,16 +430,16 @@ export default function SectionFooter() {
                 <h5>About Us</h5>
                 <ul className={classes.linksVertical}>
                   <li>
-                    <a href="#pablo">Blog</a>
+                    <a href='#pablo'>Blog</a>
                   </li>
                   <li>
-                    <a href="#pablo">About us</a>
+                    <a href='#pablo'>About us</a>
                   </li>
                   <li>
-                    <a href="#pablo">Presentation</a>
+                    <a href='#pablo'>Presentation</a>
                   </li>
                   <li>
-                    <a href="#pablo">Contact Us</a>
+                    <a href='#pablo'>Contact Us</a>
                   </li>
                 </ul>
               </GridItem>
@@ -505,22 +447,22 @@ export default function SectionFooter() {
                 <h5>Market</h5>
                 <ul className={classes.linksVertical}>
                   <li>
-                    <a href="#pablo">Sales FAQ</a>
+                    <a href='#pablo'>Sales FAQ</a>
                   </li>
                   <li>
-                    <a href="#pablo">How to register</a>
+                    <a href='#pablo'>How to register</a>
                   </li>
                   <li>
-                    <a href="#pablo">Sell goods</a>
+                    <a href='#pablo'>Sell goods</a>
                   </li>
                   <li>
-                    <a href="#pablo">Receive Payment</a>
+                    <a href='#pablo'>Receive Payment</a>
                   </li>
                   <li>
-                    <a href="#pablo">Transactions issues</a>
+                    <a href='#pablo'>Transactions issues</a>
                   </li>
                   <li>
-                    <a href="#pablo">Affiliates program</a>
+                    <a href='#pablo'>Affiliates program</a>
                   </li>
                 </ul>
               </GridItem>
@@ -528,23 +470,16 @@ export default function SectionFooter() {
                 <h5>Social Feed</h5>
                 <div className={classes.socialFeed}>
                   <div>
-                    <i className="fab fa-twitter" />
-                    <p>
-                      How to handle ethical disagreements with your clients.
-                    </p>
+                    <i className='fab fa-twitter' />
+                    <p>How to handle ethical disagreements with your clients.</p>
                   </div>
                   <div>
-                    <i className="fab fa-twitter" />
-                    <p>
-                      The tangible benefits of designing at 1x pixel density.
-                    </p>
+                    <i className='fab fa-twitter' />
+                    <p>The tangible benefits of designing at 1x pixel density.</p>
                   </div>
                   <div>
-                    <i className="fab fa-facebook-square" />
-                    <p>
-                      A collection of 25 stunning sites that you can use for
-                      inspiration.
-                    </p>
+                    <i className='fab fa-facebook-square' />
+                    <p>A collection of 25 stunning sites that you can use for inspiration.</p>
                   </div>
                 </div>
               </GridItem>
@@ -552,28 +487,28 @@ export default function SectionFooter() {
                 <h5>Follow Us</h5>
                 <ul className={classes.socialButtons}>
                   <li>
-                    <Button justIcon simple href="#pablo" color="twitter">
-                      <i className="fab fa-twitter" />
+                    <Button justIcon simple href='#pablo' color='twitter'>
+                      <i className='fab fa-twitter' />
                     </Button>
                   </li>
                   <li>
-                    <Button justIcon simple href="#pablo" color="facebook">
-                      <i className="fab fa-facebook-square" />
+                    <Button justIcon simple href='#pablo' color='facebook'>
+                      <i className='fab fa-facebook-square' />
                     </Button>
                   </li>
                   <li>
-                    <Button justIcon simple href="#pablo" color="dribbble">
-                      <i className="fab fa-dribbble" />
+                    <Button justIcon simple href='#pablo' color='dribbble'>
+                      <i className='fab fa-dribbble' />
                     </Button>
                   </li>
                   <li>
-                    <Button justIcon simple href="#pablo" color="google">
-                      <i className="fab fa-google-plus-g" />
+                    <Button justIcon simple href='#pablo' color='google'>
+                      <i className='fab fa-google-plus-g' />
                     </Button>
                   </li>
                   <li>
-                    <Button justIcon simple href="#pablo" color="instagram">
-                      <i className="fab fa-instagram" />
+                    <Button justIcon simple href='#pablo' color='instagram'>
+                      <i className='fab fa-instagram' />
                     </Button>
                   </li>
                 </ul>
@@ -591,46 +526,41 @@ export default function SectionFooter() {
         <br />
         <br />
         <Footer
-          theme="white"
+          theme='white'
           content={
             <div>
               <ul className={classes.socialButtons}>
                 <li>
-                  <Button justIcon simple href="#pablo" color="twitter">
-                    <i className="fab fa-twitter" />
+                  <Button justIcon simple href='#pablo' color='twitter'>
+                    <i className='fab fa-twitter' />
                   </Button>
                 </li>
                 <li>
-                  <Button justIcon simple href="#pablo" color="facebook">
-                    <i className="fab fa-facebook-square" />
+                  <Button justIcon simple href='#pablo' color='facebook'>
+                    <i className='fab fa-facebook-square' />
                   </Button>
                 </li>
                 <li>
-                  <Button justIcon simple href="#pablo" color="dribbble">
-                    <i className="fab fa-dribbble" />
+                  <Button justIcon simple href='#pablo' color='dribbble'>
+                    <i className='fab fa-dribbble' />
                   </Button>
                 </li>
                 <li>
-                  <Button justIcon simple href="#pablo" color="google">
-                    <i className="fab fa-google-plus-g" />
+                  <Button justIcon simple href='#pablo' color='google'>
+                    <i className='fab fa-google-plus-g' />
                   </Button>
                 </li>
                 <li>
-                  <Button justIcon simple href="#pablo" color="youtube">
-                    <i className="fab fa-youtube" />
+                  <Button justIcon simple href='#pablo' color='youtube'>
+                    <i className='fab fa-youtube' />
                   </Button>
                 </li>
               </ul>
-              <div
-                className={classNames(classes.pullCenter, classes.copyRight)}
-              >
-                Copyright &copy; {1900 + new Date().getYear()}{" "}
-                <a
-                  href="https://www.creative-tim.com?ref=njsmkp-footer-components"
-                  target="_blank"
-                >
+              <div className={classNames(classes.pullCenter, classes.copyRight)}>
+                Copyright &copy; {1900 + new Date().getYear()}{' '}
+                <a href='https://www.creative-tim.com?ref=njsmkp-footer-components' target='_blank'>
                   Creative Tim
-                </a>{" "}
+                </a>{' '}
                 All Rights Reserved.
               </div>
             </div>
@@ -639,28 +569,28 @@ export default function SectionFooter() {
           <div className={classes.footer}>
             <GridContainer>
               <GridItem xs={12} sm={3} md={3}>
-                <a href="#pablo">
+                <a href='#pablo'>
                   <h5>Material Kit PRO</h5>
                 </a>
                 <p>
-                  Probably the best UI Kit in the world! We know you{"'"}ve been
-                  waiting for it, so don{"'"}t be shy!
+                  Probably the best UI Kit in the world! We know you{"'"}ve been waiting for it, so
+                  don{"'"}t be shy!
                 </p>
               </GridItem>
               <GridItem xs={12} sm={2} md={2}>
                 <h5>About</h5>
                 <ul className={classes.linksVertical}>
                   <li>
-                    <a href="#pablo">Blog</a>
+                    <a href='#pablo'>Blog</a>
                   </li>
                   <li>
-                    <a href="#pablo">About us</a>
+                    <a href='#pablo'>About us</a>
                   </li>
                   <li>
-                    <a href="#pablo">Presentation</a>
+                    <a href='#pablo'>Presentation</a>
                   </li>
                   <li>
-                    <a href="#pablo">Contact us</a>
+                    <a href='#pablo'>Contact us</a>
                   </li>
                 </ul>
               </GridItem>
@@ -668,19 +598,19 @@ export default function SectionFooter() {
                 <h5>Market</h5>
                 <ul className={classes.linksVertical}>
                   <li>
-                    <a href="#pablo">Sales FAQ</a>
+                    <a href='#pablo'>Sales FAQ</a>
                   </li>
                   <li>
-                    <a href="#pablo">How to register</a>
+                    <a href='#pablo'>How to register</a>
                   </li>
                   <li>
-                    <a href="#pablo">Sell Goods</a>
+                    <a href='#pablo'>Sell Goods</a>
                   </li>
                   <li>
-                    <a href="#pablo">Receive Payment</a>
+                    <a href='#pablo'>Receive Payment</a>
                   </li>
                   <li>
-                    <a href="#pablo">Transactions Issues</a>
+                    <a href='#pablo'>Transactions Issues</a>
                   </li>
                 </ul>
               </GridItem>
@@ -688,34 +618,34 @@ export default function SectionFooter() {
                 <h5>Legal</h5>
                 <ul className={classes.linksVertical}>
                   <li>
-                    <a href="#pablo">Transactions FAQ</a>
+                    <a href='#pablo'>Transactions FAQ</a>
                   </li>
                   <li>
-                    <a href="#pablo">Terms & conditions</a>
+                    <a href='#pablo'>Terms & conditions</a>
                   </li>
                   <li>
-                    <a href="#pablo">Licenses</a>
+                    <a href='#pablo'>Licenses</a>
                   </li>
                 </ul>
               </GridItem>
               <GridItem xs={12} sm={3} md={3}>
                 <h5>Subscribe to Newsletter</h5>
                 <p>
-                  Join our newsletter and get news in your inbox every week! We
-                  hate spam too, so no worries about this.
+                  Join our newsletter and get news in your inbox every week! We hate spam too, so no
+                  worries about this.
                 </p>
                 <form>
                   <CustomInput
-                    id="footeremail"
+                    id='footeremail'
                     formControlProps={{
                       fullWidth: false,
                       className: classes.customFormControl
                     }}
                     inputProps={{
-                      placeholder: "Your Email..."
+                      placeholder: 'Your Email...'
                     }}
                   />
-                  <Button color="primary" justIcon>
+                  <Button color='primary' justIcon>
                     <Mail />
                   </Button>
                 </form>

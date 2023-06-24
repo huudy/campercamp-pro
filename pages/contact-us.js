@@ -1,34 +1,34 @@
 /*eslint-disable*/
-import React from "react";
+import React from 'react';
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import classNames from 'classnames';
 import makeStyles from '@mui/styles/makeStyles';
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
 // @mui/icons-material
-import Favorite from "@mui/icons-material/Favorite";
-import PinDrop from "@mui/icons-material/PinDrop";
-import Phone from "@mui/icons-material/Phone";
-import BusinessCenter from "@mui/icons-material/BusinessCenter";
+import Favorite from '@mui/icons-material/Favorite';
+import PinDrop from '@mui/icons-material/PinDrop';
+import Phone from '@mui/icons-material/Phone';
+import BusinessCenter from '@mui/icons-material/BusinessCenter';
 // core components
-import Header from "/components/Header/Header.js";
-import HeaderLinks from "/components/Header/HeaderLinks.js";
-import GridContainer from "/components/Grid/GridContainer.js";
-import GridItem from "/components/Grid/GridItem.js";
-import InfoArea from "/components/InfoArea/InfoArea.js";
-import CustomInput from "/components/CustomInput/CustomInput.js";
-import Button from "/components/CustomButtons/Button.js";
-import Footer from "/components/Footer/Footer.js";
+import Header from '/components/Header/Header.js';
+import HeaderLinks from '/components/Header/HeaderLinks.js';
+import GridContainer from '/components/Grid/GridContainer.js';
+import GridItem from '/components/Grid/GridItem.js';
+import InfoArea from '/components/InfoArea/InfoArea.js';
+import CustomInput from '/components/CustomInput/CustomInput.js';
+import Button from '/components/CustomButtons/Button.js';
+import Footer from '/components/Footer/Footer.js';
 
-import contactUsStyle from "/styles/jss/nextjs-material-kit-pro/pages/contactUsStyle.js";
+import contactUsStyle from '/styles/jss/nextjs-material-kit-pro/pages/contactUsStyle.js';
 
 const CustomSkinMap = () => {
   const mapRef = React.useRef(null);
   React.useEffect(() => {
     let google = window.google;
     let map = mapRef.current;
-    let lat = "44.43353";
-    let lng = "26.093928";
+    let lat = '44.43353';
+    let lng = '26.093928';
     const myLatlng = new google.maps.LatLng(lat, lng);
     const mapOptions = {
       zoom: 14,
@@ -37,54 +37,54 @@ const CustomSkinMap = () => {
       zoomControl: true,
       styles: [
         {
-          featureType: "water",
-          stylers: [{ saturation: 43 }, { lightness: -11 }, { hue: "#0088ff" }]
+          featureType: 'water',
+          stylers: [{ saturation: 43 }, { lightness: -11 }, { hue: '#0088ff' }]
         },
         {
-          featureType: "road",
-          elementType: "geometry.fill",
-          stylers: [{ hue: "#ff0000" }, { saturation: -100 }, { lightness: 99 }]
+          featureType: 'road',
+          elementType: 'geometry.fill',
+          stylers: [{ hue: '#ff0000' }, { saturation: -100 }, { lightness: 99 }]
         },
         {
-          featureType: "road",
-          elementType: "geometry.stroke",
-          stylers: [{ color: "#808080" }, { lightness: 54 }]
+          featureType: 'road',
+          elementType: 'geometry.stroke',
+          stylers: [{ color: '#808080' }, { lightness: 54 }]
         },
         {
-          featureType: "landscape.man_made",
-          elementType: "geometry.fill",
-          stylers: [{ color: "#ece2d9" }]
+          featureType: 'landscape.man_made',
+          elementType: 'geometry.fill',
+          stylers: [{ color: '#ece2d9' }]
         },
         {
-          featureType: "poi.park",
-          elementType: "geometry.fill",
-          stylers: [{ color: "#ccdca1" }]
+          featureType: 'poi.park',
+          elementType: 'geometry.fill',
+          stylers: [{ color: '#ccdca1' }]
         },
         {
-          featureType: "road",
-          elementType: "labels.text.fill",
-          stylers: [{ color: "#767676" }]
+          featureType: 'road',
+          elementType: 'labels.text.fill',
+          stylers: [{ color: '#767676' }]
         },
         {
-          featureType: "road",
-          elementType: "labels.text.stroke",
-          stylers: [{ color: "#ffffff" }]
+          featureType: 'road',
+          elementType: 'labels.text.stroke',
+          stylers: [{ color: '#ffffff' }]
         },
-        { featureType: "poi", stylers: [{ visibility: "off" }] },
+        { featureType: 'poi', stylers: [{ visibility: 'off' }] },
         {
-          featureType: "landscape.natural",
-          elementType: "geometry.fill",
-          stylers: [{ visibility: "on" }, { color: "#b8cb93" }]
+          featureType: 'landscape.natural',
+          elementType: 'geometry.fill',
+          stylers: [{ visibility: 'on' }, { color: '#b8cb93' }]
         },
-        { featureType: "poi.park", stylers: [{ visibility: "on" }] },
+        { featureType: 'poi.park', stylers: [{ visibility: 'on' }] },
         {
-          featureType: "poi.sports_complex",
-          stylers: [{ visibility: "on" }]
+          featureType: 'poi.sports_complex',
+          stylers: [{ visibility: 'on' }]
         },
-        { featureType: "poi.medical", stylers: [{ visibility: "on" }] },
+        { featureType: 'poi.medical', stylers: [{ visibility: 'on' }] },
         {
-          featureType: "poi.business",
-          stylers: [{ visibility: "simplified" }]
+          featureType: 'poi.business',
+          stylers: [{ visibility: 'simplified' }]
         }
       ]
     };
@@ -95,18 +95,18 @@ const CustomSkinMap = () => {
       position: myLatlng,
       map: map,
       animation: google.maps.Animation.DROP,
-      title: "NextJS Material Kit PRO!"
+      title: 'CamperCamp!'
     });
 
     const contentString =
-      '<div class="info-window-content"><h2>NextJS Material Kit PRO</h2>' +
-      "<p>A premium Admin for React, Material-UI, and React Hooks.</p></div>";
+      '<div class="info-window-content"><h2>CamperCamp</h2>' +
+      '<p>A premium Admin for React, Material-UI, and React Hooks.</p></div>';
 
     const infowindow = new google.maps.InfoWindow({
       content: contentString
     });
 
-    google.maps.event.addListener(marker, "click", function () {
+    google.maps.event.addListener(marker, 'click', function () {
       infowindow.open(map, marker);
     });
   });
@@ -115,8 +115,8 @@ const CustomSkinMap = () => {
       <div
         style={{
           height: `100%`,
-          borderRadius: "6px",
-          overflow: "hidden"
+          borderRadius: '6px',
+          overflow: 'hidden'
         }}
         ref={mapRef}
       ></div>
@@ -135,10 +135,10 @@ export default function ContactUsPage() {
   return (
     <div>
       <Header
-        brand="NextJS Material Kit PRO"
-        links={<HeaderLinks dropdownHoverColor="dark" />}
+        brand='CamperCamp'
+        links={<HeaderLinks dropdownHoverColor='dark' />}
         fixed
-        color="dark"
+        color='dark'
       />
       <div className={classes.bigMap}>
         <CustomSkinMap />
@@ -157,29 +157,29 @@ export default function ContactUsPage() {
                 </p>
                 <form>
                   <CustomInput
-                    labelText="Your Name"
-                    id="float"
+                    labelText='Your Name'
+                    id='float'
                     formControlProps={{
                       fullWidth: true
                     }}
                   />
                   <CustomInput
-                    labelText="Email address"
-                    id="float"
+                    labelText='Email address'
+                    id='float'
                     formControlProps={{
                       fullWidth: true
                     }}
                   />
                   <CustomInput
-                    labelText="Phone"
-                    id="float"
+                    labelText='Phone'
+                    id='float'
                     formControlProps={{
                       fullWidth: true
                     }}
                   />
                   <CustomInput
-                    labelText="Your message"
-                    id="float"
+                    labelText='Your message'
+                    id='float'
                     formControlProps={{
                       fullWidth: true
                     }}
@@ -189,7 +189,7 @@ export default function ContactUsPage() {
                     }}
                   />
                   <div className={classes.textCenter}>
-                    <Button color="primary" round>
+                    <Button color='primary' round>
                       Contact us
                     </Button>
                   </div>
@@ -198,39 +198,37 @@ export default function ContactUsPage() {
               <GridItem md={4} sm={4} className={classes.mlAuto}>
                 <InfoArea
                   className={classes.info}
-                  title="Find us at the office"
+                  title='Find us at the office'
                   description={
                     <p>
-                      Bld Mihail Kogalniceanu, nr. 8, <br /> 7652 Bucharest,{" "}
-                      <br /> Romania
+                      Bld Mihail Kogalniceanu, nr. 8, <br /> 7652 Bucharest, <br /> Romania
                     </p>
                   }
                   icon={PinDrop}
-                  iconColor="primary"
+                  iconColor='primary'
                 />
                 <InfoArea
                   className={classes.info}
-                  title="Give us a ring"
+                  title='Give us a ring'
                   description={
                     <p>
-                      Michael Jordan <br /> +40 762 321 762 <br /> Mon - Fri,
-                      8:00-22:00
+                      Michael Jordan <br /> +40 762 321 762 <br /> Mon - Fri, 8:00-22:00
                     </p>
                   }
                   icon={Phone}
-                  iconColor="primary"
+                  iconColor='primary'
                 />
                 <InfoArea
                   className={classes.info}
-                  title="Legal Information"
+                  title='Legal Information'
                   description={
                     <p>
-                      Creative Tim Ltd. <br /> VAT · EN2341241 <br /> IBAN ·
-                      EN8732ENGB2300099123 <br /> Bank · Great Britain Bank
+                      Creative Tim Ltd. <br /> VAT · EN2341241 <br /> IBAN · EN8732ENGB2300099123{' '}
+                      <br /> Bank · Great Britain Bank
                     </p>
                   }
                   icon={BusinessCenter}
-                  iconColor="primary"
+                  iconColor='primary'
                 />
               </GridItem>
             </GridContainer>
@@ -244,8 +242,8 @@ export default function ContactUsPage() {
               <List className={classes.list}>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/?ref=njsmkp-contact-us"
-                    target="_blank"
+                    href='https://www.creative-tim.com/?ref=njsmkp-contact-us'
+                    target='_blank'
                     className={classes.block}
                   >
                     Creative Tim
@@ -253,8 +251,8 @@ export default function ContactUsPage() {
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/presentation?ref=njsmkp-contact-us"
-                    target="_blank"
+                    href='https://www.creative-tim.com/presentation?ref=njsmkp-contact-us'
+                    target='_blank'
                     className={classes.block}
                   >
                     About us
@@ -262,7 +260,7 @@ export default function ContactUsPage() {
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="http://blog.creative-tim.com/?ref=njsmkp-contact-us"
+                    href='http://blog.creative-tim.com/?ref=njsmkp-contact-us'
                     className={classes.block}
                   >
                     Blog
@@ -270,8 +268,8 @@ export default function ContactUsPage() {
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/license?ref=njsmkp-contact-us"
-                    target="_blank"
+                    href='https://www.creative-tim.com/license?ref=njsmkp-contact-us'
+                    target='_blank'
                     className={classes.block}
                   >
                     Licenses
@@ -280,14 +278,11 @@ export default function ContactUsPage() {
               </List>
             </div>
             <div className={classes.right}>
-              &copy; {1900 + new Date().getYear()} , made with{" "}
-              <Favorite className={classes.icon} /> by{" "}
-              <a
-                href="https://www.creative-tim.com?ref=njsmkp-contact-us"
-                target="_blank"
-              >
+              &copy; {1900 + new Date().getYear()} , made with <Favorite className={classes.icon} />{' '}
+              by{' '}
+              <a href='https://www.creative-tim.com?ref=njsmkp-contact-us' target='_blank'>
                 Creative Tim
-              </a>{" "}
+              </a>{' '}
               for a better web.
             </div>
           </div>

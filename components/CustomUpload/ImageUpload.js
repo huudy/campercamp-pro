@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 // used for making the prop types of this component
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 // core components
-import Button from "/components/CustomButtons/Button.js";
+import Button from '/components/CustomButtons/Button.js';
 
 export default function ImageUpload(props) {
   const [file, setFile] = React.useState(null);
   const [imagePreviewUrl, setImagePreviewUrl] = React.useState(
-    props.avatar ? "/img/placeholder.jpg" : "/img/image_placeholder.jpg"
+    props.avatar ? '/img/placeholder.jpg' : '/img/image_placeholder.jpg'
   );
   let fileInput = React.createRef();
   const handleImageChange = (e) => {
@@ -33,22 +33,20 @@ export default function ImageUpload(props) {
   };
   const handleRemove = () => {
     setFile(null);
-    setImagePreviewUrl(
-      props.avatar ? "/img/placeholder.jpg" : "/img/image_placeholder.jpg"
-    );
+    setImagePreviewUrl(props.avatar ? '/img/placeholder.jpg' : '/img/image_placeholder.jpg');
     fileInput.current.value = null;
   };
   let { avatar, addButtonProps, changeButtonProps, removeButtonProps } = props;
   return (
-    <div className="fileinput text-center">
-      <input type="file" onChange={handleImageChange} ref={fileInput} />
-      <div className={"thumbnail" + (avatar ? " img-circle" : "")}>
-        <img src={imagePreviewUrl} alt="..." />
+    <div className='fileinput text-center'>
+      <input type='file' onChange={handleImageChange} ref={fileInput} />
+      <div className={'thumbnail' + (avatar ? ' img-circle' : '')}>
+        <img src={imagePreviewUrl} alt='...' />
       </div>
       <div>
         {file === null ? (
           <Button {...addButtonProps} onClick={() => handleClick()}>
-            {avatar ? "Add Photo" : "Select image"}
+            {avatar ? 'Add Photo' : 'Select image'}
           </Button>
         ) : (
           <span>
@@ -57,7 +55,7 @@ export default function ImageUpload(props) {
             </Button>
             {avatar ? <br /> : null}
             <Button {...removeButtonProps} onClick={() => handleRemove()}>
-              <i className="fas fa-times" /> Remove
+              <i className='fas fa-times' /> Remove
             </Button>
           </span>
         )}

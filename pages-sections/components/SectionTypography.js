@@ -1,23 +1,23 @@
-import React from "react";
+import React from 'react';
 
 import makeStyles from '@mui/styles/makeStyles';
 
 // @mui/icons-material
 
 // core components
-import GridContainer from "/components/Grid/GridContainer.js";
-import GridItem from "/components/Grid/GridItem.js";
-import Small from "/components/Typography/Small.js";
-import Danger from "/components/Typography/Danger.js";
-import Warning from "/components/Typography/Warning.js";
-import Success from "/components/Typography/Success.js";
-import Info from "/components/Typography/Info.js";
-import Primary from "/components/Typography/Primary.js";
-import Muted from "/components/Typography/Muted.js";
-import Quote from "/components/Typography/Quote.js";
-import SectionContentAreas from "./SectionContentAreas.js";
+import GridContainer from '/components/Grid/GridContainer.js';
+import GridItem from '/components/Grid/GridItem.js';
+import Small from '/components/Typography/Small.js';
+import Danger from '/components/Typography/Danger.js';
+import Warning from '/components/Typography/Warning.js';
+import Success from '/components/Typography/Success.js';
+import Info from '/components/Typography/Info.js';
+import Primary from '/components/Typography/Primary.js';
+import Muted from '/components/Typography/Muted.js';
+import Quote from '/components/Typography/Quote.js';
+import SectionContentAreas from './SectionContentAreas.js';
 
-import typographyStyle from "/styles/jss/nextjs-material-kit-pro/pages/componentsSections/typographyStyle.js";
+import typographyStyle from '/styles/jss/nextjs-material-kit-pro/pages/componentsSections/typographyStyle.js';
 
 const useStyles = makeStyles(typographyStyle);
 
@@ -26,7 +26,7 @@ export default function SectionTypography() {
   return (
     <div className={classes.section}>
       <div className={classes.container}>
-        <div id="typography" className="cd-section">
+        <div id='typography' className='cd-section'>
           <div className={classes.title}>
             <h2>Typography</h2>
           </div>
@@ -74,60 +74,59 @@ export default function SectionTypography() {
             <div className={classes.typo}>
               <div className={classes.note}>Paragraph</div>
               <p>
-                I will be the leader of a company that ends up being worth
-                billions of dollars, because I got the answers. I understand
-                culture. I am the nucleus. I think that’s a responsibility that
-                I have, to push possibilities, to show people, this is the level
+                I will be the leader of a company that ends up being worth billions of dollars,
+                because I got the answers. I understand culture. I am the nucleus. I think that’s a
+                responsibility that I have, to push possibilities, to show people, this is the level
                 that things could be at.
               </p>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Quote</div>
               <Quote
-                text="I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at."
-                author=" Kanye West, Musician"
+                text='I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at.'
+                author=' Kanye West, Musician'
               />
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Muted Text</div>
               <Muted>
-                I will be the leader of a company that ends up being worth
-                billions of dollars, because I got the answers...
+                I will be the leader of a company that ends up being worth billions of dollars,
+                because I got the answers...
               </Muted>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Primary Text</div>
               <Primary>
-                I will be the leader of a company that ends up being worth
-                billions of dollars, because I got the answers...
+                I will be the leader of a company that ends up being worth billions of dollars,
+                because I got the answers...
               </Primary>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Info Text</div>
               <Info>
-                I will be the leader of a company that ends up being worth
-                billions of dollars, because I got the answers...
+                I will be the leader of a company that ends up being worth billions of dollars,
+                because I got the answers...
               </Info>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Success Text</div>
               <Success>
-                I will be the leader of a company that ends up being worth
-                billions of dollars, because I got the answers...
+                I will be the leader of a company that ends up being worth billions of dollars,
+                because I got the answers...
               </Success>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Warning Text</div>
               <Warning>
-                I will be the leader of a company that ends up being worth
-                billions of dollars, because I got the answers...
+                I will be the leader of a company that ends up being worth billions of dollars,
+                because I got the answers...
               </Warning>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Danger Text</div>
               <Danger>
-                I will be the leader of a company that ends up being worth
-                billions of dollars, because I got the answers...
+                I will be the leader of a company that ends up being worth billions of dollars,
+                because I got the answers...
               </Danger>
             </div>
             <div className={classes.typo}>
@@ -143,7 +142,7 @@ export default function SectionTypography() {
           </GridContainer>
         </div>
         <div className={classes.space50} />
-        <div id="images">
+        <div id='images'>
           <div className={classes.title}>
             <h2>Images</h2>
           </div>
@@ -152,44 +151,34 @@ export default function SectionTypography() {
             <GridItem xs={12} sm={2}>
               <h4>Rounded Image</h4>
               <img
-                src="/img/faces/avatar.jpg"
-                alt="..."
-                className={classes.imgRounded + " " + classes.imgFluid}
+                src='/img/faces/avatar.jpg'
+                alt='...'
+                className={classes.imgRounded + ' ' + classes.imgFluid}
               />
             </GridItem>
             <GridItem xs={12} sm={2} className={classes.marginLeft}>
               <h4>Circle Image</h4>
               <img
-                src="/img/faces/avatar.jpg"
-                alt="..."
-                className={classes.imgRoundedCircle + " " + classes.imgFluid}
+                src='/img/faces/avatar.jpg'
+                alt='...'
+                className={classes.imgRoundedCircle + ' ' + classes.imgFluid}
               />
             </GridItem>
             <GridItem xs={12} sm={2} className={classes.marginLeft}>
               <h4>Rounded Raised</h4>
               <img
-                src="/img/faces/avatar.jpg"
-                alt="..."
-                className={
-                  classes.imgRaised +
-                  " " +
-                  classes.imgRounded +
-                  " " +
-                  classes.imgFluid
-                }
+                src='/img/faces/avatar.jpg'
+                alt='...'
+                className={classes.imgRaised + ' ' + classes.imgRounded + ' ' + classes.imgFluid}
               />
             </GridItem>
             <GridItem xs={12} sm={2} className={classes.marginLeft}>
               <h4>Circle Raised</h4>
               <img
-                src="/img/faces/avatar.jpg"
-                alt="..."
+                src='/img/faces/avatar.jpg'
+                alt='...'
                 className={
-                  classes.imgRaised +
-                  " " +
-                  classes.imgRoundedCircle +
-                  " " +
-                  classes.imgFluid
+                  classes.imgRaised + ' ' + classes.imgRoundedCircle + ' ' + classes.imgFluid
                 }
               />
             </GridItem>

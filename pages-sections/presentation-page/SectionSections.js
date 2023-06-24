@@ -1,19 +1,19 @@
-import React from "react";
+import React from 'react';
 // react components for routing our app without refresh
-import Link from "next/link";
+import Link from 'next/link';
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import classNames from 'classnames';
 // core components
-import GridContainer from "/components/Grid/GridContainer.js";
-import GridItem from "/components/Grid/GridItem.js";
+import GridContainer from '/components/Grid/GridContainer.js';
+import GridItem from '/components/Grid/GridItem.js';
 // core components
-import Button from "/components/CustomButtons/Button.js";
-import makeStyles from "@mui/styles/makeStyles";
+import Button from '/components/CustomButtons/Button.js';
+import makeStyles from '@mui/styles/makeStyles';
 
-import sectionsStyle from "/styles/jss/nextjs-material-kit-pro/pages/presentationSections/sectionsStyle.js";
+import sectionsStyle from '/styles/jss/nextjs-material-kit-pro/pages/presentationSections/sectionsStyle.js';
 
 // images array used in rendering a function for this section
-import imgs from "/public/img/assets-for-demo/sections/imgs.js";
+import imgs from '/public/img/assets-for-demo/sections/imgs.js';
 
 const useStyles = makeStyles(sectionsStyle);
 
@@ -24,18 +24,8 @@ export default function SectionSections() {
         <GridContainer key={row[0]}>
           {row.map((el, index) => {
             return (
-              <GridItem
-                md={3}
-                sm={3}
-                xs={12}
-                key={el + "_" + index}
-                className={cssClass}
-              >
-                <img
-                  src={`/img/assets-for-demo/sections/${el}.jpg`}
-                  alt={el}
-                  key={el[index]}
-                />
+              <GridItem md={3} sm={3} xs={12} key={el + '_' + index} className={cssClass}>
+                <img src={`/img/assets-for-demo/sections/${el}.jpg`} alt={el} key={el[index]} />
               </GridItem>
             );
           })}
@@ -47,26 +37,17 @@ export default function SectionSections() {
   return (
     <div className={classes.sectionSections}>
       <div className={classes.container}>
-        <GridContainer justifyContent="center">
-          <GridItem
-            md={8}
-            className={classNames(classes.mrAuto, classes.mlAuto)}
-          >
+        <GridContainer justifyContent='center'>
+          <GridItem md={8} className={classNames(classes.mrAuto, classes.mlAuto)}>
             <div className={classes.sectionDescription}>
               <h2 className={classes.title}>Ready to Use Sections</h2>
               <h5 className={classes.description}>
-                Build your page section by section! We have created multiple
-                options for you to put together and customise into pixel perfect
-                pages. From headers to footers, you will be able to choose the
-                best combination for your project.
+                Build your page section by section! We have created multiple options for you to put
+                together and customise into pixel perfect pages. From headers to footers, you will
+                be able to choose the best combination for your project.
               </h5>
-              <Link href={"/sections"}>
-                <Button
-                  color="rose"
-                  target="_blank"
-                  className={classes.navButton}
-                  round
-                >
+              <Link href={'/sections'}>
+                <Button color='rose' target='_blank' className={classes.navButton} round>
                   view all sections
                 </Button>
               </Link>
@@ -74,9 +55,7 @@ export default function SectionSections() {
           </GridItem>
         </GridContainer>
       </div>
-      <div className={classes.containerFluid}>
-        {renderContainerFluid(classes.photoGallery)}
-      </div>
+      <div className={classes.containerFluid}>{renderContainerFluid(classes.photoGallery)}</div>
     </div>
   );
 }

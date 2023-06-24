@@ -1,16 +1,12 @@
-import React from "react";
-// nodejs library that concatenates classes
-import classNames from "classnames";
-// core components
-import GridContainer from "/components/Grid/GridContainer.js";
-import GridItem from "/components/Grid/GridItem.js";
-import NavPills from "/components/NavPills/NavPills.js";
-import Card from "/components/Card/Card.js";
-import CardBody from "/components/Card/CardBody.js";
-import Button from "/components/CustomButtons/Button.js";
+import React from 'react';
+import GridContainer from '/components/Grid/GridContainer.js';
+import GridItem from '/components/Grid/GridItem.js';
+import Card from '/components/Card/Card.js';
+import CardBody from '/components/Card/CardBody.js';
+import Button from '/components/CustomButtons/Button.js';
 import makeStyles from '@mui/styles/makeStyles';
 
-import pricingStyle from "/styles/jss/nextjs-material-kit-pro/pages/pricingSections/pricingStyle.js";
+import pricingStyle from '/styles/jss/nextjs-material-kit-pro/pages/pricingSections/pricingStyle.js';
 
 const useStyles = makeStyles(pricingStyle);
 
@@ -18,45 +14,142 @@ export default function SectionPricing() {
   const classes = useStyles();
   return (
     <div className={classes.pricingSection}>
+      <h2 className={classes.title}>Cars</h2>
       <GridContainer>
-        <GridItem
-          md={6}
-          sm={6}
-          className={classNames(
-            classes.mrAuto,
-            classes.mlAuto,
-            classes.textCenter
-          )}
-        >
-          {/* <NavPills
-            alignCenter
-            color="primary"
-            tabs={[
-              {
-                tabButton: "monthly"
-              },
-              {
-                tabButton: "yearly"
-              }
-            ]}
-          /> */}
-        </GridItem>
-      </GridContainer>
-      <GridContainer>
-        <GridItem md={4} sm={4}>
-          <Card plain pricing>
-            <CardBody pricing>
-              <h6
-                className={classNames(classes.cardCategory, classes.textInfo)}
-              >
-                Free
-              </h6>
-              <h1 className={classes.cardTitle}>
-                <small>$</small>0 <small>/mo</small>
+        <GridItem xs={12} sm={6} md={6} lg={3}>
+          <Card
+            pricing
+            background
+            style={{
+              backgroundImage: "url('/img/volvo.jpeg')"
+            }}
+          >
+            <CardBody pricing background>
+              <h6 className={classes.cardCategoryFullWhite}>Night</h6>
+              <h1 className={classes.cardTitleWhite}>
+                40 <small>PLN</small>
               </h1>
               <ul>
                 <li>
-                  <b>1</b> Project
+                  From <b>21-9</b>
+                </li>
+                <li>
+                  <b>12</b> Hours
+                </li>
+                {/* <li>
+                          <b>55</b> Personal Contacts
+                        </li>
+                        <li>
+                          <b>Car Wash</b> Messages
+                        </li> */}
+              </ul>
+              <Button color='warning'>Reserve</Button>
+            </CardBody>
+          </Card>
+        </GridItem>
+        <GridItem xs={12} sm={6} md={6} lg={3}>
+          <Card
+            pricing
+            background
+            style={{
+              backgroundImage: "url('/img/merc.jpeg')"
+            }}
+          >
+            <CardBody pricing background>
+              <h6 className={classes.cardCategoryFullWhite}>Day</h6>
+              <h1 className={classes.cardTitleWhite}>
+                40 <small>PLN</small>
+              </h1>
+              <ul>
+                <li>
+                  From <b>9-21</b>
+                </li>
+                <li>
+                  <b>12</b> Hours
+                </li>
+              </ul>
+              <Button color='warning'>Reserve</Button>
+            </CardBody>
+          </Card>
+        </GridItem>
+        <GridItem md={4} sm={4}>
+          <Card raised pricing color='primary'>
+            <CardBody pricing>
+              <h6 className={classes.cardCategory}>24h</h6>
+              <h1 className={classes.cardTitleWhite}>
+                70 <small>PLN</small>
+              </h1>
+              <ul>
+                <li>
+                  <b>24h </b>
+                </li>
+                <li>
+                  <b>24</b> Hours
+                </li>
+                <li>
+                  Access to <b>Vaccum</b> free
+                </li>
+                <li>
+                  Access to <b>Car Wash</b> free
+                </li>
+              </ul>
+              <Button href='#pablo' color='white' round>
+                Get started
+              </Button>
+            </CardBody>
+          </Card>
+        </GridItem>
+      </GridContainer>
+
+      <h2 className={classes.title}>Camper</h2>
+      <GridContainer>
+        <GridItem xs={12} sm={6} md={6} lg={3}>
+          <Card
+            pricing
+            background
+            style={{
+              backgroundImage: "url('/img/van.jpeg')"
+            }}
+          >
+            <CardBody pricing background>
+              <h6 className={classes.cardCategoryFullWhite}>Night</h6>
+              <h1 className={classes.cardTitleWhite}>
+                50 <small>PLN</small>
+              </h1>
+              <ul>
+                <li>
+                  From <b>21-9</b>
+                </li>
+                <li>
+                  <b>12</b> Hours
+                </li>
+                <li>
+                  <b>55</b> Personal Contacts
+                </li>
+                <li>
+                  <b>Car Wash</b> Messages
+                </li>
+              </ul>
+              <Button color='warning'>Reserve</Button>
+            </CardBody>
+          </Card>
+        </GridItem>
+        <GridItem xs={12} sm={6} md={6} lg={3}>
+          <Card
+            pricing
+            background
+            style={{
+              backgroundImage: "url('/img/day.jpeg')"
+            }}
+          >
+            <CardBody pricing background>
+              <h6 className={classes.cardCategoryFullWhite}>Day</h6>
+              <h1 className={classes.cardTitleWhite}>
+                50 <small>PLN</small>
+              </h1>
+              <ul>
+                <li>
+                  <b>80</b> Projects
                 </li>
                 <li>
                   <b>5</b> Team Members
@@ -65,21 +158,19 @@ export default function SectionPricing() {
                   <b>55</b> Personal Contacts
                 </li>
                 <li>
-                  <b>5.000</b> Messages
+                  <b>Car Wash</b> Messages
                 </li>
               </ul>
-              <Button href="#pablo" color="primary" round>
-                Get started
-              </Button>
+              <Button color='warning'>Reserve</Button>
             </CardBody>
           </Card>
         </GridItem>
         <GridItem md={4} sm={4}>
-          <Card raised pricing color="primary">
+          <Card raised pricing color='primary'>
             <CardBody pricing>
-              <h6 className={classes.cardCategory}>Premium</h6>
+              <h6 className={classes.cardCategory}>24h</h6>
               <h1 className={classes.cardTitleWhite}>
-                <small>$</small>89 <small>/mo</small>
+                80 <small>PLN</small>
               </h1>
               <ul>
                 <li>
@@ -95,38 +186,7 @@ export default function SectionPricing() {
                   <b>15.000</b> Messages
                 </li>
               </ul>
-              <Button href="#pablo" color="white" round>
-                Get started
-              </Button>
-            </CardBody>
-          </Card>
-        </GridItem>
-        <GridItem md={4} sm={4}>
-          <Card plain pricing>
-            <CardBody pricing>
-              <h6
-                className={classNames(classes.cardCategory, classes.textInfo)}
-              >
-                Platinum
-              </h6>
-              <h1 className={classes.cardTitle}>
-                <small>$</small>199 <small>/mo</small>
-              </h1>
-              <ul>
-                <li>
-                  <b>1000</b> Project
-                </li>
-                <li>
-                  <b>100</b> Team Members
-                </li>
-                <li>
-                  <b>550</b> Personal Contacts
-                </li>
-                <li>
-                  <b>50.000</b> Messages
-                </li>
-              </ul>
-              <Button href="#pablo" color="primary" round>
+              <Button href='#pablo' color='white' round>
                 Get started
               </Button>
             </CardBody>

@@ -1,31 +1,31 @@
-import React from "react";
+import React from 'react';
 
 import makeStyles from '@mui/styles/makeStyles';
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
 // @mui/icons-material
-import Search from "@mui/icons-material/Search";
-import Email from "@mui/icons-material/Email";
-import Face from "@mui/icons-material/Face";
-import Settings from "@mui/icons-material/Settings";
-import AccountCircle from "@mui/icons-material/AccountCircle";
-import Explore from "@mui/icons-material/Explore";
+import Search from '@mui/icons-material/Search';
+import Email from '@mui/icons-material/Email';
+import Face from '@mui/icons-material/Face';
+import Settings from '@mui/icons-material/Settings';
+import AccountCircle from '@mui/icons-material/AccountCircle';
+import Explore from '@mui/icons-material/Explore';
 // core components
-import GridContainer from "/components/Grid/GridContainer.js";
-import GridItem from "/components/Grid/GridItem.js";
-import Header from "/components/Header/Header.js";
-import CustomInput from "/components/CustomInput/CustomInput.js";
-import CustomDropdown from "/components/CustomDropdown/CustomDropdown.js";
-import Button from "/components/CustomButtons/Button.js";
+import GridContainer from '/components/Grid/GridContainer.js';
+import GridItem from '/components/Grid/GridItem.js';
+import Header from '/components/Header/Header.js';
+import CustomInput from '/components/CustomInput/CustomInput.js';
+import CustomDropdown from '/components/CustomDropdown/CustomDropdown.js';
+import Button from '/components/CustomButtons/Button.js';
 
-import navbarsStyle from "/styles/jss/nextjs-material-kit-pro/pages/componentsSections/navbarsStyle.js";
+import navbarsStyle from '/styles/jss/nextjs-material-kit-pro/pages/componentsSections/navbarsStyle.js';
 
 const useStyles = makeStyles(navbarsStyle);
 
 export default function SectionNavbars() {
   const classes = useStyles();
   return (
-    <div className={classes.section + " cd-section"} id="navigation">
+    <div className={classes.section + ' cd-section'} id='navigation'>
       <div className={classes.container}>
         <GridContainer>
           <GridItem xs={12} sm={6} md={6}>
@@ -33,46 +33,46 @@ export default function SectionNavbars() {
               <h3>Menu</h3>
             </div>
             <Header
-              brand="Menu"
-              color="primary"
+              brand='Menu'
+              color='primary'
               links={
                 <List className={classes.list}>
                   <ListItem className={classes.listItem}>
                     <Button
-                      href="#pablo"
-                      className={classes.navLink + " " + classes.navLinkActive}
+                      href='#pablo'
+                      className={classes.navLink + ' ' + classes.navLinkActive}
                       onClick={(e) => e.preventDefault()}
-                      color="transparent"
+                      color='transparent'
                     >
                       Link
                     </Button>
                   </ListItem>
                   <ListItem className={classes.listItem}>
                     <Button
-                      href="#pablo"
+                      href='#pablo'
                       className={classes.navLink}
                       onClick={(e) => e.preventDefault()}
-                      color="transparent"
+                      color='transparent'
                     >
                       Link
                     </Button>
                   </ListItem>
                   <ListItem className={classes.listItem}>
                     <CustomDropdown
-                      buttonText="Dropdown"
-                      dropdownHeader="Dropdown Header"
+                      buttonText='Dropdown'
+                      dropdownHeader='Dropdown Header'
                       buttonProps={{
                         className: classes.navLink,
-                        color: "transparent"
+                        color: 'transparent'
                       }}
                       dropdownList={[
-                        "Action",
-                        "Another action",
-                        "Something else here",
+                        'Action',
+                        'Another action',
+                        'Something else here',
                         { divider: true },
-                        "Separated link",
+                        'Separated link',
                         { divider: true },
-                        "One more separated link"
+                        'One more separated link'
                       ]}
                     />
                   </ListItem>
@@ -85,37 +85,37 @@ export default function SectionNavbars() {
               <h3>Menu with Icons</h3>
             </div>
             <Header
-              brand="Icons"
-              color="info"
+              brand='Icons'
+              color='info'
               links={
-                <List className={classes.list + " " + classes.mlAuto}>
+                <List className={classes.list + ' ' + classes.mlAuto}>
                   <ListItem className={classes.listItem}>
-                    <Button color="transparent" className={classes.navLink}>
+                    <Button color='transparent' className={classes.navLink}>
                       <Email />
                     </Button>
                   </ListItem>
                   <ListItem className={classes.listItem}>
-                    <Button color="transparent" className={classes.navLink}>
+                    <Button color='transparent' className={classes.navLink}>
                       <Face />
                     </Button>
                   </ListItem>
                   <ListItem className={classes.listItem}>
                     <CustomDropdown
                       left
-                      dropdownHeader="Dropdown Header"
+                      dropdownHeader='Dropdown Header'
                       buttonIcon={Settings}
                       buttonProps={{
                         className: classes.navLink,
-                        color: "transparent"
+                        color: 'transparent'
                       }}
                       dropdownList={[
-                        "Action",
-                        "Another action",
-                        "Something else here",
+                        'Action',
+                        'Another action',
+                        'Something else here',
                         { divider: true },
-                        "Separated link",
+                        'Separated link',
                         { divider: true },
-                        "One more separated link"
+                        'One more separated link'
                       ]}
                     />
                   </ListItem>
@@ -128,33 +128,30 @@ export default function SectionNavbars() {
           <h3>Navigation</h3>
         </div>
       </div>
-      <div id="navbar" className={classes.navbar}>
-        <div
-          className={classes.navigation}
-          style={{ backgroundImage: "url('/img/bg.jpg')" }}
-        >
+      <div id='navbar' className={classes.navbar}>
+        <div className={classes.navigation} style={{ backgroundImage: "url('/img/bg.jpg')" }}>
           <Header
-            brand="Brand"
-            color="rose"
+            brand='Brand'
+            color='rose'
             links={
               <div className={classes.collapse}>
-                <List className={classes.list + " " + classes.mrAuto}>
+                <List className={classes.list + ' ' + classes.mrAuto}>
                   <ListItem className={classes.listItem}>
                     <Button
-                      href="#pablo"
-                      className={classes.navLink + " " + classes.navLinkActive}
+                      href='#pablo'
+                      className={classes.navLink + ' ' + classes.navLinkActive}
                       onClick={(e) => e.preventDefault()}
-                      color="transparent"
+                      color='transparent'
                     >
                       Link
                     </Button>
                   </ListItem>
                   <ListItem className={classes.listItem}>
                     <Button
-                      href="#pablo"
+                      href='#pablo'
                       className={classes.navLink}
                       onClick={(e) => e.preventDefault()}
-                      color="transparent"
+                      color='transparent'
                     >
                       Link
                     </Button>
@@ -168,14 +165,14 @@ export default function SectionNavbars() {
                       className: classes.formControl
                     }}
                     inputProps={{
-                      placeholder: "Search",
+                      placeholder: 'Search',
                       inputProps: {
-                        "aria-label": "Search",
+                        'aria-label': 'Search',
                         className: classes.searchInput
                       }
                     }}
                   />
-                  <Button color="white" justIcon round>
+                  <Button color='white' justIcon round>
                     <Search className={classes.searchIcon} />
                   </Button>
                 </div>
@@ -183,36 +180,36 @@ export default function SectionNavbars() {
             }
           />
           <Header
-            brand="Info Color"
-            color="info"
+            brand='Info Color'
+            color='info'
             links={
-              <List className={classes.list + " " + classes.mlAuto}>
+              <List className={classes.list + ' ' + classes.mlAuto}>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href="#pablo"
-                    className={classes.navLink + " " + classes.navLinkActive}
+                    href='#pablo'
+                    className={classes.navLink + ' ' + classes.navLinkActive}
                     onClick={(e) => e.preventDefault()}
-                    color="transparent"
+                    color='transparent'
                   >
                     Discover
                   </Button>
                 </ListItem>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href="#pablo"
+                    href='#pablo'
                     className={classes.navLink}
                     onClick={(e) => e.preventDefault()}
-                    color="transparent"
+                    color='transparent'
                   >
                     Profile
                   </Button>
                 </ListItem>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href="#pablo"
+                    href='#pablo'
                     className={classes.navLink}
                     onClick={(e) => e.preventDefault()}
-                    color="transparent"
+                    color='transparent'
                   >
                     Settings
                   </Button>
@@ -221,36 +218,36 @@ export default function SectionNavbars() {
             }
           />
           <Header
-            brand="Primary Color"
-            color="primary"
+            brand='Primary Color'
+            color='primary'
             links={
-              <List className={classes.list + " " + classes.mlAuto}>
+              <List className={classes.list + ' ' + classes.mlAuto}>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href="#pablo"
-                    className={classes.navLink + " " + classes.navLinkActive}
+                    href='#pablo'
+                    className={classes.navLink + ' ' + classes.navLinkActive}
                     onClick={(e) => e.preventDefault()}
-                    color="transparent"
+                    color='transparent'
                   >
                     <Explore /> Discover
                   </Button>
                 </ListItem>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href="#pablo"
+                    href='#pablo'
                     className={classes.navLink}
                     onClick={(e) => e.preventDefault()}
-                    color="transparent"
+                    color='transparent'
                   >
                     <AccountCircle /> Profile
                   </Button>
                 </ListItem>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href="#pablo"
+                    href='#pablo'
                     className={classes.navLink}
                     onClick={(e) => e.preventDefault()}
-                    color="transparent"
+                    color='transparent'
                   >
                     <Settings /> Settings
                   </Button>
@@ -259,36 +256,36 @@ export default function SectionNavbars() {
             }
           />
           <Header
-            brand="Navbar with notifications"
-            color="dark"
+            brand='Navbar with notifications'
+            color='dark'
             links={
-              <List className={classes.list + " " + classes.mlAuto}>
+              <List className={classes.list + ' ' + classes.mlAuto}>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href="#pablo"
+                    href='#pablo'
                     className={classes.navLink}
                     onClick={(e) => e.preventDefault()}
-                    color="transparent"
+                    color='transparent'
                   >
                     Discover
                   </Button>
                 </ListItem>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href="#pablo"
+                    href='#pablo'
                     className={classes.navLink}
                     onClick={(e) => e.preventDefault()}
-                    color="transparent"
+                    color='transparent'
                   >
                     Wishlist
                   </Button>
                 </ListItem>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href="#pablo"
+                    href='#pablo'
                     className={classes.notificationNavLink}
                     onClick={(e) => e.preventDefault()}
-                    color="rose"
+                    color='rose'
                     justIcon
                     round
                   >
@@ -299,60 +296,51 @@ export default function SectionNavbars() {
                   <CustomDropdown
                     left
                     caret={false}
-                    hoverColor="dark"
-                    dropdownHeader="Dropdown Header"
+                    hoverColor='dark'
+                    dropdownHeader='Dropdown Header'
                     buttonText={
-                      <img
-                        src="/img/faces/avatar.jpg"
-                        className={classes.img}
-                        alt="profile"
-                      />
+                      <img src='/img/faces/avatar.jpg' className={classes.img} alt='profile' />
                     }
                     buttonProps={{
-                      className:
-                        classes.navLink + " " + classes.imageDropdownButton,
-                      color: "transparent"
+                      className: classes.navLink + ' ' + classes.imageDropdownButton,
+                      color: 'transparent'
                     }}
-                    dropdownList={[
-                      "Me",
-                      "Settings and other stuff",
-                      "Sign out"
-                    ]}
+                    dropdownList={['Me', 'Settings and other stuff', 'Sign out']}
                   />
                 </ListItem>
               </List>
             }
           />
           <Header
-            brand="Navbar with profile"
+            brand='Navbar with profile'
             links={
-              <List className={classes.list + " " + classes.mlAuto}>
+              <List className={classes.list + ' ' + classes.mlAuto}>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href="#pablo"
+                    href='#pablo'
                     className={classes.navLink}
                     onClick={(e) => e.preventDefault()}
-                    color="transparent"
+                    color='transparent'
                   >
                     Discover
                   </Button>
                 </ListItem>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href="#pablo"
+                    href='#pablo'
                     className={classes.navLink}
                     onClick={(e) => e.preventDefault()}
-                    color="transparent"
+                    color='transparent'
                   >
                     Wishlist
                   </Button>
                 </ListItem>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href="#pablo"
+                    href='#pablo'
                     className={classes.registerNavLink}
                     onClick={(e) => e.preventDefault()}
-                    color="rose"
+                    color='rose'
                     round
                   >
                     Register
@@ -362,46 +350,37 @@ export default function SectionNavbars() {
             }
           />
           <Header
-            brand="Transparent"
-            color="transparent"
+            brand='Transparent'
+            color='transparent'
             links={
-              <List className={classes.list + " " + classes.mlAuto}>
+              <List className={classes.list + ' ' + classes.mlAuto}>
                 <ListItem className={classes.listItem}>
-                  <Button color="transparent" className={classes.navLink}>
+                  <Button color='transparent' className={classes.navLink}>
                     <i
                       className={
-                        classes.socialIcons +
-                        " " +
-                        classes.marginRight5 +
-                        " fab fa-twitter"
+                        classes.socialIcons + ' ' + classes.marginRight5 + ' fab fa-twitter'
                       }
-                    />{" "}
+                    />{' '}
                     Twitter
                   </Button>
                 </ListItem>
                 <ListItem className={classes.listItem}>
-                  <Button color="transparent" className={classes.navLink}>
+                  <Button color='transparent' className={classes.navLink}>
                     <i
                       className={
-                        classes.socialIcons +
-                        " " +
-                        classes.marginRight5 +
-                        " fab fa-facebook"
+                        classes.socialIcons + ' ' + classes.marginRight5 + ' fab fa-facebook'
                       }
-                    />{" "}
+                    />{' '}
                     Facebook
                   </Button>
                 </ListItem>
                 <ListItem className={classes.listItem}>
-                  <Button color="transparent" className={classes.navLink}>
+                  <Button color='transparent' className={classes.navLink}>
                     <i
                       className={
-                        classes.socialIcons +
-                        " " +
-                        classes.marginRight5 +
-                        " fab fa-instagram"
+                        classes.socialIcons + ' ' + classes.marginRight5 + ' fab fa-instagram'
                       }
-                    />{" "}
+                    />{' '}
                     Instagram
                   </Button>
                 </ListItem>

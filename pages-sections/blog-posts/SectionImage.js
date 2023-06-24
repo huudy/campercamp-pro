@@ -1,27 +1,24 @@
-import React from "react";
+import React from 'react';
 import makeStyles from '@mui/styles/makeStyles';
 // @mui/icons-material
 // core components
-import GridContainer from "/components/Grid/GridContainer.js";
-import GridItem from "/components/Grid/GridItem.js";
-import Card from "/components/Card/Card.js";
-import CardHeader from "/components/Card/CardHeader.js";
-import CardBody from "/components/Card/CardBody.js";
-import CardFooter from "/components/Card/CardFooter.js";
-import Muted from "/components/Typography/Muted.js";
-import Button from "/components/CustomButtons/Button.js";
+import GridContainer from '/components/Grid/GridContainer.js';
+import GridItem from '/components/Grid/GridItem.js';
+import Card from '/components/Card/Card.js';
+import CardHeader from '/components/Card/CardHeader.js';
+import CardBody from '/components/Card/CardBody.js';
+import CardFooter from '/components/Card/CardFooter.js';
+import Muted from '/components/Typography/Muted.js';
+import Button from '/components/CustomButtons/Button.js';
 
-import sectionImageStyle from "/styles/jss/nextjs-material-kit-pro/pages/blogPostsSections/sectionImageStyle.js";
+import sectionImageStyle from '/styles/jss/nextjs-material-kit-pro/pages/blogPostsSections/sectionImageStyle.js';
 
 const useStyles = makeStyles(sectionImageStyle);
 
 export default function SectionImage() {
   const classes = useStyles();
   return (
-    <div
-      className={classes.section}
-      style={{ backgroundImage: "url('/img/bg10.jpg')" }}
-    >
+    <div className={classes.section} style={{ backgroundImage: "url('/img/bg10.jpg')" }}>
       <div className={classes.container}>
         <GridContainer>
           <GridItem xs={12} sm={6} md={6}>
@@ -29,11 +26,8 @@ export default function SectionImage() {
               <GridContainer>
                 <GridItem xs={12} sm={5} md={5}>
                   <CardHeader image plain>
-                    <a href="#pablo">
-                      <img
-                        src="/img/faces/card-profile1-square.jpg"
-                        alt="..."
-                      />
+                    <a href='#pablo'>
+                      <img src='/img/faces/card-profile1-square.jpg' alt='...' />
                     </a>
                   </CardHeader>
                 </GridItem>
@@ -44,19 +38,19 @@ export default function SectionImage() {
                       <h6>AUTHOR OF THE MONTH</h6>
                     </Muted>
                     <p className={classes.description}>
-                      Don{"'"}t be scared of the truth because we need to
-                      restart the human foundation in truth...
+                      Don{"'"}t be scared of the truth because we need to restart the human
+                      foundation in truth...
                     </p>
                   </CardBody>
                   <CardFooter profile plain>
-                    <Button justIcon simple color="white" href="#pablo">
-                      <i className="fab fa-twitter" />
+                    <Button justIcon simple color='white' href='#pablo'>
+                      <i className='fab fa-twitter' />
                     </Button>
-                    <Button justIcon simple color="white" href="#pablo">
-                      <i className="fab fa-facebook-square" />
+                    <Button justIcon simple color='white' href='#pablo'>
+                      <i className='fab fa-facebook-square' />
                     </Button>
-                    <Button justIcon simple color="white" href="#pablo">
-                      <i className="fab fa-google" />
+                    <Button justIcon simple color='white' href='#pablo'>
+                      <i className='fab fa-google' />
                     </Button>
                   </CardFooter>
                 </GridItem>
@@ -68,11 +62,8 @@ export default function SectionImage() {
               <GridContainer>
                 <GridItem xs={12} sm={5} md={5}>
                   <CardHeader image plain>
-                    <a href="#pablo">
-                      <img
-                        src="/img/faces/card-profile4-square.jpg"
-                        alt="..."
-                      />
+                    <a href='#pablo'>
+                      <img src='/img/faces/card-profile4-square.jpg' alt='...' />
                     </a>
                   </CardHeader>
                 </GridItem>
@@ -83,22 +74,22 @@ export default function SectionImage() {
                       <h6>AUTHOR OF THE WEEK</h6>
                     </Muted>
                     <p className={classes.description}>
-                      Don{"'"}t be scared of the truth because we need to
-                      restart the human foundation in truth...
+                      Don{"'"}t be scared of the truth because we need to restart the human
+                      foundation in truth...
                     </p>
                   </CardBody>
                   <CardFooter profile plain>
-                    <Button justIcon simple color="white" href="#pablo">
-                      <i className="fab fa-linkedin-in" />
+                    <Button justIcon simple color='white' href='#pablo'>
+                      <i className='fab fa-linkedin-in' />
                     </Button>
-                    <Button justIcon simple color="white" href="#pablo">
-                      <i className="fab fa-facebook-square" />
+                    <Button justIcon simple color='white' href='#pablo'>
+                      <i className='fab fa-facebook-square' />
                     </Button>
-                    <Button justIcon simple color="white" href="#pablo">
-                      <i className="fab fa-dribbble" />
+                    <Button justIcon simple color='white' href='#pablo'>
+                      <i className='fab fa-dribbble' />
                     </Button>
-                    <Button justIcon simple color="white" href="#pablo">
-                      <i className="fab fa-google" />
+                    <Button justIcon simple color='white' href='#pablo'>
+                      <i className='fab fa-google' />
                     </Button>
                   </CardFooter>
                 </GridItem>

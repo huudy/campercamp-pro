@@ -1,17 +1,17 @@
-import React from "react";
+import React from 'react';
 // used for making the prop types of this component
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 import makeStyles from '@mui/styles/makeStyles';
 // core components
-import CustomInput from "/components/CustomInput/CustomInput.js";
-import Button from "/components/CustomButtons/Button.js";
+import CustomInput from '/components/CustomInput/CustomInput.js';
+import Button from '/components/CustomButtons/Button.js';
 
-import styles from "/styles/jss/nextjs-material-kit-pro/components/customFileInputStyle.js";
+import styles from '/styles/jss/nextjs-material-kit-pro/components/customFileInputStyle.js';
 
 const useStyles = makeStyles(styles);
 
 export default function CustomFileInput(props) {
-  const [fileNames, setFileNames] = React.useState("");
+  const [fileNames, setFileNames] = React.useState('');
   // eslint-disable-next-line
   const [files, setFiles] = React.useState(null);
   let hiddenFile = React.createRef();
@@ -26,22 +26,21 @@ export default function CustomFileInput(props) {
     // you have to call it yourself
   };
   const addFile = (e) => {
-    let fileNames = "";
+    let fileNames = '';
     let files = e.target.files;
     for (let i = 0; i < e.target.files.length; i++) {
       fileNames = fileNames + e.target.files[i].name;
       if (props.multiple && i !== e.target.files.length - 1) {
-        fileNames = fileNames + ", ";
+        fileNames = fileNames + ', ';
       }
     }
     setFiles(files);
     setFileNames(fileNames);
   };
-  const { id, endButton, startButton, inputProps, formControlProps, multiple } =
-    props;
+  const { id, endButton, startButton, inputProps, formControlProps, multiple } = props;
   const classes = useStyles();
-  if (inputProps && inputProps.type && inputProps.type === "file") {
-    inputProps.type = "text";
+  if (inputProps && inputProps.type && inputProps.type === 'file') {
+    inputProps.type = 'text';
   }
   let buttonStart;
   let buttonEnd;
@@ -64,7 +63,7 @@ export default function CustomFileInput(props) {
   return (
     <div className={classes.inputFileWrapper}>
       <input
-        type="file"
+        type='file'
         className={classes.inputFile}
         multiple={multiple}
         ref={hiddenFile}

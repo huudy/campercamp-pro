@@ -1,30 +1,29 @@
-/*eslint-disable*/ import React from "react";
+/*eslint-disable*/ import React from 'react';
 // nodejs library to set properties for components
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import classNames from 'classnames';
 import makeStyles from '@mui/styles/makeStyles';
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
 // @mui/icons-material
-import Favorite from "@mui/icons-material/Favorite";
+import Favorite from '@mui/icons-material/Favorite';
 // core components
-import Header from "/components/Header/Header.js";
-import Footer from "/components/Footer/Footer.js";
-import GridContainer from "/components/Grid/GridContainer.js";
-import GridItem from "/components/Grid/GridItem.js";
-import Button from "/components/CustomButtons/Button.js";
-import HeaderLinks from "/components/Header/HeaderLinks.js";
-import Parallax from "/components/Parallax/Parallax.js";
+import Header from '/components/Header/Header.js';
+import Footer from '/components/Footer/Footer.js';
+import GridContainer from '/components/Grid/GridContainer.js';
+import GridItem from '/components/Grid/GridItem.js';
+import Button from '/components/CustomButtons/Button.js';
+import HeaderLinks from '/components/Header/HeaderLinks.js';
+import Parallax from '/components/Parallax/Parallax.js';
 
-import landingPageStyle from "/styles/jss/nextjs-material-kit-pro/pages/landingPageStyle.js";
+import landingPageStyle from '/styles/jss/nextjs-material-kit-pro/pages/landingPageStyle.js';
 
 // Sections for this page
-import SectionProduct from "/pages-sections/landing-page/SectionProduct.js";
-import SectionTeam from "/pages-sections/landing-page/SectionTeam.js";
-import SectionWork from "/pages-sections/landing-page/SectionWork.js";
-import SectionDescription from "/pages-sections/presentation-page/SectionDescription.js";
-
+import SectionProduct from '/pages-sections/landing-page/SectionProduct.js';
+import SectionTeam from '/pages-sections/landing-page/SectionTeam.js';
+import SectionWork from '/pages-sections/landing-page/SectionWork.js';
+import SectionDescription from '/pages-sections/presentation-page/SectionDescription.js';
 
 const useStyles = makeStyles(landingPageStyle);
 
@@ -37,31 +36,25 @@ export default function LandingPage({ ...rest }) {
   return (
     <div>
       <Header
-        color="transparent"
-        brand="Camper Camp 🏕" 
+        color='transparent'
+        brand='Camper Camp 🏕'
         // links={<HeaderLinks dropdownHoverColor="info" />}
         fixed
         changeColorOnScroll={{
           height: 300,
-          color: "info"
+          color: 'info'
         }}
         {...rest}
       />
-      <Parallax image="/img/camp.jpeg" filter="dark">
+      <Parallax image='/img/camp.jpeg' filter='dark'>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={6} md={6}>
               <h1 className={classes.title}>Camper Camp.</h1>
-              <h4>
-                It is not quite just a parking lot.
-              </h4>
+              <h4>It is not quite just a parking lot.</h4>
               <br />
-              <Button
-                color="danger"
-                size="lg"
-                href="/pricing"
-              >
-                <i className="fas fa-play" />
+              <Button color='danger' size='lg' href='/pricing'>
+                <i className='fas fa-play' />
                 See the prices
               </Button>
             </GridItem>
@@ -70,7 +63,7 @@ export default function LandingPage({ ...rest }) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-                  <SectionDescription />
+          <SectionDescription />
 
           {/* <SectionProduct />
           <SectionTeam /> */}

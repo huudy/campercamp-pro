@@ -1,24 +1,23 @@
 /* eslint-disable */
-import React from "react";
+import React from 'react';
 // nodejs library to set properties for components
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import classNames from 'classnames';
 import makeStyles from '@mui/styles/makeStyles';
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
 // @mui/icons-material
-import Favorite from "@mui/icons-material/Favorite";
+import Favorite from '@mui/icons-material/Favorite';
 
-import styles from "/styles/jss/nextjs-material-kit-pro/components/footerStyle.js";
+import styles from '/styles/jss/nextjs-material-kit-pro/components/footerStyle.js';
 
 const useStyles = makeStyles(styles);
 
 export default function Footer(props) {
   const { children, content, theme, big, className } = props;
   const classes = useStyles();
-  const themeType =
-    theme === "transparent" || theme == undefined ? false : true;
+  const themeType = theme === 'transparent' || theme == undefined ? false : true;
   const footerClasses = classNames({
     [classes.footer]: true,
     [classes[theme]]: themeType,
@@ -38,7 +37,7 @@ export default function Footer(props) {
             <hr />
           </div>
         ) : (
-          " "
+          ' '
         )}
         {content}
         <div className={classes.clearFix} />
@@ -48,7 +47,7 @@ export default function Footer(props) {
 }
 
 Footer.propTypes = {
-  theme: PropTypes.oneOf(["dark", "white", "transparent"]),
+  theme: PropTypes.oneOf(['dark', 'white', 'transparent']),
   big: PropTypes.bool,
   content: PropTypes.node.isRequired
 };

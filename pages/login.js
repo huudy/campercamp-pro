@@ -1,27 +1,27 @@
 /*eslint-disable*/
-import React from "react";
-import makeStyles from "@mui/styles/makeStyles";
-import InputAdornment from "@mui/material/InputAdornment";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import Icon from "@mui/material/Icon";
+import React from 'react';
+import makeStyles from '@mui/styles/makeStyles';
+import InputAdornment from '@mui/material/InputAdornment';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import Icon from '@mui/material/Icon';
 // @mui/icons-material
-import Email from "@mui/icons-material/Email";
-import Favorite from "@mui/icons-material/Favorite";
-import Face from "@mui/icons-material/Face";
+import Email from '@mui/icons-material/Email';
+import Favorite from '@mui/icons-material/Favorite';
+import Face from '@mui/icons-material/Face';
 // core components
-import Header from "/components/Header/Header.js";
-import HeaderLinks from "/components/Header/HeaderLinks.js";
-import Footer from "/components/Footer/Footer.js";
-import GridContainer from "/components/Grid/GridContainer.js";
-import GridItem from "/components/Grid/GridItem.js";
-import Button from "/components/CustomButtons/Button.js";
-import Card from "/components/Card/Card.js";
-import CardBody from "/components/Card/CardBody.js";
-import CardHeader from "/components/Card/CardHeader.js";
-import CustomInput from "/components/CustomInput/CustomInput.js";
+import Header from '/components/Header/Header.js';
+import HeaderLinks from '/components/Header/HeaderLinks.js';
+import Footer from '/components/Footer/Footer.js';
+import GridContainer from '/components/Grid/GridContainer.js';
+import GridItem from '/components/Grid/GridItem.js';
+import Button from '/components/CustomButtons/Button.js';
+import Card from '/components/Card/Card.js';
+import CardBody from '/components/Card/CardBody.js';
+import CardHeader from '/components/Card/CardHeader.js';
+import CustomInput from '/components/CustomInput/CustomInput.js';
 
-import loginPageStyle from "/styles/jss/nextjs-material-kit-pro/pages/loginPageStyle.js";
+import loginPageStyle from '/styles/jss/nextjs-material-kit-pro/pages/loginPageStyle.js';
 
 const useStyles = makeStyles(loginPageStyle);
 
@@ -35,111 +35,103 @@ export default function LoginPage() {
     <div>
       <Header
         absolute
-        color="transparent"
-        brand="NextJS Material Kit PRO"
-        links={<HeaderLinks dropdownHoverColor="info" />}
+        color='transparent'
+        brand='CamperCamp'
+        links={<HeaderLinks dropdownHoverColor='info' />}
       />
       <div
         className={classes.pageHeader}
         style={{
           backgroundImage: "url('/img/bg7.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "top center",
+          backgroundSize: 'cover',
+          backgroundPosition: 'top center'
         }}
       >
         <div className={classes.container}>
-          <GridContainer justifyContent="center">
+          <GridContainer justifyContent='center'>
             <GridItem xs={12} sm={8} md={4}>
               <Card>
                 <form className={classes.form}>
-                  <CardHeader
-                    color="primary"
-                    signup
-                    className={classes.cardHeader}
-                  >
+                  <CardHeader color='primary' signup className={classes.cardHeader}>
                     <h4 className={classes.cardTitle}>Login</h4>
                     <div className={classes.socialLine}>
                       <Button
                         justIcon
-                        color="transparent"
+                        color='transparent'
                         className={classes.iconButtons}
                         onClick={(e) => e.preventDefault()}
                       >
-                        <i className="fab fa-twitter" />
+                        <i className='fab fa-twitter' />
                       </Button>
                       <Button
                         justIcon
-                        color="transparent"
+                        color='transparent'
                         className={classes.iconButtons}
                         onClick={(e) => e.preventDefault()}
                       >
-                        <i className="fab fa-facebook" />
+                        <i className='fab fa-facebook' />
                       </Button>
                       <Button
                         justIcon
-                        color="transparent"
+                        color='transparent'
                         className={classes.iconButtons}
                         onClick={(e) => e.preventDefault()}
                       >
-                        <i className="fab fa-google-plus-g" />
+                        <i className='fab fa-google-plus-g' />
                       </Button>
                     </div>
                   </CardHeader>
-                  <p className={classes.description + " " + classes.textCenter}>
-                    Or Be Classical
-                  </p>
+                  <p className={classes.description + ' ' + classes.textCenter}>Or Be Classical</p>
                   <CardBody signup>
                     <CustomInput
-                      id="first"
+                      id='first'
                       formControlProps={{
-                        fullWidth: true,
+                        fullWidth: true
                       }}
                       inputProps={{
-                        placeholder: "First Name...",
-                        type: "text",
+                        placeholder: 'First Name...',
+                        type: 'text',
                         startAdornment: (
-                          <InputAdornment position="start">
+                          <InputAdornment position='start'>
                             <Face className={classes.inputIconsColor} />
                           </InputAdornment>
-                        ),
+                        )
                       }}
                     />
                     <CustomInput
-                      id="email"
+                      id='email'
                       formControlProps={{
-                        fullWidth: true,
+                        fullWidth: true
                       }}
                       inputProps={{
-                        placeholder: "Email...",
-                        type: "email",
+                        placeholder: 'Email...',
+                        type: 'email',
                         startAdornment: (
-                          <InputAdornment position="start">
+                          <InputAdornment position='start'>
                             <Email className={classes.inputIconsColor} />
                           </InputAdornment>
-                        ),
+                        )
                       }}
                     />
                     <CustomInput
-                      id="pass"
+                      id='pass'
                       formControlProps={{
-                        fullWidth: true,
+                        fullWidth: true
                       }}
                       inputProps={{
-                        placeholder: "Password",
-                        type: "password",
+                        placeholder: 'Password',
+                        type: 'password',
                         startAdornment: (
-                          <InputAdornment position="start">
-                            <Icon className={classes.inputIconsColor}>
-                              lock_utline
-                            </Icon>
+                          <InputAdornment position='start'>
+                            <Icon className={classes.inputIconsColor}>lock_utline</Icon>
                           </InputAdornment>
                         ),
-                        autoComplete: "off",
+                        autoComplete: 'off'
                       }}
                     />
                   </CardBody>
                   <div className={classes.textCenter}>
-                    <Button simple color="primary" size="lg">
+                    <Button simple color='primary' size='lg'>
                       Get started
                     </Button>
                   </div>
@@ -156,8 +148,8 @@ export default function LoginPage() {
                 <List className={classes.list}>
                   <ListItem className={classes.inlineBlock}>
                     <a
-                      href="https://www.creative-tim.com/?ref=njsmkp-login"
-                      target="_blank"
+                      href='https://www.creative-tim.com/?ref=njsmkp-login'
+                      target='_blank'
                       className={classes.block}
                     >
                       Creative Tim
@@ -165,8 +157,8 @@ export default function LoginPage() {
                   </ListItem>
                   <ListItem className={classes.inlineBlock}>
                     <a
-                      href="https://www.creative-tim.com/presentation?ref=njsmkp-login"
-                      target="_blank"
+                      href='https://www.creative-tim.com/presentation?ref=njsmkp-login'
+                      target='_blank'
                       className={classes.block}
                     >
                       About us
@@ -174,7 +166,7 @@ export default function LoginPage() {
                   </ListItem>
                   <ListItem className={classes.inlineBlock}>
                     <a
-                      href="http://blog.creative-tim.com/?ref=njsmkp-login"
+                      href='http://blog.creative-tim.com/?ref=njsmkp-login'
                       className={classes.block}
                     >
                       Blog
@@ -182,8 +174,8 @@ export default function LoginPage() {
                   </ListItem>
                   <ListItem className={classes.inlineBlock}>
                     <a
-                      href="https://www.creative-tim.com/license?ref=njsmkp-login"
-                      target="_blank"
+                      href='https://www.creative-tim.com/license?ref=njsmkp-login'
+                      target='_blank'
                       className={classes.block}
                     >
                       Licenses
@@ -192,14 +184,11 @@ export default function LoginPage() {
                 </List>
               </div>
               <div className={classes.right}>
-                &copy; {1900 + new Date().getYear()} , made with{" "}
-                <Favorite className={classes.icon} /> by{" "}
-                <a
-                  href="https://www.creative-tim.com?ref=njsmkp-login"
-                  target="_blank"
-                >
+                &copy; {1900 + new Date().getYear()} , made with{' '}
+                <Favorite className={classes.icon} /> by{' '}
+                <a href='https://www.creative-tim.com?ref=njsmkp-login' target='_blank'>
                   Creative Tim
-                </a>{" "}
+                </a>{' '}
                 for a better web
               </div>
             </div>

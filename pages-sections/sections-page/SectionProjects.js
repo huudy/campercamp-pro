@@ -1,35 +1,35 @@
 /* eslint-disable */
-import React from "react";
+import React from 'react';
 import makeStyles from '@mui/styles/makeStyles';
-import Icon from "@mui/material/Icon";
+import Icon from '@mui/material/Icon';
 // @mui/icons-material
-import Build from "@mui/icons-material/Build";
-import Subject from "@mui/icons-material/Subject";
-import FormatPaint from "@mui/icons-material/FormatPaint";
-import Code from "@mui/icons-material/Code";
-import Dashboard from "@mui/icons-material/Dashboard";
-import Timeline from "@mui/icons-material/Timeline";
-import Group from "@mui/icons-material/Group";
+import Build from '@mui/icons-material/Build';
+import Subject from '@mui/icons-material/Subject';
+import FormatPaint from '@mui/icons-material/FormatPaint';
+import Code from '@mui/icons-material/Code';
+import Dashboard from '@mui/icons-material/Dashboard';
+import Timeline from '@mui/icons-material/Timeline';
+import Group from '@mui/icons-material/Group';
 // core components
-import GridContainer from "/components/Grid/GridContainer.js";
-import GridItem from "/components/Grid/GridItem.js";
-import NavPills from "/components/NavPills/NavPills.js";
-import Card from "/components/Card/Card.js";
-import CardBody from "/components/Card/CardBody.js";
-import CardHeader from "/components/Card/CardHeader.js";
-import Button from "/components/CustomButtons/Button.js";
-import Muted from "/components/Typography/Muted.js";
-import InfoArea from "/components/InfoArea/InfoArea.js";
-import Badge from "/components/Badge/Badge.js";
+import GridContainer from '/components/Grid/GridContainer.js';
+import GridItem from '/components/Grid/GridItem.js';
+import NavPills from '/components/NavPills/NavPills.js';
+import Card from '/components/Card/Card.js';
+import CardBody from '/components/Card/CardBody.js';
+import CardHeader from '/components/Card/CardHeader.js';
+import Button from '/components/CustomButtons/Button.js';
+import Muted from '/components/Typography/Muted.js';
+import InfoArea from '/components/InfoArea/InfoArea.js';
+import Badge from '/components/Badge/Badge.js';
 
-import projectsStyle from "/styles/jss/nextjs-material-kit-pro/pages/sectionsSections/projectsStyle.js";
+import projectsStyle from '/styles/jss/nextjs-material-kit-pro/pages/sectionsSections/projectsStyle.js';
 
 const useStyles = makeStyles(projectsStyle);
 
 export default function SectionProjects({ ...rest }) {
   const classes = useStyles();
   return (
-    <div className="cd-section" {...rest}>
+    <div className='cd-section' {...rest}>
       {/* Project 1 START */}
       <div className={classes.projects}>
         <div className={classes.container}>
@@ -38,22 +38,18 @@ export default function SectionProjects({ ...rest }) {
               xs={12}
               sm={8}
               md={8}
-              className={
-                classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter
-              }
+              className={classes.mlAuto + ' ' + classes.mrAuto + ' ' + classes.textCenter}
             >
-              <h2 className={classes.title}>
-                Some of Our Awesome Products - 1
-              </h2>
+              <h2 className={classes.title}>Some of Our Awesome Products - 1</h2>
               <NavPills
                 alignCenter
-                color="rose"
+                color='rose'
                 tabs={[
-                  { tabButton: "All", tabContent: "" },
-                  { tabButton: "Marketing", tabContent: "" },
-                  { tabButton: "Development", tabContent: "" },
-                  { tabButton: "Productivity", tabContent: "" },
-                  { tabButton: "Web Design", tabContent: "" }
+                  { tabButton: 'All', tabContent: '' },
+                  { tabButton: 'Marketing', tabContent: '' },
+                  { tabButton: 'Development', tabContent: '' },
+                  { tabButton: 'Productivity', tabContent: '' },
+                  { tabButton: 'Web Design', tabContent: '' }
                 ]}
               />
               <div className={classes.tabSpace} />
@@ -68,17 +64,15 @@ export default function SectionProjects({ ...rest }) {
               >
                 <CardBody background>
                   <h6 className={classes.cardCategory}>PRODUCTIVITY</h6>
-                  <a href="#pablito" onClick={(e) => e.preventDefault()}>
-                    <h3 className={classes.cardTitleWhite}>
-                      The Best Productivity Apps on Market
-                    </h3>
+                  <a href='#pablito' onClick={(e) => e.preventDefault()}>
+                    <h3 className={classes.cardTitleWhite}>The Best Productivity Apps on Market</h3>
                   </a>
                   <p className={classes.cardDescription}>
-                    Don{"'"}t be scared of the truth because we need to restart
-                    the human foundation in truth And I love you like Kanye
-                    loves Kanye I love Rick Owens’ bed design but the back is...
+                    Don{"'"}t be scared of the truth because we need to restart the human foundation
+                    in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but
+                    the back is...
                   </p>
-                  <Button round color="danger">
+                  <Button round color='danger'>
                     <Icon>content_copy</Icon> View App
                   </Button>
                 </CardBody>
@@ -94,17 +88,15 @@ export default function SectionProjects({ ...rest }) {
               >
                 <CardBody background>
                   <h6 className={classes.cardCategory}>DESIGN</h6>
-                  <a href="#pablito" onClick={(e) => e.preventDefault()}>
-                    <h3 className={classes.cardTitleWhite}>
-                      The Sculpture Where Details Matter
-                    </h3>
+                  <a href='#pablito' onClick={(e) => e.preventDefault()}>
+                    <h3 className={classes.cardTitleWhite}>The Sculpture Where Details Matter</h3>
                   </a>
                   <p className={classes.cardDescription}>
-                    Don{"'"}t be scared of the truth because we need to restart
-                    the human foundation in truth And I love you like Kanye
-                    loves Kanye I love Rick Owens’ bed design but the back is...
+                    Don{"'"}t be scared of the truth because we need to restart the human foundation
+                    in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but
+                    the back is...
                   </p>
-                  <Button round color="info">
+                  <Button round color='info'>
                     <Build />
                     View Project
                   </Button>
@@ -121,17 +113,15 @@ export default function SectionProjects({ ...rest }) {
               >
                 <CardBody background>
                   <h6 className={classes.cardCategory}>MARKETING</h6>
-                  <a href="#pablito" onClick={(e) => e.preventDefault()}>
-                    <h3 className={classes.cardTitleWhite}>
-                      0 to 100.000 Customers in 6 months
-                    </h3>
+                  <a href='#pablito' onClick={(e) => e.preventDefault()}>
+                    <h3 className={classes.cardTitleWhite}>0 to 100.000 Customers in 6 months</h3>
                   </a>
                   <p className={classes.cardDescription}>
-                    Don{"'"}t be scared of the truth because we need to restart
-                    the human foundation in truth And I love you like Kanye
-                    loves Kanye I love Rick Owens’ bed design but the back is...
+                    Don{"'"}t be scared of the truth because we need to restart the human foundation
+                    in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but
+                    the back is...
                   </p>
-                  <Button round color="warning">
+                  <Button round color='warning'>
                     <Subject /> Case study
                   </Button>
                 </CardBody>
@@ -149,20 +139,15 @@ export default function SectionProjects({ ...rest }) {
               xs={12}
               sm={8}
               md={8}
-              className={
-                classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter
-              }
+              className={classes.mlAuto + ' ' + classes.mrAuto + ' ' + classes.textCenter}
             >
               <Muted>
                 <h6>OUR WORK</h6>
               </Muted>
-              <h2 className={classes.title}>
-                Some of Our Awesome Products - 2
-              </h2>
+              <h2 className={classes.title}>Some of Our Awesome Products - 2</h2>
               <h5 className={classes.description}>
-                This is the paragraph where you can write more details about
-                your projects. Keep you user engaged by providing meaningful
-                information.
+                This is the paragraph where you can write more details about your projects. Keep you
+                user engaged by providing meaningful information.
               </h5>
               <div className={classes.sectionSpace} />
             </GridItem>
@@ -171,43 +156,38 @@ export default function SectionProjects({ ...rest }) {
             <GridItem xs={12} sm={4} md={4}>
               <Card plain className={classes.card2}>
                 <a
-                  href="https://www.creative-tim.com/product/nextjs-material-kit?ref=njsmkp-projects-section-sections"
-                  target="_blank"
+                  href='https://www.creative-tim.com/product/nextjs-material-kit?ref=njsmkp-projects-section-sections'
+                  target='_blank'
                 >
                   <CardHeader image plain>
                     <img
                       src={
-                        "https://s3.amazonaws.com/creativetim_bucket/products/217/original/opt_mk_nextjs_thumbnail.jpg?1525851474"
+                        'https://s3.amazonaws.com/creativetim_bucket/products/217/original/opt_mk_nextjs_thumbnail.jpg?1525851474'
                       }
-                      alt="..."
+                      alt='...'
                     />
                     <div
                       className={classes.coloredShadow}
                       style={{
                         backgroundImage:
                           "url('https://s3.amazonaws.com/creativetim_bucket/products/217/original/opt_mk_nextjs_thumbnail.jpg?1525851474')",
-                        opacity: "1"
+                        opacity: '1'
                       }}
                     />
                   </CardHeader>
                 </a>
                 <CardBody plain>
                   <a
-                    href="https://www.creative-tim.com/product/nextjs-material-kit?ref=njsmkp-projects-section-sections"
-                    target="_blank"
+                    href='https://www.creative-tim.com/product/nextjs-material-kit?ref=njsmkp-projects-section-sections'
+                    target='_blank'
                   >
-                    <h4 className={classes.cardTitle}>
-                      NextJS Material Kit Free
-                    </h4>
+                    <h4 className={classes.cardTitle}>NextJS Material Kit Free</h4>
                   </a>
                   <h6 className={classes.description}>FREE UI KIT</h6>
-                  <p
-                    className={classes.description + " " + classes.marginTop20}
-                  >
-                    It is a Free Material-UI Kit with a fresh, new design
-                    inspired by Google's material design. It{"'"}s a great
-                    pleasure to introduce to you the material concepts in an
-                    easy to use and beautiful set of components.
+                  <p className={classes.description + ' ' + classes.marginTop20}>
+                    It is a Free Material-UI Kit with a fresh, new design inspired by Google's
+                    material design. It{"'"}s a great pleasure to introduce to you the material
+                    concepts in an easy to use and beautiful set of components.
                   </p>
                 </CardBody>
               </Card>
@@ -215,41 +195,36 @@ export default function SectionProjects({ ...rest }) {
             <GridItem xs={12} sm={4} md={4}>
               <Card plain className={classes.card2}>
                 <a
-                  href="https://www.creative-tim.com/product/light-bootstrap-dashboard-pro-react?ref=njsmkp-projects-section-sections"
-                  target="_blank"
+                  href='https://www.creative-tim.com/product/light-bootstrap-dashboard-pro-react?ref=njsmkp-projects-section-sections'
+                  target='_blank'
                 >
                   <CardHeader image plain>
                     <img
-                      src="https://s3.amazonaws.com/creativetim_bucket/products/66/thumb/opt_lbp_react_thumbnail.jpg?1509466309"
-                      alt="..."
+                      src='https://s3.amazonaws.com/creativetim_bucket/products/66/thumb/opt_lbp_react_thumbnail.jpg?1509466309'
+                      alt='...'
                     />
                     <div
                       className={classes.coloredShadow}
                       style={{
                         backgroundImage:
                           "url('https://s3.amazonaws.com/creativetim_bucket/products/66/thumb/opt_lbp_react_thumbnail.jpg?1509466309')",
-                        opacity: "1"
+                        opacity: '1'
                       }}
                     />
                   </CardHeader>
                 </a>
                 <CardBody plain>
                   <a
-                    href="https://www.creative-tim.com/product/light-bootstrap-dashboard-pro-react?ref=njsmkp-projects-section-sections"
-                    target="_blank"
+                    href='https://www.creative-tim.com/product/light-bootstrap-dashboard-pro-react?ref=njsmkp-projects-section-sections'
+                    target='_blank'
                   >
-                    <h4 className={classes.cardTitle}>
-                      Light Bootstrap Dashboard PRO React
-                    </h4>
+                    <h4 className={classes.cardTitle}>Light Bootstrap Dashboard PRO React</h4>
                   </a>
                   <h6 className={classes.description}>Premium Template</h6>
-                  <p
-                    className={classes.description + " " + classes.marginTop20}
-                  >
-                    Light Bootstrap Dashboard PRO is a Bootstrap 3 Admin Theme
-                    designed to look simple and beautiful. Forget about boring
-                    dashboards and grab yourself a copy to kickstart new
-                    project!
+                  <p className={classes.description + ' ' + classes.marginTop20}>
+                    Light Bootstrap Dashboard PRO is a Bootstrap 3 Admin Theme designed to look
+                    simple and beautiful. Forget about boring dashboards and grab yourself a copy to
+                    kickstart new project!
                   </p>
                 </CardBody>
               </Card>
@@ -257,41 +232,36 @@ export default function SectionProjects({ ...rest }) {
             <GridItem xs={12} sm={4} md={4}>
               <Card plain className={classes.card2}>
                 <a
-                  href="https://www.creative-tim.com/product/now-ui-dashboard-pro-react?ref=njsmkp-projects-section-sections"
-                  target="_blank"
+                  href='https://www.creative-tim.com/product/now-ui-dashboard-pro-react?ref=njsmkp-projects-section-sections'
+                  target='_blank'
                 >
                   <CardHeader image plain>
                     <img
-                      src="https://s3.amazonaws.com/creativetim_bucket/products/73/original/opt_nudp_react_thumbnail.jpg?1518533306"
-                      alt="..."
+                      src='https://s3.amazonaws.com/creativetim_bucket/products/73/original/opt_nudp_react_thumbnail.jpg?1518533306'
+                      alt='...'
                     />
                     <div
                       className={classes.coloredShadow}
                       style={{
                         backgroundImage:
                           "url('https://s3.amazonaws.com/creativetim_bucket/products/73/original/opt_nudp_react_thumbnail.jpg?1518533306')",
-                        opacity: "1"
+                        opacity: '1'
                       }}
                     />
                   </CardHeader>
                 </a>
                 <CardBody plain>
                   <a
-                    href="https://www.creative-tim.com/product/now-ui-dashboard-pro-react?ref=njsmkp-projects-section-sections"
-                    target="_blank"
+                    href='https://www.creative-tim.com/product/now-ui-dashboard-pro-react?ref=njsmkp-projects-section-sections'
+                    target='_blank'
                   >
-                    <h4 className={classes.cardTitle}>
-                      Now UI Dashboard PRO React
-                    </h4>
+                    <h4 className={classes.cardTitle}>Now UI Dashboard PRO React</h4>
                   </a>
                   <h6 className={classes.description}>Premium Template</h6>
-                  <p
-                    className={classes.description + " " + classes.marginTop20}
-                  >
-                    Now UI Dashboard React is an admin dashboard template
-                    designed by Invision and coded by Creative Tim. It is built
-                    on top of Reactstrap, using Now UI Dashboard and it is fully
-                    responsive.
+                  <p className={classes.description + ' ' + classes.marginTop20}>
+                    Now UI Dashboard React is an admin dashboard template designed by Invision and
+                    coded by Creative Tim. It is built on top of Reactstrap, using Now UI Dashboard
+                    and it is fully responsive.
                   </p>
                 </CardBody>
               </Card>
@@ -301,106 +271,94 @@ export default function SectionProjects({ ...rest }) {
       </div>
       {/* Project 2 END */}
       {/* Project 3 START */}
-      <div
-        className={
-          classes.projects + " " + classes.sectionDark + " " + classes.projects3
-        }
-      >
+      <div className={classes.projects + ' ' + classes.sectionDark + ' ' + classes.projects3}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem
               xs={12}
               sm={8}
               md={8}
-              className={
-                classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter
-              }
+              className={classes.mlAuto + ' ' + classes.mrAuto + ' ' + classes.textCenter}
             >
               <Muted>
                 <h6>OUR WORK</h6>
               </Muted>
-              <h2 className={classes.title}>
-                Some of Our Awesome Products - 3
-              </h2>
+              <h2 className={classes.title}>Some of Our Awesome Products - 3</h2>
             </GridItem>
           </GridContainer>
           <GridContainer>
             <GridItem xs={12} sm={5} md={5} className={classes.mlAuto}>
               <Card plain className={classes.card2}>
-                <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                <a href='#pablo' onClick={(e) => e.preventDefault()}>
                   <CardHeader plain image>
-                    <img src="/img/examples/card-project1.jpg" alt="..." />
+                    <img src='/img/examples/card-project1.jpg' alt='...' />
                   </CardHeader>
                 </a>
                 <CardBody>
                   <h6 className={classes.cardCategory}>WEB DESIGN</h6>
-                  <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                    <h4 className={classes.cardTitle}>
-                      Famous Website Redesign
-                    </h4>
+                  <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                    <h4 className={classes.cardTitle}>Famous Website Redesign</h4>
                   </a>
                   <p className={classes.cardDescription}>
-                    Don{"'"}t be scared of the truth because we need to restart
-                    the human foundation in truth.
+                    Don{"'"}t be scared of the truth because we need to restart the human foundation
+                    in truth.
                   </p>
                 </CardBody>
               </Card>
             </GridItem>
             <GridItem xs={12} sm={5} md={5} className={classes.mrAuto}>
               <Card plain className={classes.card2}>
-                <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                <a href='#pablo' onClick={(e) => e.preventDefault()}>
                   <CardHeader plain image>
-                    <img src="/img/examples/card-project2.jpg" alt="..." />
+                    <img src='/img/examples/card-project2.jpg' alt='...' />
                   </CardHeader>
                 </a>
                 <CardBody>
                   <h6 className={classes.cardCategory}>PRODUCTIVITY TOOLS</h6>
-                  <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                    <h4 className={classes.cardTitle}>
-                      Beautiful Desktop for Designers
-                    </h4>
+                  <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                    <h4 className={classes.cardTitle}>Beautiful Desktop for Designers</h4>
                   </a>
                   <p className={classes.cardDescription}>
-                    Don{"'"}t be scared of the truth because we need to restart
-                    the human foundation in truth.
+                    Don{"'"}t be scared of the truth because we need to restart the human foundation
+                    in truth.
                   </p>
                 </CardBody>
               </Card>
             </GridItem>
             <GridItem xs={12} sm={5} md={5} className={classes.mlAuto}>
               <Card plain className={classes.card2}>
-                <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                <a href='#pablo' onClick={(e) => e.preventDefault()}>
                   <CardHeader plain image>
-                    <img src="/img/examples/card-project3.jpg" alt="..." />
+                    <img src='/img/examples/card-project3.jpg' alt='...' />
                   </CardHeader>
                 </a>
                 <CardBody>
                   <h6 className={classes.cardCategory}>ANDROID APP</h6>
-                  <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                  <a href='#pablo' onClick={(e) => e.preventDefault()}>
                     <h4 className={classes.cardTitle}>Analytics for Android</h4>
                   </a>
                   <p className={classes.cardDescription}>
-                    Don{"'"}t be scared of the truth because we need to restart
-                    the human foundation in truth.
+                    Don{"'"}t be scared of the truth because we need to restart the human foundation
+                    in truth.
                   </p>
                 </CardBody>
               </Card>
             </GridItem>
             <GridItem xs={12} sm={5} md={5} className={classes.mrAuto}>
               <Card plain className={classes.card2}>
-                <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                <a href='#pablo' onClick={(e) => e.preventDefault()}>
                   <CardHeader plain image>
-                    <img src="/img/examples/card-project4.jpg" alt="..." />
+                    <img src='/img/examples/card-project4.jpg' alt='...' />
                   </CardHeader>
                 </a>
                 <CardBody>
                   <h6 className={classes.cardCategory}>WEBSITE</h6>
-                  <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                  <a href='#pablo' onClick={(e) => e.preventDefault()}>
                     <h4 className={classes.cardTitle}>Behance Redesign</h4>
                   </a>
                   <p className={classes.cardDescription}>
-                    Don{"'"}t be scared of the truth because we need to restart
-                    the human foundation in truth.
+                    Don{"'"}t be scared of the truth because we need to restart the human foundation
+                    in truth.
                   </p>
                 </CardBody>
               </Card>
@@ -410,24 +368,19 @@ export default function SectionProjects({ ...rest }) {
       </div>
       {/* Project 3 END */}
       {/* Project 4 START */}
-      <div className={classes.projects + " " + classes.projects4}>
+      <div className={classes.projects + ' ' + classes.projects4}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem
               xs={12}
               sm={8}
               md={8}
-              className={
-                classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter
-              }
+              className={classes.mlAuto + ' ' + classes.mrAuto + ' ' + classes.textCenter}
             >
-              <h2 className={classes.title}>
-                Some of Our Awesome Products - 4
-              </h2>
+              <h2 className={classes.title}>Some of Our Awesome Products - 4</h2>
               <h5 className={classes.description}>
-                This is the paragraph where you can write more details about
-                your projects. Keep you user engaged by providing meaningful
-                information.
+                This is the paragraph where you can write more details about your projects. Keep you
+                user engaged by providing meaningful information.
               </h5>
               <div className={classes.sectionSpace} />
             </GridItem>
@@ -442,12 +395,12 @@ export default function SectionProjects({ ...rest }) {
                 }}
               >
                 <CardBody background className={classes.cardBody4}>
-                  <Badge color="rose">Client: Apple</Badge>
-                  <a href="#pablo" onClick={(e) => e.preventDefault}>
+                  <Badge color='rose'>Client: Apple</Badge>
+                  <a href='#pablo' onClick={(e) => e.preventDefault}>
                     <h3 className={classes.cardTitle}>Beautiful Project</h3>
                     <p className={classes.cardDescription}>
-                      Don{"'"}t be scared of the truth because we need to
-                      restart the human foundation in truth.
+                      Don{"'"}t be scared of the truth because we need to restart the human
+                      foundation in truth.
                     </p>
                   </a>
                 </CardBody>
@@ -456,24 +409,24 @@ export default function SectionProjects({ ...rest }) {
             <GridItem xs={12} sm={5} md={5} className={classes.mrAuto}>
               <InfoArea
                 className={classes.info4}
-                title="Graphic Design"
+                title='Graphic Design'
                 description="We've created the design of the website using modern Technologies like Sketch. It was a very interesting collaboration."
                 icon={FormatPaint}
-                iconColor="info"
+                iconColor='info'
               />
               <InfoArea
                 className={classes.info4}
-                title="Fully Coded in HTML5"
+                title='Fully Coded in HTML5'
                 description="We've developed the website with HTML5 and CSS3. The client has access to the code using GitHub."
                 icon={Code}
-                iconColor="primary"
+                iconColor='primary'
               />
               <InfoArea
                 className={classes.info4}
-                title="CMS Admin Dashboard"
-                description="There is also a Fully Customizable CMS Admin Dashboard for this product."
+                title='CMS Admin Dashboard'
+                description='There is also a Fully Customizable CMS Admin Dashboard for this product.'
                 icon={Dashboard}
-                iconColor="danger"
+                iconColor='danger'
               />
             </GridItem>
           </GridContainer>
@@ -482,24 +435,24 @@ export default function SectionProjects({ ...rest }) {
             <GridItem xs={12} sm={5} md={5} className={classes.mlAuto}>
               <InfoArea
                 className={classes.info4}
-                title="Marketing"
+                title='Marketing'
                 description="We've created the marketing campaign of the website. It was a very interesting collaboration."
                 icon={Timeline}
-                iconColor="rose"
+                iconColor='rose'
               />
               <InfoArea
                 className={classes.info4}
-                title="Fully Coded in HTML5"
+                title='Fully Coded in HTML5'
                 description="We've developed the website with HTML5 and CSS3. The client has access to the code using GitHub."
                 icon={Code}
-                iconColor="success"
+                iconColor='success'
               />
               <InfoArea
                 className={classes.info4}
-                title="Built Audience"
-                description="There is also a Fully Customizable CMS Admin Dashboard for this product."
+                title='Built Audience'
+                description='There is also a Fully Customizable CMS Admin Dashboard for this product.'
                 icon={Group}
-                iconColor="info"
+                iconColor='info'
               />
             </GridItem>
             <GridItem xs={12} sm={5} md={5} className={classes.mrAuto}>
@@ -511,12 +464,12 @@ export default function SectionProjects({ ...rest }) {
                 }}
               >
                 <CardBody background className={classes.cardBody4}>
-                  <Badge color="rose">CLIENT: DJ KHALED</Badge>
-                  <a href="#pablo" onClick={(e) => e.preventDefault}>
+                  <Badge color='rose'>CLIENT: DJ KHALED</Badge>
+                  <a href='#pablo' onClick={(e) => e.preventDefault}>
                     <h3 className={classes.cardTitle}>Another One</h3>
                     <p className={classes.cardDescription}>
-                      Don{"'"}t be scared of the truth because we need to
-                      restart the human foundation in truth.
+                      Don{"'"}t be scared of the truth because we need to restart the human
+                      foundation in truth.
                     </p>
                   </a>
                 </CardBody>

@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import classNames from 'classnames';
 // nodejs library to set properties for components
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 import makeStyles from '@mui/styles/makeStyles';
 // @mui/icons-material
 
 // core components
-import styles from "/styles/jss/nextjs-material-kit-pro/components/cardStyle.js";
+import styles from '/styles/jss/nextjs-material-kit-pro/components/cardStyle.js';
 
 const useStyles = makeStyles(styles);
 
@@ -57,14 +57,7 @@ Card.propTypes = {
   background: PropTypes.bool,
   pricing: PropTypes.bool,
   testimonial: PropTypes.bool,
-  color: PropTypes.oneOf([
-    "primary",
-    "info",
-    "success",
-    "warning",
-    "danger",
-    "rose"
-  ]),
+  color: PropTypes.oneOf(['primary', 'info', 'success', 'warning', 'danger', 'rose']),
   product: PropTypes.bool,
   children: PropTypes.node
 };

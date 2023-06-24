@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 // nodejs library to set properties for components
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import classNames from 'classnames';
 import makeStyles from '@mui/styles/makeStyles';
-import Icon from "@mui/material/Icon";
+import Icon from '@mui/material/Icon';
 
-import styles from "/styles/jss/nextjs-material-kit-pro/components/infoStyle.js";
+import styles from '/styles/jss/nextjs-material-kit-pro/components/infoStyle.js';
 
 const useStyles = makeStyles(styles);
 
@@ -28,7 +28,7 @@ export default function InfoArea(props) {
   });
   let icon = null;
   switch (typeof props.icon) {
-    case "string":
+    case 'string':
       icon = <Icon className={iconClasses}>{props.icon}</Icon>;
       break;
     default:
@@ -47,22 +47,14 @@ export default function InfoArea(props) {
 }
 
 InfoArea.defaultProps = {
-  iconColor: "gray"
+  iconColor: 'gray'
 };
 
 InfoArea.propTypes = {
   icon: PropTypes.oneOfType([PropTypes.object, PropTypes.string]).isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.node.isRequired,
-  iconColor: PropTypes.oneOf([
-    "primary",
-    "warning",
-    "danger",
-    "success",
-    "info",
-    "rose",
-    "gray"
-  ]),
+  iconColor: PropTypes.oneOf(['primary', 'warning', 'danger', 'success', 'info', 'rose', 'gray']),
   vertical: PropTypes.bool,
   className: PropTypes.string
 };

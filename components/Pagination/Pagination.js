@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 // nodejs library to set properties for components
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import classNames from 'classnames';
 
 import makeStyles from '@mui/styles/makeStyles';
-import Button from "@mui/material/Button";
+import Button from '@mui/material/Button';
 
-import styles from "/styles/jss/nextjs-material-kit-pro/components/paginationStyle.js";
+import styles from '/styles/jss/nextjs-material-kit-pro/components/paginationStyle.js';
 
 const useStyles = makeStyles(styles);
 
@@ -26,11 +26,7 @@ export default function Pagination(props) {
         return (
           <li className={classes.paginationItem} key={key}>
             {prop.onClick !== undefined ? (
-              <Button
-                onClick={prop.onClick}
-                className={paginationLink}
-                disabled={prop.disabled}
-              >
+              <Button onClick={prop.onClick} className={paginationLink} disabled={prop.disabled}>
                 {prop.text}
               </Button>
             ) : (
@@ -50,7 +46,7 @@ export default function Pagination(props) {
 }
 
 Pagination.defaultProps = {
-  color: "primary"
+  color: 'primary'
 };
 
 Pagination.propTypes = {
@@ -58,11 +54,10 @@ Pagination.propTypes = {
     PropTypes.shape({
       active: PropTypes.bool,
       disabled: PropTypes.bool,
-      text: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
-        .isRequired,
+      text: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
       onClick: PropTypes.func
     })
   ).isRequired,
-  color: PropTypes.oneOf(["primary", "info", "success", "warning", "danger"]),
+  color: PropTypes.oneOf(['primary', 'info', 'success', 'warning', 'danger']),
   className: PropTypes.string
 };

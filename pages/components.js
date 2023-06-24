@@ -1,48 +1,46 @@
 /*eslint-disable*/
-import React from "react";
+import React from 'react';
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import classNames from 'classnames';
 import makeStyles from '@mui/styles/makeStyles';
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
 // @mui/icons-material
-import Favorite from "@mui/icons-material/Favorite";
+import Favorite from '@mui/icons-material/Favorite';
 // core components
-import Header from "/components/Header/Header.js";
-import Footer from "/components/Footer/Footer.js";
-import GridContainer from "/components/Grid/GridContainer.js";
-import GridItem from "/components/Grid/GridItem.js";
-import Parallax from "/components/Parallax/Parallax.js";
-import HeaderLinks from "/components/Header/HeaderLinks.js";
+import Header from '/components/Header/Header.js';
+import Footer from '/components/Footer/Footer.js';
+import GridContainer from '/components/Grid/GridContainer.js';
+import GridItem from '/components/Grid/GridItem.js';
+import Parallax from '/components/Parallax/Parallax.js';
+import HeaderLinks from '/components/Header/HeaderLinks.js';
 // sections for this page
-import SectionBasics from "/pages-sections/components/SectionBasics.js";
-import SectionNavbars from "/pages-sections/components/SectionNavbars.js";
-import SectionTabs from "/pages-sections/components/SectionTabs.js";
-import SectionPills from "/pages-sections/components/SectionPills.js";
-import SectionNotifications from "/pages-sections/components/SectionNotifications.js";
-import SectionPreFooter from "/pages-sections/components/SectionPreFooter.js";
-import SectionFooter from "/pages-sections/components/SectionFooter.js";
-import SectionTypography from "/pages-sections/components/SectionTypography.js";
-import SectionCards from "/pages-sections/components/SectionCards.js";
-import SectionJavascript from "/pages-sections/components/SectionJavascript.js";
-import SectionCarousel from "/pages-sections/components/SectionCarousel.js";
+import SectionBasics from '/pages-sections/components/SectionBasics.js';
+import SectionNavbars from '/pages-sections/components/SectionNavbars.js';
+import SectionTabs from '/pages-sections/components/SectionTabs.js';
+import SectionPills from '/pages-sections/components/SectionPills.js';
+import SectionNotifications from '/pages-sections/components/SectionNotifications.js';
+import SectionPreFooter from '/pages-sections/components/SectionPreFooter.js';
+import SectionFooter from '/pages-sections/components/SectionFooter.js';
+import SectionTypography from '/pages-sections/components/SectionTypography.js';
+import SectionCards from '/pages-sections/components/SectionCards.js';
+import SectionJavascript from '/pages-sections/components/SectionJavascript.js';
+import SectionCarousel from '/pages-sections/components/SectionCarousel.js';
 
-import componentsStyle from "/styles/jss/nextjs-material-kit-pro/pages/componentsStyle.js";
+import componentsStyle from '/styles/jss/nextjs-material-kit-pro/pages/componentsStyle.js';
 
 const useStyles = makeStyles(componentsStyle);
 
 export default function Components() {
   React.useEffect(() => {
-    var href = window.location.href.substring(
-      window.location.href.lastIndexOf("#") + 1
-    );
-    if (window.location.href.lastIndexOf("#") > 0) {
+    var href = window.location.href.substring(window.location.href.lastIndexOf('#') + 1);
+    if (window.location.href.lastIndexOf('#') > 0) {
       document.getElementById(href).scrollIntoView();
     }
-    window.addEventListener("scroll", updateView);
+    window.addEventListener('scroll', updateView);
     updateView();
     return function cleanup() {
-      window.removeEventListener("scroll", updateView);
+      window.removeEventListener('scroll', updateView);
     };
   });
   const easeInOutQuad = (t, b, c, d) => {
@@ -52,28 +50,25 @@ export default function Components() {
     return (-c / 2) * (t * (t - 2) - 1) + b;
   };
   const updateView = () => {
-    var contentSections = document.getElementsByClassName("cd-section");
-    var navigationItems = document
-      .getElementById("cd-vertical-nav")
-      .getElementsByTagName("a");
+    var contentSections = document.getElementsByClassName('cd-section');
+    var navigationItems = document.getElementById('cd-vertical-nav').getElementsByTagName('a');
 
     for (let i = 0; i < contentSections.length; i++) {
-      var activeSection =
-        parseInt(navigationItems[i].getAttribute("data-number"), 10) - 1;
+      var activeSection = parseInt(navigationItems[i].getAttribute('data-number'), 10) - 1;
       if (
         contentSections[i].offsetTop -
           window.innerHeight / 2 +
-          document.getElementById("main-panel").offsetTop <
+          document.getElementById('main-panel').offsetTop <
           window.pageYOffset &&
         contentSections[i].offsetTop +
           contentSections[i].scrollHeight -
           window.innerHeight / 2 +
-          document.getElementById("main-panel").offsetTop >
+          document.getElementById('main-panel').offsetTop >
           window.pageYOffset
       ) {
-        navigationItems[activeSection].classList.add("is-selected");
+        navigationItems[activeSection].classList.add('is-selected');
       } else {
-        navigationItems[activeSection].classList.remove("is-selected");
+        navigationItems[activeSection].classList.remove('is-selected');
       }
     }
   };
@@ -83,7 +78,7 @@ export default function Components() {
   };
   const scrollTo = (element, to, duration) => {
     var start = element.scrollTop,
-      change = to - start + document.getElementById("main-panel").offsetTop,
+      change = to - start + document.getElementById('main-panel').offsetTop,
       currentTime = 0,
       increment = 20;
 
@@ -101,23 +96,22 @@ export default function Components() {
   return (
     <div>
       <Header
-        brand="NextJS Material Kit PRO"
-        links={<HeaderLinks dropdownHoverColor="info" />}
+        brand='CamperCamp'
+        links={<HeaderLinks dropdownHoverColor='info' />}
         fixed
-        color="transparent"
+        color='transparent'
         changeColorOnScroll={{
           height: 400,
-          color: "info"
+          color: 'info'
         }}
       />
-      <Parallax image="/img/nextjs_header.jpg" className={classes.parallax}>
+      <Parallax image='/img/nextjs_header.jpg' className={classes.parallax}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
                 <h1>
-                  NextJS Material Kit{" "}
-                  <span className={classes.proBadge}>PRO</span>
+                  NextJS Material Kit <span className={classes.proBadge}>PRO</span>
                 </h1>
                 <h3 className={classes.title}>All Components</h3>
               </div>
@@ -126,22 +120,15 @@ export default function Components() {
         </div>
       </Parallax>
 
-      <div
-        className={classNames(classes.main, classes.mainRaised)}
-        id="main-panel"
-      >
+      <div className={classNames(classes.main, classes.mainRaised)} id='main-panel'>
         <SectionBasics />
         <SectionNavbars />
         <SectionTabs />
         <SectionPills />
         <SectionNotifications />
         <div
-          className={classNames(
-            classes.section,
-            classes.sectionGray,
-            "cd-section"
-          )}
-          id="footers"
+          className={classNames(classes.section, classes.sectionGray, 'cd-section')}
+          id='footers'
         >
           <SectionPreFooter />
           <SectionFooter />
@@ -151,132 +138,132 @@ export default function Components() {
         <SectionJavascript />
         <SectionCarousel />
       </div>
-      <nav id="cd-vertical-nav">
+      <nav id='cd-vertical-nav'>
         <ul>
           <li>
             <a
-              href="#buttons"
-              data-number="1"
-              className=""
+              href='#buttons'
+              data-number='1'
+              className=''
               onClick={(e) => {
                 e.preventDefault();
-                smoothScroll("buttons");
+                smoothScroll('buttons');
               }}
             >
-              <span className="cd-dot" />
-              <span className="cd-label">Basic Elements</span>
+              <span className='cd-dot' />
+              <span className='cd-label'>Basic Elements</span>
             </a>
           </li>
           <li>
             <a
-              href="#navigation"
-              data-number="2"
-              className=""
+              href='#navigation'
+              data-number='2'
+              className=''
               onClick={(e) => {
                 e.preventDefault();
-                smoothScroll("navigation");
+                smoothScroll('navigation');
               }}
             >
-              <span className="cd-dot" />
-              <span className="cd-label">Navigation</span>
+              <span className='cd-dot' />
+              <span className='cd-label'>Navigation</span>
             </a>
           </li>
           <li>
             <a
-              href="#notifications"
-              data-number="3"
-              className=""
+              href='#notifications'
+              data-number='3'
+              className=''
               onClick={(e) => {
                 e.preventDefault();
-                smoothScroll("notifications");
+                smoothScroll('notifications');
               }}
             >
-              <span className="cd-dot" />
-              <span className="cd-label">Notifications</span>
+              <span className='cd-dot' />
+              <span className='cd-label'>Notifications</span>
             </a>
           </li>
           <li>
             <a
-              href="#footers"
-              data-number="4"
-              className=""
+              href='#footers'
+              data-number='4'
+              className=''
               onClick={(e) => {
                 e.preventDefault();
-                smoothScroll("footers");
+                smoothScroll('footers');
               }}
             >
-              <span className="cd-dot" />
-              <span className="cd-label">Footers</span>
+              <span className='cd-dot' />
+              <span className='cd-label'>Footers</span>
             </a>
           </li>
           <li>
             <a
-              href="#typography"
-              data-number="5"
-              className=""
+              href='#typography'
+              data-number='5'
+              className=''
               onClick={(e) => {
                 e.preventDefault();
-                smoothScroll("typography");
+                smoothScroll('typography');
               }}
             >
-              <span className="cd-dot" />
-              <span className="cd-label">Typography</span>
+              <span className='cd-dot' />
+              <span className='cd-label'>Typography</span>
             </a>
           </li>
           <li>
             <a
-              href="#contentAreas"
-              data-number="6"
-              className=""
+              href='#contentAreas'
+              data-number='6'
+              className=''
               onClick={(e) => {
                 e.preventDefault();
-                smoothScroll("contentAreas");
+                smoothScroll('contentAreas');
               }}
             >
-              <span className="cd-dot" />
-              <span className="cd-label">Content Areas</span>
+              <span className='cd-dot' />
+              <span className='cd-label'>Content Areas</span>
             </a>
           </li>
           <li>
             <a
-              href="#cards"
-              data-number="7"
-              className=""
+              href='#cards'
+              data-number='7'
+              className=''
               onClick={(e) => {
                 e.preventDefault();
-                smoothScroll("cards");
+                smoothScroll('cards');
               }}
             >
-              <span className="cd-dot" />
-              <span className="cd-label">Cards</span>
+              <span className='cd-dot' />
+              <span className='cd-label'>Cards</span>
             </a>
           </li>
           <li>
             <a
-              href="#morphingCards"
-              data-number="8"
-              className=""
+              href='#morphingCards'
+              data-number='8'
+              className=''
               onClick={(e) => {
                 e.preventDefault();
-                smoothScroll("morphingCards");
+                smoothScroll('morphingCards');
               }}
             >
-              <span className="cd-dot" />
-              <span className="cd-label">Morphing Cards</span>
+              <span className='cd-dot' />
+              <span className='cd-label'>Morphing Cards</span>
             </a>
           </li>
           <li>
             <a
-              href="#pablo"
-              data-number="9"
-              className=""
+              href='#pablo'
+              data-number='9'
+              className=''
               onClick={(e) => {
                 e.preventDefault();
-                smoothScroll("javascriptComponents");
+                smoothScroll('javascriptComponents');
               }}
             >
-              <span className="cd-dot" />
-              <span className="cd-label">Javascript</span>
+              <span className='cd-dot' />
+              <span className='cd-label'>Javascript</span>
             </a>
           </li>
         </ul>
@@ -288,8 +275,8 @@ export default function Components() {
               <List className={classes.list}>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/?ref=njsmkp-components"
-                    target="_blank"
+                    href='https://www.creative-tim.com/?ref=njsmkp-components'
+                    target='_blank'
                     className={classes.block}
                   >
                     Creative Tim
@@ -297,8 +284,8 @@ export default function Components() {
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/presentation?ref=njsmkp-components"
-                    target="_blank"
+                    href='https://www.creative-tim.com/presentation?ref=njsmkp-components'
+                    target='_blank'
                     className={classes.block}
                   >
                     About us
@@ -306,7 +293,7 @@ export default function Components() {
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="http://blog.creative-tim.com/?ref=njsmkp-components"
+                    href='http://blog.creative-tim.com/?ref=njsmkp-components'
                     className={classes.block}
                   >
                     Blog
@@ -314,8 +301,8 @@ export default function Components() {
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/license?ref=njsmkp-components"
-                    target="_blank"
+                    href='https://www.creative-tim.com/license?ref=njsmkp-components'
+                    target='_blank'
                     className={classes.block}
                   >
                     Licenses
@@ -324,14 +311,11 @@ export default function Components() {
               </List>
             </div>
             <div className={classes.right}>
-              &copy; {1900 + new Date().getYear()} , made with{" "}
-              <Favorite className={classes.icon} /> by{" "}
-              <a
-                href="https://www.creative-tim.com?ref=njsmkp-components"
-                target="_blank"
-              >
+              &copy; {1900 + new Date().getYear()} , made with <Favorite className={classes.icon} />{' '}
+              by{' '}
+              <a href='https://www.creative-tim.com?ref=njsmkp-components' target='_blank'>
                 Creative Tim
-              </a>{" "}
+              </a>{' '}
               for a better web.
             </div>
           </div>

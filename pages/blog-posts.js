@@ -1,24 +1,24 @@
 /*eslint-disable*/
-import React from "react";
-import makeStyles from "@mui/styles/makeStyles";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
+import React from 'react';
+import makeStyles from '@mui/styles/makeStyles';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
 // @mui/icons-material
-import Favorite from "@mui/icons-material/Favorite";
+import Favorite from '@mui/icons-material/Favorite';
 // core components
-import Header from "/components/Header/Header.js";
-import HeaderLinks from "/components/Header/HeaderLinks.js";
-import Footer from "/components/Footer/Footer.js";
-import GridContainer from "/components/Grid/GridContainer.js";
-import GridItem from "/components/Grid/GridItem.js";
-import Parallax from "/components/Parallax/Parallax.js";
+import Header from '/components/Header/Header.js';
+import HeaderLinks from '/components/Header/HeaderLinks.js';
+import Footer from '/components/Footer/Footer.js';
+import GridContainer from '/components/Grid/GridContainer.js';
+import GridItem from '/components/Grid/GridItem.js';
+import Parallax from '/components/Parallax/Parallax.js';
 // sections for this page
-import SectionPills from "/pages-sections/blog-posts/SectionPills.js";
-import SectionInterested from "/pages-sections/blog-posts/SectionInterested.js";
-import SectionImage from "/pages-sections/blog-posts/SectionImage.js";
-import SubscribeLine from "/pages-sections/blog-posts/SubscribeLine.js";
+import SectionPills from '/pages-sections/blog-posts/SectionPills.js';
+import SectionInterested from '/pages-sections/blog-posts/SectionInterested.js';
+import SectionImage from '/pages-sections/blog-posts/SectionImage.js';
+import SubscribeLine from '/pages-sections/blog-posts/SubscribeLine.js';
 
-import blogPostsPageStyle from "/styles/jss/nextjs-material-kit-pro/pages/blogPostsPageStyle.js";
+import blogPostsPageStyle from '/styles/jss/nextjs-material-kit-pro/pages/blogPostsPageStyle.js';
 
 const useStyles = makeStyles(blogPostsPageStyle);
 
@@ -31,18 +31,18 @@ export default function BlogPostsPage() {
   return (
     <div>
       <Header
-        brand="NextJS Material Kit PRO"
-        links={<HeaderLinks dropdownHoverColor="info" />}
+        brand='CamperCamp'
+        links={<HeaderLinks dropdownHoverColor='info' />}
         fixed
-        color="transparent"
+        color='transparent'
         changeColorOnScroll={{
           height: 400,
-          color: "info",
+          color: 'info'
         }}
       />
-      <Parallax image="/img/bg10.jpg" filter="dark" small>
+      <Parallax image='/img/bg10.jpg' filter='dark' small>
         <div className={classes.container}>
-          <GridContainer justifyContent="center">
+          <GridContainer justifyContent='center'>
             <GridItem xs={12} sm={12} md={8} className={classes.textCenter}>
               <h2 className={classes.title}>
                 A Place for Entrepreneurs to Share and Discover New Stories
@@ -66,8 +66,8 @@ export default function BlogPostsPage() {
               <List className={classes.list}>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/?ref=njsmkp-blog-posts"
-                    target="_blank"
+                    href='https://www.creative-tim.com/?ref=njsmkp-blog-posts'
+                    target='_blank'
                     className={classes.block}
                   >
                     Creative Tim
@@ -75,8 +75,8 @@ export default function BlogPostsPage() {
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/presentation?ref=njsmkp-blog-posts"
-                    target="_blank"
+                    href='https://www.creative-tim.com/presentation?ref=njsmkp-blog-posts'
+                    target='_blank'
                     className={classes.block}
                   >
                     About us
@@ -84,7 +84,7 @@ export default function BlogPostsPage() {
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="http://blog.creative-tim.com/?ref=njsmkp-blog-posts"
+                    href='http://blog.creative-tim.com/?ref=njsmkp-blog-posts'
                     className={classes.block}
                   >
                     Blog
@@ -92,8 +92,8 @@ export default function BlogPostsPage() {
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/license?ref=njsmkp-blog-posts"
-                    target="_blank"
+                    href='https://www.creative-tim.com/license?ref=njsmkp-blog-posts'
+                    target='_blank'
                     className={classes.block}
                   >
                     Licenses
@@ -102,14 +102,11 @@ export default function BlogPostsPage() {
               </List>
             </div>
             <div className={classes.right}>
-              &copy; {1900 + new Date().getYear()} , made with{" "}
-              <Favorite className={classes.icon} /> by{" "}
-              <a
-                href="https://www.creative-tim.com?ref=njsmkp-blog-posts"
-                target="_blank"
-              >
+              &copy; {1900 + new Date().getYear()} , made with <Favorite className={classes.icon} />{' '}
+              by{' '}
+              <a href='https://www.creative-tim.com?ref=njsmkp-blog-posts' target='_blank'>
                 Creative Tim
-              </a>{" "}
+              </a>{' '}
               for a better web.
             </div>
           </div>

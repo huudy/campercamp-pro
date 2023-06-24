@@ -1,18 +1,18 @@
-import React from "react";
+import React from 'react';
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import classNames from 'classnames';
 // nodejs library to set properties for components
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 import makeStyles from '@mui/styles/makeStyles';
-import Tab from "@mui/material/Tab";
-import Tabs from "@mui/material/Tabs";
+import Tab from '@mui/material/Tab';
+import Tabs from '@mui/material/Tabs';
 
 // core components
-import GridContainer from "/components/Grid/GridContainer.js";
-import GridItem from "/components/Grid/GridItem.js";
+import GridContainer from '/components/Grid/GridContainer.js';
+import GridItem from '/components/Grid/GridItem.js';
 
-import styles from "/styles/jss/nextjs-material-kit-pro/components/navPillsStyle.js";
+import styles from '/styles/jss/nextjs-material-kit-pro/components/navPillsStyle.js';
 
 const useStyles = makeStyles(styles);
 
@@ -42,7 +42,7 @@ export default function NavPills(props) {
       {tabs.map((prop, key) => {
         var icon = {};
         if (prop.tabIcon !== undefined) {
-          icon["icon"] = <prop.tabIcon className={classes.tabIcon} />;
+          icon['icon'] = <prop.tabIcon className={classes.tabIcon} />;
         }
         const pillsClasses = classNames({
           [classes.pills]: true,
@@ -94,7 +94,7 @@ export default function NavPills(props) {
 
 NavPills.defaultProps = {
   active: 0,
-  color: "primary"
+  color: 'primary'
 };
 
 NavPills.propTypes = {
@@ -107,14 +107,7 @@ NavPills.propTypes = {
       tabContent: PropTypes.node
     })
   ).isRequired,
-  color: PropTypes.oneOf([
-    "primary",
-    "warning",
-    "danger",
-    "success",
-    "info",
-    "rose"
-  ]),
+  color: PropTypes.oneOf(['primary', 'warning', 'danger', 'success', 'info', 'rose']),
   horizontal: PropTypes.shape({
     tabsGrid: PropTypes.object,
     contentGrid: PropTypes.object

@@ -31,7 +31,10 @@
     "start": "next start",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && rm -rf .next/ && npm install && npm run dev",
     "compile-sass": "sass styles/scss/nextjs-material-kit-pro.scss styles/css/nextjs-material-kit-pro.css",
-    "minify-sass": "sass styles/scss/nextjs-material-kit-pro.scss styles/css/nextjs-material-kit-pro.min.css --style compressed"
+    "minify-sass": "sass styles/scss/nextjs-material-kit-pro.scss styles/css/nextjs-material-kit-pro.min.css --style compressed",
+    "lint": "eslint src/**/*.{js,jsx,ts,tsx,json}",
+    "lint:fix": "eslint --fix ./**/*.{js,jsx,ts,tsx,json}",
+    "format": "prettier --write ./**/**/*.{js,json} --config ./.prettierrc"
   },
   "browserslist": {
     "production": [
@@ -40,5 +43,10 @@
       "not op_mini all"
     ],
     "development": []
+  },
+  "devDependencies": {
+    "eslint": "^8.43.0",
+    "eslint-plugin-react": "^7.32.2",
+    "prettier": "2.8.8"
   }
 }

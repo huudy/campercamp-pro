@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react';
 // nodejs library to set properties for components
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 import makeStyles from '@mui/styles/makeStyles';
-import Snack from "@mui/material/SnackbarContent";
-import IconButton from "@mui/material/IconButton";
-import Icon from "@mui/material/Icon";
+import Snack from '@mui/material/SnackbarContent';
+import IconButton from '@mui/material/IconButton';
+import Icon from '@mui/material/Icon';
 // @mui/icons-material
-import Close from "@mui/icons-material/Close";
+import Close from '@mui/icons-material/Close';
 // core components
 
-import styles from "/styles/jss/nextjs-material-kit-pro/components/snackbarContentStyle.js";
+import styles from '/styles/jss/nextjs-material-kit-pro/components/snackbarContentStyle.js';
 
 const useStyles = makeStyles(styles);
 
@@ -24,21 +24,22 @@ export default function SnackbarContent(props) {
     action = [
       <IconButton
         className={classes.iconButton}
-        key="close"
-        aria-label="Close"
-        color="inherit"
+        key='close'
+        aria-label='Close'
+        color='inherit'
         onClick={closeAlert}
-        size="large">
+        size='large'
+      >
         <Close className={classes.close} />
       </IconButton>
     ];
   }
   let snackIcon = null;
   switch (typeof icon) {
-    case "object":
+    case 'object':
       snackIcon = <props.icon className={classes.icon} />;
       break;
-    case "string":
+    case 'string':
       snackIcon = <Icon className={classes.icon}>{props.icon}</Icon>;
       break;
     default:
@@ -55,8 +56,8 @@ export default function SnackbarContent(props) {
         </div>
       }
       classes={{
-        root: classes.root + " " + classes[color],
-        message: classes.message + " " + classes.container
+        root: classes.root + ' ' + classes[color],
+        message: classes.message + ' ' + classes.container
       }}
     />
   );
@@ -65,7 +66,7 @@ export default function SnackbarContent(props) {
 
 SnackbarContent.propTypes = {
   message: PropTypes.node.isRequired,
-  color: PropTypes.oneOf(["info", "success", "warning", "danger", "primary"]),
+  color: PropTypes.oneOf(['info', 'success', 'warning', 'danger', 'primary']),
   close: PropTypes.bool,
   icon: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
 };

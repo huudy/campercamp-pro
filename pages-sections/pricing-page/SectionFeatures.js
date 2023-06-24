@@ -1,16 +1,16 @@
-import React from "react";
+import React from 'react';
 // core components
-import GridContainer from "/components/Grid/GridContainer.js";
-import GridItem from "/components/Grid/GridItem.js";
-import InfoArea from "/components/InfoArea/InfoArea.js";
+import GridContainer from '/components/Grid/GridContainer.js';
+import GridItem from '/components/Grid/GridItem.js';
+import InfoArea from '/components/InfoArea/InfoArea.js';
 import makeStyles from '@mui/styles/makeStyles';
 // @material-ui icons
-import CardMembership from "@mui/icons-material/CardMembership";
-import CardGiftCard from "@mui/icons-material/CardGiftcard";
-import AttachMoney from "@mui/icons-material/AttachMoney";
-import QuestionAnswer from "@mui/icons-material/QuestionAnswer";
+import CardMembership from '@mui/icons-material/CardMembership';
+import CardGiftCard from '@mui/icons-material/CardGiftcard';
+import AttachMoney from '@mui/icons-material/AttachMoney';
+import QuestionAnswer from '@mui/icons-material/QuestionAnswer';
 
-import featuresStyle from "/styles/jss/nextjs-material-kit-pro/pages/pricingSections/featuresStyle.js";
+import featuresStyle from '/styles/jss/nextjs-material-kit-pro/pages/pricingSections/featuresStyle.js';
 
 const useStyles = makeStyles(featuresStyle);
 
@@ -24,36 +24,36 @@ export default function SectionFeatures() {
       <GridContainer>
         <GridItem md={4} sm={4} className={classes.mlAuto}>
           <InfoArea
-            title="Can I cancel my subscription?"
-            description="Yes, you can cancel and perform other actions on your subscriptions via the My Account page."
+            title='Can I cancel my subscription?'
+            description='Yes, you can cancel and perform other actions on your subscriptions via the My Account page.'
             icon={CardMembership}
-            iconColor="info"
+            iconColor='info'
           />
         </GridItem>
         <GridItem md={4} sm={4} className={classes.mrAuto}>
           <InfoArea
-            title="Is there any discount for an annual subscription?"
-            description="Yes, we offer a 40% discount if you choose annual subscription for any plan."
+            title='Is there any discount for an annual subscription?'
+            description='Yes, we offer a 40% discount if you choose annual subscription for any plan.'
             icon={CardGiftCard}
-            iconColor="success"
+            iconColor='success'
           />
         </GridItem>
       </GridContainer>
       <GridContainer>
         <GridItem md={4} sm={4} className={classes.mlAuto}>
           <InfoArea
-            title="Which payment methods do you take?"
-            description="WooCommerce comes bundled with PayPal (for accepting credit card and PayPal account payments), BACS, and cash on delivery for accepting payments."
+            title='Which payment methods do you take?'
+            description='WooCommerce comes bundled with PayPal (for accepting credit card and PayPal account payments), BACS, and cash on delivery for accepting payments.'
             icon={AttachMoney}
-            iconColor="success"
+            iconColor='success'
           />
         </GridItem>
         <GridItem md={4} sm={4} className={classes.mrAuto}>
           <InfoArea
-            title="Any other questions we can answer?"
-            description="We are happy to help you. Contact us."
+            title='Any other questions we can answer?'
+            description='We are happy to help you. Contact us.'
             icon={QuestionAnswer}
-            iconColor="rose"
+            iconColor='rose'
           />
         </GridItem>
       </GridContainer>

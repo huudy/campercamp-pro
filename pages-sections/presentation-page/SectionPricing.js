@@ -1,19 +1,19 @@
-import React from "react";
+import React from 'react';
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import classNames from 'classnames';
 // core components
-import GridContainer from "/components/Grid/GridContainer.js";
-import GridItem from "/components/Grid/GridItem.js";
-import NavPills from "/components/NavPills/NavPills.js";
-import Button from "/components/CustomButtons/Button.js";
-import Card from "/components/Card/Card.js";
-import CardBody from "/components/Card/CardBody.js";
+import GridContainer from '/components/Grid/GridContainer.js';
+import GridItem from '/components/Grid/GridItem.js';
+import NavPills from '/components/NavPills/NavPills.js';
+import Button from '/components/CustomButtons/Button.js';
+import Card from '/components/Card/Card.js';
+import CardBody from '/components/Card/CardBody.js';
 import makeStyles from '@mui/styles/makeStyles';
 // @mui/icons-material
-import ShoppingCart from "@mui/icons-material/ShoppingCart";
-import Store from "@mui/icons-material/Store";
+import ShoppingCart from '@mui/icons-material/ShoppingCart';
+import Store from '@mui/icons-material/Store';
 
-import pricingStyle from "/styles/jss/nextjs-material-kit-pro/pages/presentationSections/pricingStyle.js";
+import pricingStyle from '/styles/jss/nextjs-material-kit-pro/pages/presentationSections/pricingStyle.js';
 
 const useStyles = makeStyles(pricingStyle);
 
@@ -23,26 +23,20 @@ export default function SectionPricing() {
     <div className={classes.section}>
       <div className={classes.container}>
         <GridContainer>
-          <GridItem
-            md={8}
-            sm={10}
-            className={classNames(classes.mlAuto, classes.mrAuto)}
-          >
-            <h2 className={classes.title}>
-              Ready to grab NextJS Material Kit PRO?
-            </h2>
+          <GridItem md={8} sm={10} className={classNames(classes.mlAuto, classes.mrAuto)}>
+            <h2 className={classes.title}>Ready to grab CamperCamp?</h2>
             <Button
-              href="https://www.creative-tim.com/product/nextjs-material-kit-pro#pricingCard?ref=njsmkp-presentation"
-              color={"primary"}
-              target="_blank"
+              href='https://www.creative-tim.com/product/nextjs-material-kit-pro#pricingCard?ref=njsmkp-presentation'
+              color={'primary'}
+              target='_blank'
               round
             >
               <ShoppingCart className={classes.icons} /> buy now
-            </Button>{" "}
+            </Button>{' '}
             <Button
-              href="https://www.creative-tim.com/product/nextjs-material-kit?ref=njsmkp-presentation"
-              color={"white"}
-              target="_blank"
+              href='https://www.creative-tim.com/product/nextjs-material-kit?ref=njsmkp-presentation'
+              color={'white'}
+              target='_blank'
               round
             >
               <Store className={classes.icons} /> Check Free Demo
@@ -53,16 +47,16 @@ export default function SectionPricing() {
               <GridContainer>
                 <GridItem md={12}>
                   <h4 className={classes.title}>Thank you for sharing!</h4>
-                  <Button color="twitter" href="#pablo" round>
-                    <i className={"fab fa-twitter " + classes.marginRight} />
+                  <Button color='twitter' href='#pablo' round>
+                    <i className={'fab fa-twitter ' + classes.marginRight} />
                     Twitter
                   </Button>
-                  <Button color="facebook" href="#pablo" round>
-                    <i className={"fab fa-facebook " + classes.marginRight} />
+                  <Button color='facebook' href='#pablo' round>
+                    <i className={'fab fa-facebook ' + classes.marginRight} />
                     Facebook
                   </Button>
-                  <Button color="google" href="#pablo" round>
-                    <i className={"fab fa-google " + classes.marginRight} />
+                  <Button color='google' href='#pablo' round>
+                    <i className={'fab fa-google ' + classes.marginRight} />
                     Google
                   </Button>
                 </GridItem>
