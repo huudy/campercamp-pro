@@ -18,6 +18,7 @@ export default function SectionWork() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
     message: ''
   });
 
@@ -25,21 +26,29 @@ export default function SectionWork() {
     setFormData({ ...formData, [event.target.id]: event.target.value });
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-
-    console.log('Habdle submit::', formData);
-    // event.preventDefault();
-    // // Make API request to send the email
-    // axios.post("/api/sendEmail", formData)
-    //   .then((response) => {
-    //     // Handle success, show a success message or perform any other actions
-    //     console.log("Email sent successfully!");
-    //   })
-    //   .catch((error) => {
-    //     // Handle error, show an error message or perform any other actions
-    //     console.error("Error sending email:", error);
-    //   });
+try {
+  const {name,email,message,phone} = formData
+  console.log('Sending ', formData);
+    const res = await fetch('/api/send-email', {
+      method: 'POST',
+      body: JSON.stringify({
+        name,
+        email,
+        message,
+        phone
+      }),
+      headers: {
+        'content-type': 'application/json',
+      },
+    })
+      if (res.status === 200) {
+        setFormData({name:'',email:'',message:'', phone:''})
+      }
+    } catch (err) {
+      console.error('Err', err)
+    }
   };
   return (
     <div className={classes.section}>
@@ -69,6 +78,17 @@ export default function SectionWork() {
                   labelText='Your Email'
                   id='email'
                   value={formData.email}
+                  onChange={handleInputChange}
+                  formControlProps={{
+                    fullWidth: true
+                  }}
+                />
+              </GridItem>
+              <GridItem xs={12} sm={6} md={6}>
+                <CustomInput
+                  labelText='Your Phone Number'
+                  id='phone'
+                  value={formData.phoen}
                   onChange={handleInputChange}
                   formControlProps={{
                     fullWidth: true

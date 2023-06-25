@@ -22,7 +22,8 @@
     "react-slick": "0.29.0",
     "react-tagsinput": "3.19.0",
     "sass": "1.54.4",
-    "webpack": "5.74.0"
+    "webpack": "5.74.0",
+    "mailgun.js": "8.0.6"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
