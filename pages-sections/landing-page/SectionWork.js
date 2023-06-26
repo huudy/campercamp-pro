@@ -44,7 +44,7 @@ try {
       },
     })
       if (res.status === 200) {
-        setFormData({name:'',email:'',message:'', phone:''})
+        setFormData({name:'',email:'', phone:'',message:''})
       }
     } catch (err) {
       console.error('Err', err)
