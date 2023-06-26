@@ -88,7 +88,7 @@ try {
                 <CustomInput
                   labelText='Your Phone Number'
                   id='phone'
-                  value={formData.phoen}
+                  value={formData.phone}
                   onChange={handleInputChange}
                   formControlProps={{
                     fullWidth: true
