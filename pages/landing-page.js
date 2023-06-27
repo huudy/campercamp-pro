@@ -1,27 +1,17 @@
 /*eslint-disable*/ import React from 'react';
-// nodejs library to set properties for components
-import PropTypes from 'prop-types';
-// nodejs library that concatenates classes
 import classNames from 'classnames';
 import makeStyles from '@mui/styles/makeStyles';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-// @mui/icons-material
-import Favorite from '@mui/icons-material/Favorite';
+
 // core components
 import Header from '/components/Header/Header.js';
-import Footer from '/components/Footer/Footer.js';
 import GridContainer from '/components/Grid/GridContainer.js';
 import GridItem from '/components/Grid/GridItem.js';
 import Button from '/components/CustomButtons/Button.js';
-import HeaderLinks from '/components/Header/HeaderLinks.js';
 import Parallax from '/components/Parallax/Parallax.js';
 
 import landingPageStyle from '/styles/jss/nextjs-material-kit-pro/pages/landingPageStyle.js';
 
 // Sections for this page
-import SectionProduct from '/pages-sections/landing-page/SectionProduct.js';
-import SectionTeam from '/pages-sections/landing-page/SectionTeam.js';
 import SectionWork from '/pages-sections/landing-page/SectionWork.js';
 import SectionDescription from '/pages-sections/presentation-page/SectionDescription.js';
 
@@ -32,13 +22,14 @@ export default function LandingPage({ ...rest }) {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
   });
+  
+
   const classes = useStyles();
   return (
     <div>
       <Header
         color='transparent'
         brand='Camper Camp 🏕'
-        // links={<HeaderLinks dropdownHoverColor="info" />}
         fixed
         changeColorOnScroll={{
           height: 300,
@@ -64,68 +55,9 @@ export default function LandingPage({ ...rest }) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <SectionDescription />
-
-          {/* <SectionProduct />
-          <SectionTeam /> */}
           <SectionWork />
         </div>
       </div>
-      {/* <Footer
-        content={
-          <div>
-            <div className={classes.left}>
-              <List className={classes.list}>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/?ref=njsmkp-landing"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    Creative Tim
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/presentation?ref=njsmkp-landing"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    About us
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="http://blog.creative-tim.com/?ref=njsmkp-landing"
-                    className={classes.block}
-                  >
-                    Blog
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/license?ref=njsmkp-landing"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    Licenses
-                  </a>
-                </ListItem>
-              </List>
-            </div>
-            <div className={classes.right}>
-              &copy; {1900 + new Date().getYear()} , made with{" "}
-              <Favorite className={classes.icon} /> by{" "}
-              <a
-                href="https://www.creative-tim.com/?ref=njsmkp-landing"
-                target="_blank"
-              >
-                Creative Tim
-              </a>{" "}
-              for a better web.
-            </div>
-          </div>
-        }
-      /> */}
     </div>
   );
 }

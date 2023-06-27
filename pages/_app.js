@@ -20,14 +20,14 @@ import App from 'next/app';
 import Head from 'next/head';
 import Router from 'next/router';
 import { ThemeProvider, createTheme, StyledEngineProvider } from '@mui/material/styles';
+import { ReactNotifications } from 'react-notifications-component';
 
 import PageChange from '/components/PageChange/PageChange.js';
 
 import '/styles/scss/nextjs-material-kit-pro.scss';
-
 import '/styles/css/react-demo.css';
-
 import 'animate.css/animate.min.css';
+import '../node_modules/react-notifications-component/dist/scss/notification.scss';
 
 const theme = createTheme({
   components: {
@@ -102,6 +102,7 @@ export default class MyApp extends App {
         </Head>
         <ThemeProvider theme={theme}>
           <StyledEngineProvider injectFirst>
+            <ReactNotifications />
             <Component {...pageProps} />
           </StyledEngineProvider>
         </ThemeProvider>

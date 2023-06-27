@@ -10,6 +10,7 @@
     "@mui/styles": "^5.10.14",
     "animate.css": "4.1.1",
     "classnames": "2.3.1",
+    "mailgun.js": "8.0.6",
     "moment": "2.29.4",
     "next": "12.2.5",
     "nouislider": "15.1.0",
@@ -19,11 +20,11 @@
     "react-datetime": "3.1.1",
     "react-dom": "18.2.0",
     "react-image-gallery": "1.2.9",
+    "react-notifications-component": "^4.0.1",
     "react-slick": "0.29.0",
     "react-tagsinput": "3.19.0",
     "sass": "1.54.4",
-    "webpack": "5.74.0",
-    "mailgun.js": "8.0.6"
+    "webpack": "5.74.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

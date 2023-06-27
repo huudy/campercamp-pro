@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import makeStyles from '@mui/styles/makeStyles';
-
-// @mui/icons-material
-
 // core components
 import GridContainer from '/components/Grid/GridContainer.js';
 import GridItem from '/components/Grid/GridItem.js';
 import CustomInput from '/components/CustomInput/CustomInput.js';
 import Button from '/components/CustomButtons/Button.js';
+import { Store } from 'react-notifications-component';
 
 import workStyle from '/styles/jss/nextjs-material-kit-pro/pages/landingPageSections/workStyle.js';
 
@@ -21,6 +19,16 @@ export default function SectionWork() {
     phone: '',
     message: ''
   });
+const notification = {
+  container: 'bottom-center',
+  animationIn: ['animate__animated', 'animate__fadeIn'],
+  animationOut: ['animate__animated', 'animate__fadeOut'],
+  dismiss: {
+    duration: 5000,
+    onScreen: true,
+    showIcon: true
+  }
+};
 
   const handleInputChange = (event) => {
     setFormData({ ...formData, [event.target.id]: event.target.value });
@@ -45,6 +53,13 @@ try {
     })
       if (res.status === 200) {
         setFormData({name:'',email:'', phone:'',message:''})
+        Store.addNotification({
+          title: 'Success !',
+          message: 'Message was sent successfully! Wait for a confirmation from us.',
+          type: 'success',
+          ...notification
+        });
+
       }
     } catch (err) {
       console.error('Err', err)
