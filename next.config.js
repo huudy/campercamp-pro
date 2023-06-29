@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+const nextTranslate = require('next-translate-plugin');
 
 const isGithubActions = process.env.GITHUB_ACTIONS || false
 let assetPrefix = '/'
@@ -14,4 +15,4 @@ const nextConfig = {
   assetPrefix,
   basePath: basePath
 };
-module.exports = nextConfig;
+module.exports = nextTranslate({...nextConfig })

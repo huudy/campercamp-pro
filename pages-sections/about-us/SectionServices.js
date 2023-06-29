@@ -41,7 +41,7 @@ export default function SectionServices() {
                   The moment you use Material Kit, you know you’ve never felt anything like it. With
                   a single use, this powerfull UI Kit lets you do more than ever before.{' '}
                 </p>
-                <a href='#pablo'>Find more...</a>
+                <a href='/'>Find more...</a>
               </span>
             }
             icon={Gesture}
@@ -57,7 +57,7 @@ export default function SectionServices() {
                   Divide details about your product or agency work into parts. Write a few lines
                   about each one. A paragraph describing a feature will be enough.{' '}
                 </p>
-                <a href='#pablo'>Find more...</a>
+                <a href='/'>Find more...</a>
               </span>
             }
             icon={Build}
@@ -73,7 +73,7 @@ export default function SectionServices() {
                   Divide details about your product or agency work into parts. Write a few lines
                   about each one. A paragraph describing a feature will be enough.{' '}
                 </p>
-                <a href='#pablo'>Find more...</a>
+                <a href='/'>Find more...</a>
               </span>
             }
             icon='mode_edit'

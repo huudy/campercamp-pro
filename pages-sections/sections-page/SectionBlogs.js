@@ -49,7 +49,7 @@ export default function SectionBlogs({ ...rest }) {
                       <h6 className={classes.cardCategory}>ENTERPRISE</h6>
                     </Info>
                     <h3 className={classes.cardTitle}>
-                      <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                      <a href='/' onClick={(e) => e.preventDefault()}>
                         Autodesk looks to future of 3D printing with Project Escher
                       </a>
                     </h3>
@@ -58,14 +58,14 @@ export default function SectionBlogs({ ...rest }) {
                       was until recently a traditional boxed software company selling licenses.
                       Today, it’s moving to a subscription model. Yet its own business model
                       disruption is only part of the story — and…
-                      <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                      <a href='/' onClick={(e) => e.preventDefault()}>
                         {' '}
                         Read More{' '}
                       </a>
                     </p>
                     <p className={classes.author}>
                       by{' '}
-                      <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                      <a href='/' onClick={(e) => e.preventDefault()}>
                         <b>Mike Butcher</b>
                       </a>{' '}
                       , 2 days ago
@@ -83,7 +83,7 @@ export default function SectionBlogs({ ...rest }) {
                       </h6>
                     </Danger>
                     <h3 className={classes.cardTitle}>
-                      <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                      <a href='/' onClick={(e) => e.preventDefault()}>
                         6 insights into the French Fashion landscape
                       </a>
                     </h3>
@@ -92,14 +92,14 @@ export default function SectionBlogs({ ...rest }) {
                       was until recently a traditional boxed software company selling licenses.
                       Today, it’s moving to a subscription model. Yet its own business model
                       disruption is only part of the story — and…
-                      <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                      <a href='/' onClick={(e) => e.preventDefault()}>
                         {' '}
                         Read More{' '}
                       </a>
                     </p>
                     <p className={classes.author}>
                       by{' '}
-                      <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                      <a href='/' onClick={(e) => e.preventDefault()}>
                         <b>Mike Butcher</b>
                       </a>{' '}
                       , 2 days ago
@@ -153,14 +153,14 @@ export default function SectionBlogs({ ...rest }) {
                         <h6 className={classes.cardCategory}>ENTERPRISE</h6>
                       </Info>
                       <h4 className={classes.cardTitle}>
-                        <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                        <a href='/' onClick={(e) => e.preventDefault()}>
                           Autodesk looks to future of 3D printing with Project Escher
                         </a>
                       </h4>
                       <p className={classes.description}>
                         Like so many organizations these days, Autodesk is a company in transition.
                         It was until recently a traditional boxed software company selling licenses.
-                        <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                        <a href='/' onClick={(e) => e.preventDefault()}>
                           {' '}
                           Read More{' '}
                         </a>
@@ -187,14 +187,14 @@ export default function SectionBlogs({ ...rest }) {
                         <h6 className={classes.cardCategory}>STARTUPS</h6>
                       </Success>
                       <h4 className={classes.cardTitle}>
-                        <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                        <a href='/' onClick={(e) => e.preventDefault()}>
                           Lyft launching cross-platform service this week
                         </a>
                       </h4>
                       <p className={classes.description}>
                         Like so many organizations these days, Autodesk is a company in transition.
                         It was until recently a traditional boxed software company selling licenses.
-                        <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                        <a href='/' onClick={(e) => e.preventDefault()}>
                           {' '}
                           Read More{' '}
                         </a>
@@ -224,14 +224,14 @@ export default function SectionBlogs({ ...rest }) {
                         </h6>
                       </Danger>
                       <h4 className={classes.cardTitle}>
-                        <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                        <a href='/' onClick={(e) => e.preventDefault()}>
                           6 insights into the French Fashion landscape
                         </a>
                       </h4>
                       <p className={classes.description}>
                         Like so many organizations these days, Autodesk is a company in transition.
                         It was until recently a traditional boxed software company selling licenses.
-                        <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                        <a href='/' onClick={(e) => e.preventDefault()}>
                           {' '}
                           Read More{' '}
                         </a>
@@ -280,7 +280,7 @@ export default function SectionBlogs({ ...rest }) {
                       <h6 className={classes.cardCategory}>ENTERPRISE</h6>
                     </Info>
                     <h3 className={classes.cardTitle}>
-                      <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                      <a href='/' onClick={(e) => e.preventDefault()}>
                         Autodesk looks to future of 3D printing with Project Escher
                       </a>
                     </h3>
@@ -289,14 +289,14 @@ export default function SectionBlogs({ ...rest }) {
                       was until recently a traditional boxed software company selling licenses.
                       Today, it’s moving to a subscription model. Yet its own business model
                       disruption is only part of the story — and…
-                      <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                      <a href='/' onClick={(e) => e.preventDefault()}>
                         {' '}
                         Read More{' '}
                       </a>
                     </p>
                     <p className={classes.author}>
                       by{' '}
-                      <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                      <a href='/' onClick={(e) => e.preventDefault()}>
                         <b>Mike Butcher</b>
                       </a>{' '}
                       , 2 days ago
@@ -335,7 +335,7 @@ export default function SectionBlogs({ ...rest }) {
                       </h6>
                     </Danger>
                     <h3 className={classes.cardTitle}>
-                      <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                      <a href='/' onClick={(e) => e.preventDefault()}>
                         6 insights into the French Fashion landscape
                       </a>
                     </h3>
@@ -344,14 +344,14 @@ export default function SectionBlogs({ ...rest }) {
                       was until recently a traditional boxed software company selling licenses.
                       Today, it’s moving to a subscription model. Yet its own business model
                       disruption is only part of the story — and…
-                      <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                      <a href='/' onClick={(e) => e.preventDefault()}>
                         {' '}
                         Read More{' '}
                       </a>
                     </p>
                     <p className={classes.author}>
                       by{' '}
-                      <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                      <a href='/' onClick={(e) => e.preventDefault()}>
                         <b>Mike Butcher</b>
                       </a>{' '}
                       , 2 days ago
@@ -387,7 +387,7 @@ export default function SectionBlogs({ ...rest }) {
                       <h6 className={classes.cardCategory}>STARTUPS</h6>
                     </Success>
                     <h3 className={classes.cardTitle}>
-                      <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                      <a href='/' onClick={(e) => e.preventDefault()}>
                         Lyft launching cross-platform service this week
                       </a>
                     </h3>
@@ -396,14 +396,14 @@ export default function SectionBlogs({ ...rest }) {
                       was until recently a traditional boxed software company selling licenses.
                       Today, it’s moving to a subscription model. Yet its own business model
                       disruption is only part of the story — and…
-                      <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                      <a href='/' onClick={(e) => e.preventDefault()}>
                         {' '}
                         Read More{' '}
                       </a>
                     </p>
                     <p className={classes.author}>
                       by{' '}
-                      <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                      <a href='/' onClick={(e) => e.preventDefault()}>
                         <b>Megan Rose</b>
                       </a>{' '}
                       , 2 days ago
@@ -441,7 +441,7 @@ export default function SectionBlogs({ ...rest }) {
                     <h6 className={classes.cardCategory}>FASHION</h6>
                   </Info>
                   <h3 className={classes.cardTitle}>
-                    <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                    <a href='/' onClick={(e) => e.preventDefault()}>
                       Autodesk looks to future of 3D
                     </a>
                   </h3>
@@ -474,7 +474,7 @@ export default function SectionBlogs({ ...rest }) {
                     <h6 className={classes.cardCategory}>LIFESTYLE</h6>
                   </Success>
                   <h3 className={classes.cardTitle}>
-                    <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                    <a href='/' onClick={(e) => e.preventDefault()}>
                       We will breathe clean air and exercise
                     </a>
                   </h3>

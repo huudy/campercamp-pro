@@ -68,7 +68,7 @@ export default function SectionTestimonials({ ...rest }) {
                   <h4 className={classes.cardTitle}>Alec Thompson</h4>
                   <h6 className={classes.cardCategory}>@ALECTHOMPSON</h6>
                   <CardAvatar testimonial testimonialFooter>
-                    <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                    <a href='/' onClick={(e) => e.preventDefault()}>
                       <img src='/img/faces/card-profile1-square.jpg' alt='...' />
                     </a>
                   </CardAvatar>
@@ -91,7 +91,7 @@ export default function SectionTestimonials({ ...rest }) {
                   <h4 className={classes.cardTitle}>Gina Andrew</h4>
                   <h6 className={classes.cardCategory}>@GINAANDREW</h6>
                   <CardAvatar testimonial testimonialFooter>
-                    <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                    <a href='/' onClick={(e) => e.preventDefault()}>
                       <img src='/img/faces/card-profile4-square.jpg' alt='...' />
                     </a>
                   </CardAvatar>
@@ -114,7 +114,7 @@ export default function SectionTestimonials({ ...rest }) {
                   <h4 className={classes.cardTitle}>George West</h4>
                   <h6 className={classes.cardCategory}>@GEORGEWEST</h6>
                   <CardAvatar testimonial testimonialFooter>
-                    <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                    <a href='/' onClick={(e) => e.preventDefault()}>
                       <img src='/img/faces/card-profile2-square.jpg' alt='...' />
                     </a>
                   </CardAvatar>
@@ -136,7 +136,7 @@ export default function SectionTestimonials({ ...rest }) {
                 <div>
                   <Card testimonial plain className={classes.card2}>
                     <CardAvatar testimonial plain>
-                      <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                      <a href='/' onClick={(e) => e.preventDefault()}>
                         <img src='/img/faces/kendall.jpg' alt='...' />
                       </a>
                     </CardAvatar>
@@ -176,7 +176,7 @@ export default function SectionTestimonials({ ...rest }) {
                 <div>
                   <Card testimonial plain className={classes.card2}>
                     <CardAvatar testimonial plain>
-                      <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                      <a href='/' onClick={(e) => e.preventDefault()}>
                         <img src='/img/faces/christian.jpg' alt='...' />
                       </a>
                     </CardAvatar>
@@ -232,7 +232,7 @@ export default function SectionTestimonials({ ...rest }) {
             <GridItem xs={12} sm={4} md={4}>
               <Card testimonial plain>
                 <CardAvatar testimonial plain>
-                  <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                  <a href='/' onClick={(e) => e.preventDefault()}>
                     <img src='/img/faces/card-profile1-square.jpg' alt='...' />
                   </a>
                 </CardAvatar>
@@ -252,7 +252,7 @@ export default function SectionTestimonials({ ...rest }) {
             <GridItem xs={12} sm={4} md={4}>
               <Card testimonial plain>
                 <CardAvatar testimonial plain>
-                  <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                  <a href='/' onClick={(e) => e.preventDefault()}>
                     <img src='/img/faces/card-profile4-square.jpg' alt='...' />
                   </a>
                 </CardAvatar>
@@ -273,7 +273,7 @@ export default function SectionTestimonials({ ...rest }) {
             <GridItem xs={12} sm={4} md={4}>
               <Card testimonial plain>
                 <CardAvatar testimonial plain>
-                  <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                  <a href='/' onClick={(e) => e.preventDefault()}>
                     <img src='/img/faces/card-profile6-square.jpg' alt='...' />
                   </a>
                 </CardAvatar>

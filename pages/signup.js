@@ -173,7 +173,7 @@ export default function SignUpPage({ ...rest }) {
                           }
                           label={
                             <span>
-                              I agree to the <a href='#pablo'>terms and conditions</a>.
+                              I agree to the <a href='/'>terms and conditions</a>.
                             </span>
                           }
                         />

@@ -39,7 +39,7 @@ export default function SectionNavbars() {
                 <List className={classes.list}>
                   <ListItem className={classes.listItem}>
                     <Button
-                      href='#pablo'
+                      href='/'
                       className={classes.navLink + ' ' + classes.navLinkActive}
                       onClick={(e) => e.preventDefault()}
                       color='transparent'
@@ -49,7 +49,7 @@ export default function SectionNavbars() {
                   </ListItem>
                   <ListItem className={classes.listItem}>
                     <Button
-                      href='#pablo'
+                      href='/'
                       className={classes.navLink}
                       onClick={(e) => e.preventDefault()}
                       color='transparent'
@@ -138,7 +138,7 @@ export default function SectionNavbars() {
                 <List className={classes.list + ' ' + classes.mrAuto}>
                   <ListItem className={classes.listItem}>
                     <Button
-                      href='#pablo'
+                      href='/'
                       className={classes.navLink + ' ' + classes.navLinkActive}
                       onClick={(e) => e.preventDefault()}
                       color='transparent'
@@ -148,7 +148,7 @@ export default function SectionNavbars() {
                   </ListItem>
                   <ListItem className={classes.listItem}>
                     <Button
-                      href='#pablo'
+                      href='/'
                       className={classes.navLink}
                       onClick={(e) => e.preventDefault()}
                       color='transparent'
@@ -186,7 +186,7 @@ export default function SectionNavbars() {
               <List className={classes.list + ' ' + classes.mlAuto}>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href='#pablo'
+                    href='/'
                     className={classes.navLink + ' ' + classes.navLinkActive}
                     onClick={(e) => e.preventDefault()}
                     color='transparent'
@@ -196,7 +196,7 @@ export default function SectionNavbars() {
                 </ListItem>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href='#pablo'
+                    href='/'
                     className={classes.navLink}
                     onClick={(e) => e.preventDefault()}
                     color='transparent'
@@ -206,7 +206,7 @@ export default function SectionNavbars() {
                 </ListItem>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href='#pablo'
+                    href='/'
                     className={classes.navLink}
                     onClick={(e) => e.preventDefault()}
                     color='transparent'
@@ -224,7 +224,7 @@ export default function SectionNavbars() {
               <List className={classes.list + ' ' + classes.mlAuto}>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href='#pablo'
+                    href='/'
                     className={classes.navLink + ' ' + classes.navLinkActive}
                     onClick={(e) => e.preventDefault()}
                     color='transparent'
@@ -234,7 +234,7 @@ export default function SectionNavbars() {
                 </ListItem>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href='#pablo'
+                    href='/'
                     className={classes.navLink}
                     onClick={(e) => e.preventDefault()}
                     color='transparent'
@@ -244,7 +244,7 @@ export default function SectionNavbars() {
                 </ListItem>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href='#pablo'
+                    href='/'
                     className={classes.navLink}
                     onClick={(e) => e.preventDefault()}
                     color='transparent'
@@ -262,7 +262,7 @@ export default function SectionNavbars() {
               <List className={classes.list + ' ' + classes.mlAuto}>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href='#pablo'
+                    href='/'
                     className={classes.navLink}
                     onClick={(e) => e.preventDefault()}
                     color='transparent'
@@ -272,7 +272,7 @@ export default function SectionNavbars() {
                 </ListItem>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href='#pablo'
+                    href='/'
                     className={classes.navLink}
                     onClick={(e) => e.preventDefault()}
                     color='transparent'
@@ -282,7 +282,7 @@ export default function SectionNavbars() {
                 </ListItem>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href='#pablo'
+                    href='/'
                     className={classes.notificationNavLink}
                     onClick={(e) => e.preventDefault()}
                     color='rose'
@@ -317,7 +317,7 @@ export default function SectionNavbars() {
               <List className={classes.list + ' ' + classes.mlAuto}>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href='#pablo'
+                    href='/'
                     className={classes.navLink}
                     onClick={(e) => e.preventDefault()}
                     color='transparent'
@@ -327,7 +327,7 @@ export default function SectionNavbars() {
                 </ListItem>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href='#pablo'
+                    href='/'
                     className={classes.navLink}
                     onClick={(e) => e.preventDefault()}
                     color='transparent'
@@ -337,7 +337,7 @@ export default function SectionNavbars() {
                 </ListItem>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href='#pablo'
+                    href='/'
                     className={classes.registerNavLink}
                     onClick={(e) => e.preventDefault()}
                     color='rose'

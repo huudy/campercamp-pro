@@ -5,14 +5,15 @@ import classNames from 'classnames';
 import makeStyles from '@mui/styles/makeStyles';
 // core components
 import Header from '/components/Header/Header.js';
+import HeaderLinks from '/components/Header/HeaderLinks.js';
 import Parallax from '/components/Parallax/Parallax.js';
 import GridContainer from '/components/Grid/GridContainer.js';
 import GridItem from '/components/Grid/GridItem.js';
 // sections for this page
 import SectionPricing from '/pages-sections/pricing-page/SectionPricing.js';
-import SectionFeatures from '/pages-sections/pricing-page/SectionFeatures.js';
 
 import pricingStyle from '/styles/jss/nextjs-material-kit-pro/pages/pricingStyle.js';
+import useTranslation from 'next-translate/useTranslation';
 
 const useStyles = makeStyles(pricingStyle);
 
@@ -21,12 +22,13 @@ export default function PricingPage() {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
   });
+  const {t} = useTranslation('pricing')
   const classes = useStyles();
   return (
     <div>
       <Header
         brand='Camper Camp 🏕'
-        // links={<HeaderLinks dropdownHoverColor="info" />}
+        links={<HeaderLinks dropdownHoverColor="info" />}
         fixed
         color='transparent'
         changeColorOnScroll={{
@@ -43,11 +45,8 @@ export default function PricingPage() {
               sm={8}
               className={classNames(classes.mlAuto, classes.mrAuto, classes.textCenter)}
             >
-              <h1 className={classes.title}> Check out our prices </h1>
-              <h4>
-                We offer all kinds of fares for your stay with us. We also have a lot of extra
-                services that you can use in bundle or seperately. Get familiar with our fares
-                below:
+              <h1 className={classes.title}>{t('title')}</h1>
+              <h4>{t('desc')}
               </h4>
             </GridItem>
           </GridContainer>
@@ -57,8 +56,6 @@ export default function PricingPage() {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <SectionPricing />
-          <hr />
-          {/* <SectionFeatures /> */}
         </div>
       </div>
     </div>

@@ -89,6 +89,7 @@ export default class MyApp extends App {
       pageProps = await Component.getInitialProps(ctx);
     }
 
+    console.log('Page props', pageProps);
     return { pageProps };
   }
   render() {

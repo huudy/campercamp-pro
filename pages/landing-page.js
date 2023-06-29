@@ -4,16 +4,20 @@ import makeStyles from '@mui/styles/makeStyles';
 
 // core components
 import Header from '/components/Header/Header.js';
+import HeaderLinks from '/components/Header/HeaderLinks.js';
 import GridContainer from '/components/Grid/GridContainer.js';
 import GridItem from '/components/Grid/GridItem.js';
 import Button from '/components/CustomButtons/Button.js';
 import Parallax from '/components/Parallax/Parallax.js';
+import Link from 'next/link';
 
 import landingPageStyle from '/styles/jss/nextjs-material-kit-pro/pages/landingPageStyle.js';
 
 // Sections for this page
 import SectionWork from '/pages-sections/landing-page/SectionWork.js';
 import SectionDescription from '/pages-sections/presentation-page/SectionDescription.js';
+import useTranslation from 'next-translate/useTranslation';
+
 
 const useStyles = makeStyles(landingPageStyle);
 
@@ -23,7 +27,7 @@ export default function LandingPage({ ...rest }) {
     document.body.scrollTop = 0;
   });
   
-
+  const { t } = useTranslation('landing');
   const classes = useStyles();
   return (
     <div>
@@ -31,9 +35,10 @@ export default function LandingPage({ ...rest }) {
         color='transparent'
         brand='Camper Camp 🏕'
         fixed
+        links={<HeaderLinks dropdownHoverColor='warning' />}
         changeColorOnScroll={{
           height: 300,
-          color: 'info'
+          color: 'warning'
         }}
         {...rest}
       />
@@ -42,11 +47,11 @@ export default function LandingPage({ ...rest }) {
           <GridContainer>
             <GridItem xs={12} sm={6} md={6}>
               <h1 className={classes.title}>Camper Camp.</h1>
-              <h4>It is not quite just a parking lot.</h4>
+              <h4>{t('title')}</h4>
               <br />
               <Button color='danger' size='lg' href='/pricing'>
                 <i className='fas fa-play' />
-                See the prices
+                {t('priceBtn')}
               </Button>
             </GridItem>
           </GridContainer>
@@ -61,3 +66,12 @@ export default function LandingPage({ ...rest }) {
     </div>
   );
 }
+// export const getStaticProps = async ({ locale }) => {
+//   const translations = await import(`../locales/${locale}.json`);
+
+//   return {
+//     props: {
+//       ...translations.default
+//     }
+//   };
+// };

@@ -19,7 +19,7 @@
     "titleBar.inactiveForeground": "#e7e7e799"
   },
   "peacock.color": "#a50156",
-  "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true
+  // "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // "editor.formatOnSave": true
 }

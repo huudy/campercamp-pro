@@ -254,7 +254,7 @@ export default function Components() {
           </li>
           <li>
             <a
-              href='#pablo'
+              href='/'
               data-number='9'
               className=''
               onClick={(e) => {

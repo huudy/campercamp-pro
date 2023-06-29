@@ -8,6 +8,7 @@ import Button from '/components/CustomButtons/Button.js';
 import { Store } from 'react-notifications-component';
 
 import workStyle from '/styles/jss/nextjs-material-kit-pro/pages/landingPageSections/workStyle.js';
+import useTranslation from 'next-translate/useTranslation';
 
 const useStyles = makeStyles(workStyle);
 
@@ -29,6 +30,7 @@ const notification = {
     showIcon: true
   }
 };
+const { t } = useTranslation('landing');
 
   const handleInputChange = (event) => {
     setFormData({ ...formData, [event.target.id]: event.target.value });
@@ -69,17 +71,15 @@ try {
     <div className={classes.section}>
       <GridContainer justifyContent='center'>
         <GridItem cs={12} sm={8} md={8}>
-          <h2 className={classes.title}>Book your parking spot with us</h2>
+          <h2 className={classes.title}>{t('bookTitle')}</h2>
           <h4 className={classes.description}>
-            We give opportunity to book a parking spot for you car up front so you do not have to
-            worry about finding a spot on the go. as well as make us more prepared your arrival and
-            fulfill your needs.
+            {t('bookDesc')}
           </h4>
           <form onSubmit={handleSubmit}>
             <GridContainer>
               <GridItem xs={12} sm={6} md={6}>
                 <CustomInput
-                  labelText='Your Name'
+                  labelText='Name'
                   id='name'
                   value={formData.name}
                   onChange={handleInputChange}
@@ -90,7 +90,7 @@ try {
               </GridItem>
               <GridItem xs={12} sm={6} md={6}>
                 <CustomInput
-                  labelText='Your Email'
+                  labelText='Email'
                   id='email'
                   value={formData.email}
                   onChange={handleInputChange}
@@ -101,7 +101,7 @@ try {
               </GridItem>
               <GridItem xs={12} sm={6} md={6}>
                 <CustomInput
-                  labelText='Your Phone Number'
+                  labelText='Phone Number'
                   id='phone'
                   value={formData.phone}
                   onChange={handleInputChange}
@@ -126,7 +126,7 @@ try {
               />
               <GridItem xs={12} sm={4} md={4} className={classes.mrAuto + ' ' + classes.mlAuto}>
                 <Button color='primary' type='submit'>
-                  Send Message
+                  {t('send')}
                 </Button>
               </GridItem>
             </GridContainer>

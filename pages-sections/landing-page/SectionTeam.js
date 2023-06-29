@@ -37,7 +37,7 @@ export default function SectionTeam() {
               <GridContainer>
                 <GridItem xs={12} sm={5} md={5}>
                   <CardHeader image plain>
-                    <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                    <a href='/' onClick={(e) => e.preventDefault()}>
                       <img src='/img/faces/card-profile1-square.jpg' alt='...' />
                     </a>
                     <div
@@ -80,7 +80,7 @@ export default function SectionTeam() {
               <GridContainer>
                 <GridItem xs={12} sm={5} md={5}>
                   <CardHeader image plain>
-                    <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                    <a href='/' onClick={(e) => e.preventDefault()}>
                       <img src='/img/faces/card-profile6-square.jpg' alt='...' />
                     </a>
                     <div
@@ -126,7 +126,7 @@ export default function SectionTeam() {
               <GridContainer>
                 <GridItem xs={12} sm={5} md={5}>
                   <CardHeader image plain>
-                    <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                    <a href='/' onClick={(e) => e.preventDefault()}>
                       <img src='/img/faces/card-profile4-square.jpg' alt='...' />
                     </a>
                     <div
@@ -168,7 +168,7 @@ export default function SectionTeam() {
               <GridContainer>
                 <GridItem xs={12} sm={5} md={5}>
                   <CardHeader image plain>
-                    <a href='#pablo' onClick={(e) => e.preventDefault()}>
+                    <a href='/' onClick={(e) => e.preventDefault()}>
                       <img src='/img/faces/card-profile2-square.jpg' alt='...' />
                     </a>
                     <div

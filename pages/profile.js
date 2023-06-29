@@ -121,7 +121,7 @@ export default function ProfilePage({ ...rest }) {
                                 <Badge color='warning' className={classes.badge}>
                                   Spring 2016
                                 </Badge>
-                                <a href='#pablo'>
+                                <a href='/'>
                                   <h2 className={classes.cardTitleWhite}>Stilleto</h2>
                                 </a>
                               </CardBody>
@@ -138,7 +138,7 @@ export default function ProfilePage({ ...rest }) {
                                 <Badge color='info' className={classes.badge}>
                                   Spring 2016
                                 </Badge>
-                                <a href='#pablo'>
+                                <a href='/'>
                                   <h2 className={classes.cardTitleWhite}>High Heels</h2>
                                 </a>
                               </CardBody>
@@ -155,7 +155,7 @@ export default function ProfilePage({ ...rest }) {
                                 <Badge color='danger' className={classes.badge}>
                                   Summer 2016
                                 </Badge>
-                                <a href='#pablo'>
+                                <a href='/'>
                                   <h2 className={classes.cardTitleWhite}>Flats</h2>
                                 </a>
                               </CardBody>
@@ -172,7 +172,7 @@ export default function ProfilePage({ ...rest }) {
                                 <Badge color='success' className={classes.badge}>
                                   Winter 2016
                                 </Badge>
-                                <a href='#pablo'>
+                                <a href='/'>
                                   <h2 className={classes.cardTitleWhite}>Men{"'"}s Sneakers</h2>
                                 </a>
                               </CardBody>
@@ -221,7 +221,7 @@ export default function ProfilePage({ ...rest }) {
                             <GridContainer>
                               <GridItem xs={12} sm={12} md={5}>
                                 <CardHeader image plain>
-                                  <a href='#pablo'>
+                                  <a href='/'>
                                     <img src='/img/faces/avatar.jpg' alt='...' />
                                   </a>
                                   <div
@@ -253,7 +253,7 @@ export default function ProfilePage({ ...rest }) {
                             <GridContainer>
                               <GridItem xs={12} sm={12} md={5}>
                                 <CardHeader image plain>
-                                  <a href='#pablo'>
+                                  <a href='/'>
                                     <img src='/img/faces/marc.jpg' alt='...' />
                                   </a>
                                   <div
@@ -287,7 +287,7 @@ export default function ProfilePage({ ...rest }) {
                             <GridContainer>
                               <GridItem xs={12} sm={12} md={5}>
                                 <CardHeader image plain>
-                                  <a href='#pablo'>
+                                  <a href='/'>
                                     <img src='/img/faces/kendall.jpg' alt='...' />
                                   </a>
                                   <div
@@ -319,7 +319,7 @@ export default function ProfilePage({ ...rest }) {
                             <GridContainer>
                               <GridItem xs={12} sm={12} md={5}>
                                 <CardHeader image plain>
-                                  <a href='#pablo'>
+                                  <a href='/'>
                                     <img src='/img/faces/card-profile2-square.jpg' alt='...' />
                                   </a>
                                   <div

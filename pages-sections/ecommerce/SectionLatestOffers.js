@@ -28,7 +28,7 @@ export default function SectionLatestOffers() {
           <GridItem md={4} sm={4}>
             <Card product plain>
               <CardHeader image plain>
-                <a href='#pablo'>
+                <a href='/'>
                   <img src='/img/examples/gucci.jpg' alt='...' />
                 </a>
                 <div
@@ -69,7 +69,7 @@ export default function SectionLatestOffers() {
           <GridItem md={4} sm={4}>
             <Card product plain>
               <CardHeader image plain>
-                <a href='#pablo'>
+                <a href='/'>
                   <img src='/img/examples/dolce.jpg' alt='...' />
                 </a>
                 <div
@@ -110,7 +110,7 @@ export default function SectionLatestOffers() {
           <GridItem md={4} sm={4}>
             <Card product plain>
               <CardHeader image plain>
-                <a href='#pablo'>
+                <a href='/'>
                   <img src='/img/examples/tom-ford.jpg' alt='...' />
                 </a>
                 <div

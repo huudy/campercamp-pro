@@ -9,12 +9,15 @@ import makeStyles from '@mui/styles/makeStyles';
 import pricingStyle from '/styles/jss/nextjs-material-kit-pro/pages/pricingSections/pricingStyle.js';
 
 const useStyles = makeStyles(pricingStyle);
+import useTranslation from 'next-translate/useTranslation';
 
 export default function SectionPricing() {
   const classes = useStyles();
+  const { t, lang } = useTranslation('pricing');
+  console.log('Lang',lang);
   return (
     <div className={classes.pricingSection}>
-      <h2 className={classes.title}>Cars</h2>
+      <h2 className={classes.title}>{t('cars')}</h2>
       <GridContainer>
         <GridItem xs={12} sm={6} md={6} lg={3}>
           <Card
@@ -25,7 +28,7 @@ export default function SectionPricing() {
             }}
           >
             <CardBody pricing background>
-              <h6 className={classes.cardCategoryFullWhite}>Night</h6>
+              <h6 className={classes.cardCategoryFullWhite}>{t('night')}</h6>
               <h1 className={classes.cardTitleWhite}>
                 40 <small>PLN</small>
               </h1>
@@ -37,13 +40,13 @@ export default function SectionPricing() {
                   <b>12</b> Hours
                 </li>
                  <li>
-                  Access to <b>Vaccum</b> paid
+                  {t('access')} <b>{t('vaccum')}</b> {t('paid')}
                 </li>
                 <li>
-                  Access to <b>Car Wash</b> paid
+                  {t('access')} <b>{t('wash')}</b> {t('paid')}
                 </li>
               </ul>
-              <Button color='warning'>Reserve</Button>
+              <Button color='warning'>{t('reserveBtn')}</Button>
             </CardBody>
           </Card>
         </GridItem>
@@ -56,7 +59,7 @@ export default function SectionPricing() {
             }}
           >
             <CardBody pricing background>
-              <h6 className={classes.cardCategoryFullWhite}>Day</h6>
+              <h6 className={classes.cardCategoryFullWhite}>{t('day')}</h6>
               <h1 className={classes.cardTitleWhite}>
                 40 <small>PLN</small>
               </h1>
@@ -68,13 +71,13 @@ export default function SectionPricing() {
                   <b>12</b> Hours
                 </li>
                  <li>
-                  Access to <b>Vaccum</b> paid
+                  {t('access')} <b>{t('vaccum')}</b> {t('paid')}
                 </li>
                 <li>
-                  Access to <b>Car Wash</b> paid
+                  {t('access')} <b>{t('wash')}</b> {t('paid')}
                 </li>
               </ul>
-              <Button color='warning'>Reserve</Button>
+              <Button color='warning'>{t('reserveBtn')}</Button>
             </CardBody>
           </Card>
         </GridItem>
@@ -90,21 +93,21 @@ export default function SectionPricing() {
                   <b>24</b> Hours
                 </li>
                 <li>
-                  Access to <b>Vaccum</b> free
+                  {t('access')} <b>{t('vaccum')}</b> {t('free')}
                 </li>
                 <li>
-                  Access to <b>Car Wash</b> free
+                  {t('access')} <b>{t('wash')}</b> {t('free')}
                 </li>
               </ul>
-              <Button href='#pablo' color='white' round>
-                Get started
+              <Button href='/' color='white' round>
+                {t('reserveBtn')}
               </Button>
             </CardBody>
           </Card>
         </GridItem>
       </GridContainer>
 
-      <h2 className={classes.title}>Camper</h2>
+      <h2 className={classes.title}>{t('campers')}</h2>
       <GridContainer>
         <GridItem xs={12} sm={6} md={6} lg={3}>
           <Card
@@ -115,7 +118,7 @@ export default function SectionPricing() {
             }}
           >
             <CardBody pricing background>
-              <h6 className={classes.cardCategoryFullWhite}>Night</h6>
+              <h6 className={classes.cardCategoryFullWhite}>{t('night')}</h6>
               <h1 className={classes.cardTitleWhite}>
                 50 <small>PLN</small>
               </h1>
@@ -127,13 +130,13 @@ export default function SectionPricing() {
                   <b>12</b> Hours
                 </li>
                  <li>
-                  Access to <b>Vaccum</b> paid
+                  {t('access')} <b>{t('vaccum')}</b> {t('paid')}
                 </li>
                 <li>
-                  Access to <b>Car Wash</b> paid
+                  {t('access')} <b>{t('wash')}</b> {t('paid')}
                 </li>
               </ul>
-              <Button color='warning'>Reserve</Button>
+              <Button color='warning'>{t('reserveBtn')}</Button>
             </CardBody>
           </Card>
         </GridItem>
@@ -146,7 +149,7 @@ export default function SectionPricing() {
             }}
           >
             <CardBody pricing background>
-              <h6 className={classes.cardCategoryFullWhite}>Day</h6>
+              <h6 className={classes.cardCategoryFullWhite}>{t('day')}</h6>
               <h1 className={classes.cardTitleWhite}>
                 50 <small>PLN</small>
               </h1>
@@ -158,20 +161,20 @@ export default function SectionPricing() {
                   <b>12</b> Hours
                 </li>
                  <li>
-                  Access to <b>Vaccum</b> paid
+                  {t('access')} <b>{t('vaccum')}</b> {t('paid')}
                 </li>
                 <li>
-                  Access to <b>Car Wash</b> paid
+                  {t('access')} <b>{t('wash')}</b> {t('paid')}
                 </li>
               </ul>
-              <Button color='warning'>Reserve</Button>
+              <Button color='warning'>{t('reserveBtn')}</Button>
             </CardBody>
           </Card>
         </GridItem>
         <GridItem md={4} sm={4}>
           <Card raised pricing color='primary'>
-            <CardBody pricing>
               <h6 className={classes.cardCategory}>24h</h6>
+            <CardBody pricing>
               <h1 className={classes.cardTitleWhite}>
                 80 <small>PLN</small>
               </h1>
@@ -180,14 +183,14 @@ export default function SectionPricing() {
                   <b>24</b> Hours
                 </li>
                 <li>
-                  Access to <b>Vaccum</b> free
+                  {t('access')} <b>{t('vaccum')}</b> {t('free')}
                 </li>
                 <li>
-                  Access to <b>Car Wash</b> free
+                  {t('access')} <b>{t('wash')}</b> {t('free')}
                 </li>
               </ul>
-              <Button href='#pablo' color='white' round>
-                Get started
+              <Button href='/' color='white' round>
+                {t('reserveBtn')}
               </Button>
             </CardBody>
           </Card>

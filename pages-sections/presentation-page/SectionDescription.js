@@ -18,19 +18,21 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import LocalCarWashIcon from '@mui/icons-material/LocalCarWash';
 
 import descriptionStyle from '/styles/jss/nextjs-material-kit-pro/pages/presentationSections/descriptionStyle.js';
+import useTranslation from 'next-translate/useTranslation';
 
 const useStyles = makeStyles(descriptionStyle);
 
 export default function SectionDescription() {
   const classes = useStyles();
+  const { t } = useTranslation('landing');
+
   return (
     <div className={classes.section}>
       <div className={classes.container}>
         <GridContainer justifyContent='center'>
           <GridItem md={8} sm={8}>
             <h4 className={classes.description}>
-              A nice and safe place for your camper or a car. You can stay for couple of hours,
-              entire day or event the entire night.
+              {t('featuresHeading')}
             </h4>
           </GridItem>
         </GridContainer>
@@ -67,8 +69,8 @@ export default function SectionDescription() {
           <GridContainer>
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
-                title='Camper Parking Lot'
-                description='A parking lot where you can park your camper van as well as do the entire service.'
+                title={t('lotTitle')}
+                description={t('lotDesc')}
                 icon={AirportShuttleIcon}
                 iconColor='rose'
                 vertical
@@ -76,8 +78,8 @@ export default function SectionDescription() {
             </GridItem>
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
-                title='No Time Limit'
-                description='You can stay as long as you want. No time limit just let us know'
+                title={t('timeTitle')}
+                description={t('timeDesc')}
                 icon={AlarmOnIcon}
                 iconColor='success'
                 vertical
@@ -85,8 +87,8 @@ export default function SectionDescription() {
             </GridItem>
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
-                title='Monitored 24/7'
-                description='The parking lot is fully monitored for the entire stay of yours.'
+                title={t('monitorTitle')}
+                description={t('monitorDesc')}
                 icon={CameraOutdoorIcon}
                 iconColor='primary'
                 vertical
@@ -94,8 +96,8 @@ export default function SectionDescription() {
             </GridItem>
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
-                title='Car/Camper Wash'
-                description='For extra pay we can offer you a full car wash service while you are stayig.'
+                title={t('washTitle')}
+                description={t('washDesc')}
                 icon={LocalCarWashIcon}
                 iconColor='info'
                 vertical
@@ -103,8 +105,8 @@ export default function SectionDescription() {
             </GridItem>
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
-                title='Snack'
-                description='There will be always opportunity to grab a snack while being on the go.'
+                title={t('snackTitle')}
+                description={t('snackDesc')}
                 icon={IcecreamIcon}
                 iconColor='warning'
                 vertical
@@ -112,8 +114,8 @@ export default function SectionDescription() {
             </GridItem>
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
-                title='Service'
-                description='The parking lot is adapted to camper vans, meaning you will be able to empty and refill you tanks :)'
+                title={t('serviceTitle')}
+                description={t('serviceDesc')}
                 icon={SettingsIcon}
                 iconColor='danger'
                 vertical

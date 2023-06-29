@@ -558,7 +558,7 @@ export default function SectionJavascript() {
                               }
                               label={
                                 <span>
-                                  I agree to the <a href='#pablo'>terms and conditions</a>.
+                                  I agree to the <a href='/'>terms and conditions</a>.
                                 </span>
                               }
                             />

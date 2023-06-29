@@ -29,7 +29,7 @@ export default function SectionSimilarStories() {
               <GridItem xs={12} sm={4} md={4}>
                 <Card blog>
                   <CardHeader image>
-                    <a href='#pablo'>
+                    <a href='/'>
                       <img src='/img/examples/blog6.jpg' alt='...' />
                     </a>
                     <div
@@ -45,14 +45,14 @@ export default function SectionSimilarStories() {
                       <h6>ENTERPRISE</h6>
                     </Info>
                     <h4 className={classes.cardTitle}>
-                      <a href='#pablo'>
+                      <a href='/'>
                         Autodesk looks to future of 3D printing with Project Escher
                       </a>
                     </h4>
                     <p className={classes.description}>
                       Like so many organizations these days, Autodesk is a company in transition. It
                       was until recently a traditional boxed software company selling licenses.
-                      <a href='#pablo'> Read More </a>
+                      <a href='/'> Read More </a>
                     </p>
                   </CardBody>
                 </Card>
@@ -60,7 +60,7 @@ export default function SectionSimilarStories() {
               <GridItem xs={12} sm={4} md={4}>
                 <Card blog>
                   <CardHeader image>
-                    <a href='#pablo'>
+                    <a href='/'>
                       <img src='/img/examples/blog8.jpg' alt='...' />
                     </a>
                     <div
@@ -76,12 +76,12 @@ export default function SectionSimilarStories() {
                       <h6>STARTUPS</h6>
                     </Success>
                     <h4 className={classes.cardTitle}>
-                      <a href='#pablo'>Lyft launching cross-platform service this week</a>
+                      <a href='/'>Lyft launching cross-platform service this week</a>
                     </h4>
                     <p className={classes.description}>
                       Like so many organizations these days, Autodesk is a company in transition. It
                       was until recently a traditional boxed software company selling licenses.
-                      <a href='#pablo'> Read More </a>
+                      <a href='/'> Read More </a>
                     </p>
                   </CardBody>
                 </Card>
@@ -89,7 +89,7 @@ export default function SectionSimilarStories() {
               <GridItem xs={12} sm={4} md={4}>
                 <Card blog>
                   <CardHeader image>
-                    <a href='#pablo'>
+                    <a href='/'>
                       <img src='/img/examples/blog7.jpg' alt='...' />
                     </a>
                     <div
@@ -107,12 +107,12 @@ export default function SectionSimilarStories() {
                       </h6>
                     </Danger>
                     <h4 className={classes.cardTitle}>
-                      <a href='#pablo'>6 insights into the French Fashion landscape</a>
+                      <a href='/'>6 insights into the French Fashion landscape</a>
                     </h4>
                     <p className={classes.description}>
                       Like so many organizations these days, Autodesk is a company in transition. It
                       was until recently a traditional boxed software company selling licenses.
-                      <a href='#pablo'> Read More </a>
+                      <a href='/'> Read More </a>
                     </p>
                   </CardBody>
                 </Card>

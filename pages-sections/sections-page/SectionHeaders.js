@@ -47,7 +47,7 @@ export default function SectionHeaders({ ...rest }) {
               <List className={classes.list + ' ' + classes.mlAuto}>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href='#pablo'
+                    href='/'
                     className={classes.navLink}
                     onClick={(e) => e.preventDefault()}
                     color='transparent'
@@ -57,7 +57,7 @@ export default function SectionHeaders({ ...rest }) {
                 </ListItem>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href='#pablo'
+                    href='/'
                     className={classes.navLink}
                     onClick={(e) => e.preventDefault()}
                     color='transparent'
@@ -67,7 +67,7 @@ export default function SectionHeaders({ ...rest }) {
                 </ListItem>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href='#pablo'
+                    href='/'
                     className={classes.navLink}
                     onClick={(e) => e.preventDefault()}
                     color='transparent'
@@ -77,7 +77,7 @@ export default function SectionHeaders({ ...rest }) {
                 </ListItem>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href='#pablo'
+                    href='/'
                     className={classes.navLink}
                     onClick={(e) => e.preventDefault()}
                     color='transparent'
@@ -171,7 +171,7 @@ export default function SectionHeaders({ ...rest }) {
               <List className={classes.list + ' ' + classes.mlAuto}>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href='#pablo'
+                    href='/'
                     className={classes.navLink}
                     onClick={(e) => e.preventDefault()}
                     color='transparent'
@@ -181,7 +181,7 @@ export default function SectionHeaders({ ...rest }) {
                 </ListItem>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href='#pablo'
+                    href='/'
                     className={classes.navLink}
                     onClick={(e) => e.preventDefault()}
                     color='transparent'
@@ -191,7 +191,7 @@ export default function SectionHeaders({ ...rest }) {
                 </ListItem>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href='#pablo'
+                    href='/'
                     className={classes.navLink}
                     onClick={(e) => e.preventDefault()}
                     color='transparent'
@@ -201,7 +201,7 @@ export default function SectionHeaders({ ...rest }) {
                 </ListItem>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href='#pablo'
+                    href='/'
                     className={classes.navLink}
                     onClick={(e) => e.preventDefault()}
                     color='transparent'
@@ -338,7 +338,7 @@ export default function SectionHeaders({ ...rest }) {
             <List className={classes.list + ' ' + classes.mlAuto}>
               <ListItem className={classes.listItem}>
                 <Button
-                  href='#pablo'
+                  href='/'
                   className={classes.navLink}
                   onClick={(e) => e.preventDefault()}
                   color='transparent'
@@ -348,7 +348,7 @@ export default function SectionHeaders({ ...rest }) {
               </ListItem>
               <ListItem className={classes.listItem}>
                 <Button
-                  href='#pablo'
+                  href='/'
                   className={classes.navLink}
                   onClick={(e) => e.preventDefault()}
                   color='transparent'
@@ -358,7 +358,7 @@ export default function SectionHeaders({ ...rest }) {
               </ListItem>
               <ListItem className={classes.listItem}>
                 <Button
-                  href='#pablo'
+                  href='/'
                   className={classes.navLink}
                   onClick={(e) => e.preventDefault()}
                   color='transparent'
@@ -368,7 +368,7 @@ export default function SectionHeaders({ ...rest }) {
               </ListItem>
               <ListItem className={classes.listItem}>
                 <Button
-                  href='#pablo'
+                  href='/'
                   className={classes.navLink}
                   onClick={(e) => e.preventDefault()}
                   color='transparent'

@@ -34,7 +34,7 @@ export default function Media(props) {
 }
 
 Media.defaultProps = {
-  avatarLink: '#pablo',
+  avatarLink: '/',
   avatarAlt: '...'
 };
 

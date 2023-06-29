@@ -26,7 +26,7 @@ export default function SectionImage() {
               <GridContainer>
                 <GridItem xs={12} sm={5} md={5}>
                   <CardHeader image plain>
-                    <a href='#pablo'>
+                    <a href='/'>
                       <img src='/img/faces/card-profile1-square.jpg' alt='...' />
                     </a>
                   </CardHeader>
@@ -43,13 +43,13 @@ export default function SectionImage() {
                     </p>
                   </CardBody>
                   <CardFooter profile plain>
-                    <Button justIcon simple color='white' href='#pablo'>
+                    <Button justIcon simple color='white' href='/'>
                       <i className='fab fa-twitter' />
                     </Button>
-                    <Button justIcon simple color='white' href='#pablo'>
+                    <Button justIcon simple color='white' href='/'>
                       <i className='fab fa-facebook-square' />
                     </Button>
-                    <Button justIcon simple color='white' href='#pablo'>
+                    <Button justIcon simple color='white' href='/'>
                       <i className='fab fa-google' />
                     </Button>
                   </CardFooter>
@@ -62,7 +62,7 @@ export default function SectionImage() {
               <GridContainer>
                 <GridItem xs={12} sm={5} md={5}>
                   <CardHeader image plain>
-                    <a href='#pablo'>
+                    <a href='/'>
                       <img src='/img/faces/card-profile4-square.jpg' alt='...' />
                     </a>
                   </CardHeader>
@@ -79,16 +79,16 @@ export default function SectionImage() {
                     </p>
                   </CardBody>
                   <CardFooter profile plain>
-                    <Button justIcon simple color='white' href='#pablo'>
+                    <Button justIcon simple color='white' href='/'>
                       <i className='fab fa-linkedin-in' />
                     </Button>
-                    <Button justIcon simple color='white' href='#pablo'>
+                    <Button justIcon simple color='white' href='/'>
                       <i className='fab fa-facebook-square' />
                     </Button>
-                    <Button justIcon simple color='white' href='#pablo'>
+                    <Button justIcon simple color='white' href='/'>
                       <i className='fab fa-dribbble' />
                     </Button>
-                    <Button justIcon simple color='white' href='#pablo'>
+                    <Button justIcon simple color='white' href='/'>
                       <i className='fab fa-google' />
                     </Button>
                   </CardFooter>

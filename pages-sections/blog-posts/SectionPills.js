@@ -54,7 +54,7 @@ export default function SectionPills() {
           <Card raised background style={{ backgroundImage: "url('/img/examples/office2.jpg')" }}>
             <CardBody background>
               <h6 className={classes.category}>WORLDS</h6>
-              <a href='#pablo'>
+              <a href='/'>
                 <h3 className={classes.cardTitle}>The Best Productivity Apps on Market</h3>
               </a>
               <p className={classes.category}>
@@ -62,7 +62,7 @@ export default function SectionPills() {
                 truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the
                 back is...
               </p>
-              <Button round href='#pablo' color='danger'>
+              <Button round href='/' color='danger'>
                 <FormatAlignLeft className={classes.icons} /> Read article
               </Button>
             </CardBody>
@@ -72,7 +72,7 @@ export default function SectionPills() {
           <Card raised background style={{ backgroundImage: "url('/img/examples/blog8.jpg')" }}>
             <CardBody background>
               <h6 className={classes.category}>BUSINESS</h6>
-              <a href='#pablo'>
+              <a href='/'>
                 <h3 className={classes.cardTitle}>Working on Wallstreet is Not So Easy</h3>
               </a>
               <p className={classes.category}>
@@ -80,7 +80,7 @@ export default function SectionPills() {
                 truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the
                 back is...
               </p>
-              <Button round href='#pablo' color='primary'>
+              <Button round href='/' color='primary'>
                 <FormatAlignLeft className={classes.icons} /> Read article
               </Button>
             </CardBody>
@@ -96,7 +96,7 @@ export default function SectionPills() {
           >
             <CardBody background>
               <h6 className={classes.category}>MARKETING</h6>
-              <a href='#pablo'>
+              <a href='/'>
                 <h3 className={classes.cardTitle}>0 to 100.000 Customers in 6 months</h3>
               </a>
               <p className={classes.category}>
@@ -104,7 +104,7 @@ export default function SectionPills() {
                 truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the
                 back is...
               </p>
-              <Button round href='#pablo' color='warning'>
+              <Button round href='/' color='warning'>
                 <FormatAlignLeft className={classes.icons} /> Read case study
               </Button>
               <Tooltip

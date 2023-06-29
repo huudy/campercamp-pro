@@ -37,11 +37,14 @@ import Layers from '@mui/icons-material/Layers';
 import ShoppingBasket from '@mui/icons-material/ShoppingBasket';
 import LineStyle from '@mui/icons-material/LineStyle';
 import Error from '@mui/icons-material/Error';
+import FlagIcon from '@mui/icons-material/Flag';
+
 
 // core components
 import CustomDropdown from '/components/CustomDropdown/CustomDropdown.js';
 import Button from '/components/CustomButtons/Button.js';
-
+import { useRouter } from 'next/router';
+console.log('useRouter',useRouter);
 import styles from '/styles/jss/nextjs-material-kit-pro/components/headerLinksStyle.js';
 
 const useStyles = makeStyles(styles);
@@ -86,6 +89,8 @@ export default function HeaderLinks(props) {
 
   const { dropdownHoverColor } = props;
   const classes = useStyles();
+  const { asPath, pathname } = useRouter();
+
   return (
     <List className={classes.list + ' ' + classes.mlAuto}>
       <ListItem className={classes.listItem}>
@@ -93,36 +98,37 @@ export default function HeaderLinks(props) {
           noLiPadding
           navDropdown
           hoverColor={dropdownHoverColor}
-          buttonText='Components'
+          buttonText='Language'
           buttonProps={{
             className: classes.navLink,
             color: 'transparent'
           }}
-          buttonIcon={Apps}
+          buttonIcon={FlagIcon}
           dropdownList={[
-            <Link href='/presentation'>
+            <Link href={pathname} locale='pl'>
               <a className={classes.dropdownLink}>
-                <LineStyle className={classes.dropdownIcons} /> Presentation Page
+                🇵🇱 Polski 🇵🇱 
               </a>
             </Link>,
-            <Link href='/components'>
+            <Link href={pathname} locale='en'>
               <a className={classes.dropdownLink}>
-                <Layers className={classes.dropdownIcons} />
-                All components
+                🇬🇧 English 🇬🇧 
               </a>
             </Link>,
-            <a
-              href='https://demos.creative-tim.com/nextjs-material-kit-pro/documentation/tutorial?ref=njsmkp-navbar'
-              target='_blank'
-              className={classes.dropdownLink}
-            >
-              <Icon className={classes.dropdownIcons}>content_paste</Icon>
-              Documentation
-            </a>
+            <Link href={pathname} locale='de'>
+              <a className={classes.dropdownLink}>
+                🇩🇪 German 🇩🇪
+              </a>
+            </Link>,
+            <Link href={pathname} locale='es'>
+              <a className={classes.dropdownLink}>
+                🇪🇸 Spanish 🇪🇸
+              </a>
+            </Link>,
           ]}
         />
       </ListItem>
-      <ListItem className={classes.listItem}>
+      {/* <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
           navDropdown
@@ -280,7 +286,7 @@ export default function HeaderLinks(props) {
             <ShoppingCart className={classes.icons} /> buy now
           </Button>
         </Hidden>
-      </ListItem>
+      </ListItem> */}
     </List>
   );
 }
