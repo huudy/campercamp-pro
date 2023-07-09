@@ -15,7 +15,7 @@ export default async function handler(
 
   const messageData = {
     from: email,
-    to: 'huudyy@gmail.com',
+    to: '24campercamp@gmail.com',
     subject: 'New CamperCamp reservation!',
     text: `Hello,
 
