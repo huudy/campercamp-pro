@@ -114,7 +114,7 @@ export default function SectionContacts({ ...rest }) {
                 description={
                   <span>
                     Camper Camp
-                    <br /> +48 789 146 727
+                    <br /> +48 508 147 171
                     <br /> Mon - Sun, 7:00-21:00
                   </span>
                 }
