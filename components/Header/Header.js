@@ -63,7 +63,7 @@ export default function Header(props) {
       <Toolbar className={classes.container}>
         <Button className={classes.title}>
           <Link href='/landing-page'>
-            <a>{brand}</a>
+            <a style={{ fontFamily: 'RevueBT, sans-serif' }}>{brand}</a>
           </Link>
         </Button>
         <Hidden mdDown implementation='css' className={classes.hidden}>

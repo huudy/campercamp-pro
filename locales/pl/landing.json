@@ -18,5 +18,15 @@
   "bookDesc": "Dajemy możliwość zarezerwowania miejsca parkingowego dla Twojego samochodu z góry, abyś nie musiał martwić się o znalezienie miejsca w trakcie podróży. Pozwoli nam to również lepiej przygotować się na Twój przyjazd i zaspokoić Twoje potrzeby.",
   "send": "Wyślij wiadomość",
   "language": "Język",
-  "featuresHeading":"Atrakcyjne i bezpieczne miejsce dla Twojego kampera lub samochodu. Możesz zatrzymać się na kilka godzin, cały dzień lub nawet przez całą noc."
+  "featuresHeading": "Ponieważ to miłe i bezpieczne miejsce dla twojego campingu lub samochodu. Możesz zostać na kilka godzin, cały dzień, a nawet całą noc.",
+  "featuresTitle": "Oczywiście możesz po prostu zaparkować tutaj samochód",
+  "electricityTitle": "Prąd stały",
+  "electricityDesc": "Masz do dyspozycji darmową energię elektryczną podczas pobytu",
+  "cleaningTitle": "Lub odśwież trochę swój kamper.",
+  "cleaningSubtitle": "Profesjonalne czyszczenie",
+  "cleaningHeading": "Odśwież trochę swój van.",
+  "cleaningBtn": "Zobacz szczegóły",
+  "cleaningDesc": "Oferujemy profesjonalne usługi czyszczenia kamperów. Możesz zrobić to sam za darmo lub pozwolić nam to zrobić za ciebie podczas zwiedzania.",
+  "alert": "ALERT OTWARCIA",
+  "alertDesc": "Parking jest wciąż w budowie, pobyt jest możliwy tylko po wcześniejszej rezerwacji."
 }

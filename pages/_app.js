@@ -24,6 +24,7 @@ import { ReactNotifications } from 'react-notifications-component';
 
 import PageChange from '/components/PageChange/PageChange.js';
 
+import '/styles/css/revue-bt-font.css';
 import '/styles/scss/nextjs-material-kit-pro.scss';
 import '/styles/css/react-demo.css';
 import 'animate.css/animate.min.css';
@@ -99,7 +100,7 @@ export default class MyApp extends App {
       <React.Fragment>
         <Head>
           <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />
-          <title>Camper Camp 🏕 </title>
+          <title style={{ fontFamily: 'RevueBT, sans-serif' }}>Camper Camp 🏕 </title>
         </Head>
         <ThemeProvider theme={theme}>
           <StyledEngineProvider injectFirst>

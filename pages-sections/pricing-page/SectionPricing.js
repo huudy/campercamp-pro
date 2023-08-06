@@ -30,14 +30,14 @@ export default function SectionPricing() {
             <CardBody pricing background>
               <h6 className={classes.cardCategoryFullWhite}>{t('night')}</h6>
               <h1 className={classes.cardTitleWhite}>
-                40 <small>PLN</small>
+                30 <small>PLN</small>
               </h1>
               <ul>
                 <li>
-                  From <b>21-9</b>
+                  <b>12</b> Hours
                 </li>
                 <li>
-                  <b>12</b> Hours
+                  <b>DC power</b> included
                 </li>
                  <li>
                   {t('access')} <b>{t('vaccum')}</b> {t('paid')}
@@ -61,14 +61,14 @@ export default function SectionPricing() {
             <CardBody pricing background>
               <h6 className={classes.cardCategoryFullWhite}>{t('day')}</h6>
               <h1 className={classes.cardTitleWhite}>
-                40 <small>PLN</small>
+                30 <small>PLN</small>
               </h1>
               <ul>
                 <li>
-                  From <b>9-21</b>
+                  <b>12</b> Hours
                 </li>
                 <li>
-                  <b>12</b> Hours
+                  <b>DC power</b> included
                 </li>
                  <li>
                   {t('access')} <b>{t('vaccum')}</b> {t('paid')}
@@ -86,11 +86,14 @@ export default function SectionPricing() {
             <CardBody pricing>
               <h6 className={classes.cardCategory}>24h</h6>
               <h1 className={classes.cardTitleWhite}>
-                70 <small>PLN</small>
+                50 <small>PLN</small>
               </h1>
               <ul>
                 <li>
                   <b>24</b> Hours
+                </li>
+                <li>
+                  <b>DC power</b> included
                 </li>
                 <li>
                   {t('access')} <b>{t('vaccum')}</b> {t('free')}
@@ -120,14 +123,14 @@ export default function SectionPricing() {
             <CardBody pricing background>
               <h6 className={classes.cardCategoryFullWhite}>{t('night')}</h6>
               <h1 className={classes.cardTitleWhite}>
-                50 <small>PLN</small>
+                40 <small>PLN</small>
               </h1>
               <ul>
                 <li>
-                  From <b>21-9</b>
+                  <b>12</b> Hours
                 </li>
                 <li>
-                  <b>12</b> Hours
+                  <b>DC power</b> included
                 </li>
                  <li>
                   {t('access')} <b>{t('vaccum')}</b> {t('paid')}
@@ -151,14 +154,14 @@ export default function SectionPricing() {
             <CardBody pricing background>
               <h6 className={classes.cardCategoryFullWhite}>{t('day')}</h6>
               <h1 className={classes.cardTitleWhite}>
-                50 <small>PLN</small>
+                40 <small>PLN</small>
               </h1>
               <ul>
                 <li>
-                  From <b>9-21</b>
+                  <b>12</b> Hours
                 </li>
                 <li>
-                  <b>12</b> Hours
+                  <b>DC power</b> included
                 </li>
                  <li>
                   {t('access')} <b>{t('vaccum')}</b> {t('paid')}
@@ -176,11 +179,106 @@ export default function SectionPricing() {
               <h6 className={classes.cardCategory}>24h</h6>
             <CardBody pricing>
               <h1 className={classes.cardTitleWhite}>
-                80 <small>PLN</small>
+                70 <small>PLN</small>
               </h1>
               <ul>
                 <li>
                   <b>24</b> Hours
+                </li>
+                <li>
+                  <b>DC power</b> included
+                </li>
+                <li>
+                  {t('access')} <b>{t('vaccum')}</b> {t('free')}
+                </li>
+                <li>
+                  {t('access')} <b>{t('wash')}</b> {t('free')}
+                </li>
+              </ul>
+              <Button href='/' color='white' round>
+                {t('reserveBtn')}
+              </Button>
+            </CardBody>
+          </Card>
+        </GridItem>
+      </GridContainer>
+      <h2 className={classes.title}>{t('buses')}</h2>
+      <GridContainer>
+        <GridItem xs={12} sm={6} md={6} lg={3}>
+          <Card
+            pricing
+            background
+            style={{
+              backgroundImage: "url('/img/van.jpeg')"
+            }}
+          >
+            <CardBody pricing background>
+              <h6 className={classes.cardCategoryFullWhite}>{t('night')}</h6>
+              <h1 className={classes.cardTitleWhite}>
+                40 <small>PLN</small>
+              </h1>
+              <ul>
+                <li>
+                  <b>12</b> Hours
+                </li>
+                <li>
+                  <b>DC power</b> included
+                </li>
+                 <li>
+                  {t('access')} <b>{t('vaccum')}</b> {t('paid')}
+                </li>
+                <li>
+                  {t('access')} <b>{t('wash')}</b> {t('paid')}
+                </li>
+              </ul>
+              <Button color='warning'>{t('reserveBtn')}</Button>
+            </CardBody>
+          </Card>
+        </GridItem>
+        <GridItem xs={12} sm={6} md={6} lg={3}>
+          <Card
+            pricing
+            background
+            style={{
+              backgroundImage: "url('/img/day.jpeg')"
+            }}
+          >
+            <CardBody pricing background>
+              <h6 className={classes.cardCategoryFullWhite}>{t('day')}</h6>
+              <h1 className={classes.cardTitleWhite}>
+                40 <small>PLN</small>
+              </h1>
+              <ul>
+                <li>
+                  <b>12</b> Hours
+                </li>
+                <li>
+                  <b>DC power</b> included
+                </li>
+                 <li>
+                  {t('access')} <b>{t('vaccum')}</b> {t('paid')}
+                </li>
+                <li>
+                  {t('access')} <b>{t('wash')}</b> {t('paid')}
+                </li>
+              </ul>
+              <Button color='warning'>{t('reserveBtn')}</Button>
+            </CardBody>
+          </Card>
+        </GridItem>
+        <GridItem md={4} sm={4}>
+          <Card raised pricing color='primary'>
+              <h6 className={classes.cardCategory}>24h</h6>
+            <CardBody pricing>
+              <h1 className={classes.cardTitleWhite}>
+                70 <small>PLN</small>
+              </h1>
+              <ul>
+                <li>
+                  <b>24</b> Hours
+                </li>
+                <li>
+                  <b>DC power</b> included
                 </li>
                 <li>
                   {t('access')} <b>{t('vaccum')}</b> {t('free')}

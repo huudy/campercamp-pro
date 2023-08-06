@@ -46,6 +46,8 @@ export default function SnackbarContent(props) {
       snackIcon = null;
       break;
   }
+
+  console.log('Message',message);
   const [alert, setAlert] = React.useState(
     <Snack
       message={

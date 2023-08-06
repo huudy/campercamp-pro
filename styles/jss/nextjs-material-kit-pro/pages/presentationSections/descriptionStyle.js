@@ -1,11 +1,12 @@
 import {
   container,
   section,
-  grayColor
+  grayColor,title
 } from "/styles/jss/nextjs-material-kit-pro.js";
 
 const descriptionStyle = {
   container,
+  title,
   description: {
     color: grayColor[0],
     textAlign: "center"

@@ -1,11 +1,9 @@
 import React from 'react';
 import makeStyles from '@mui/styles/makeStyles';
 
-// @mui/icons-material
 import Chat from '@mui/icons-material/Chat';
 import VerifiedUser from '@mui/icons-material/VerifiedUser';
 import Fingerprint from '@mui/icons-material/Fingerprint';
-// core components
 import GridContainer from '/components/Grid/GridContainer.js';
 import GridItem from '/components/Grid/GridItem.js';
 import InfoArea from '/components/InfoArea/InfoArea.js';

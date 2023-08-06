@@ -18,5 +18,15 @@
   "bookDesc": "We give opportunity to book a parking spot for you car up front so you do not have to worry about finding a spot on the go. as well as make us more prepared your arrival and fulfill your needs.",
   "send": "Send message",
   "language": "Language",
-  "featuresHeading":"A nice and safe place for your camper or a car. You can stay for couple of hours, entire day or event the entire night."
+  "featuresHeading": "Because it is a nice and safe place for your camper or a car. You can stay for couple of hours, entire day or event the entire night.",
+  "featuresTitle": "You can of course just park your car here",
+  "electricityTitle": "DC power",
+  "electricityDesc": "You have a free of charge electricity to use while you are staying",
+  "cleaningTitle":"Or get your camper a little refresh.",
+  "cleaningSubtitle":"Proffesional cleaning",
+  "cleaningHeading":"Get your van a little refresh.",
+  "cleaningBtn":"See details",
+  "cleaningDesc":"We provide professional cleaning services for the camper vans. You can do it yourself for free or let us do it for you while you are sightseeing. .",
+  "alert":"OPENING ALERT",
+  "alertDesc":"The parking lot is still under construction, the stay is possible only when booking in advance."
 }

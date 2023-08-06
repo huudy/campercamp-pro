@@ -2,6 +2,8 @@ import React from 'react';
 import makeStyles from '@mui/styles/makeStyles';
 // @mui/icons-material
 import TrendingUp from '@mui/icons-material/TrendingUp';
+import TravelExploreIcon from '@mui/icons-material/TravelExplore';
+
 // core components
 import GridContainer from '/components/Grid/GridContainer.js';
 import GridItem from '/components/Grid/GridItem.js';
@@ -26,7 +28,7 @@ export default function SectionBlogs({ ...rest }) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={10} md={10} className={classes.mlAuto + ' ' + classes.mrAuto}>
-              <h2 className={classes.title}>Latest Blogposts</h2>
+              <h2 className={classes.title}>Read our Blogposts</h2>
               <br />
               <Card plain blog className={classes.card}>
                 <GridContainer>
@@ -46,7 +48,12 @@ export default function SectionBlogs({ ...rest }) {
                   </GridItem>
                   <GridItem xs={12} sm={7} md={7}>
                     <Info>
-                      <h6 className={classes.cardCategory}>ENTERPRISE</h6>
+                      <Success>
+                      <h6 className={classes.cardCategory}>
+                        <TravelExploreIcon />
+                        TRAVELS
+                      </h6>
+                    </Success>
                     </Info>
                     <h3 className={classes.cardTitle}>
                       <a href='/' onClick={(e) => e.preventDefault()}>
@@ -76,12 +83,12 @@ export default function SectionBlogs({ ...rest }) {
               <Card plain blog className={classes.card}>
                 <GridContainer>
                   <GridItem xs={12} sm={7} md={7}>
-                    <Danger>
+                    <Success>
                       <h6 className={classes.cardCategory}>
-                        <TrendingUp />
-                        TRENDING
+                        <TravelExploreIcon />
+                        TRAVELS
                       </h6>
-                    </Danger>
+                    </Success>
                     <h3 className={classes.cardTitle}>
                       <a href='/' onClick={(e) => e.preventDefault()}>
                         6 insights into the French Fashion landscape
@@ -127,7 +134,7 @@ export default function SectionBlogs({ ...rest }) {
       </div>
       {/* Blogs 1 END */}
       {/* Blogs 2 START */}
-      <div className={classes.blog}>
+      {/* <div className={classes.blog}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={10} className={classes.mlAuto + ' ' + classes.mrAuto}>
@@ -243,10 +250,10 @@ export default function SectionBlogs({ ...rest }) {
             </GridItem>
           </GridContainer>
         </div>
-      </div>
+      </div> */}
       {/* Blogs 2 END */}
       {/* Blogs 3 START */}
-      <div className={classes.blog}>
+      {/* <div className={classes.blog}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={10} md={10} className={classes.mlAuto + ' ' + classes.mrAuto}>
@@ -414,10 +421,10 @@ export default function SectionBlogs({ ...rest }) {
             </GridItem>
           </GridContainer>
         </div>
-      </div>
+      </div> */}
       {/* Blogs 3 END */}
       {/* Blogs 4 START */}
-      <div className={classes.blog}>
+      {/* <div className={classes.blog}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={8} md={8} className={classes.mlAuto + ' ' + classes.mrAuto}>
@@ -492,7 +499,7 @@ export default function SectionBlogs({ ...rest }) {
             </GridItem>
           </GridContainer>
         </div>
-      </div>
+      </div> */}
       {/* Blogs 4 END */}
     </div>
   );

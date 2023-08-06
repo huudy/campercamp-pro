@@ -20,17 +20,17 @@ export default function SectionWork() {
     phone: '',
     message: ''
   });
-const notification = {
-  container: 'bottom-center',
-  animationIn: ['animate__animated', 'animate__fadeIn'],
-  animationOut: ['animate__animated', 'animate__fadeOut'],
-  dismiss: {
-    duration: 5000,
-    onScreen: true,
-    showIcon: true
-  }
-};
-const { t } = useTranslation('landing');
+  const notification = {
+    container: 'bottom-center',
+    animationIn: ['animate__animated', 'animate__fadeIn'],
+    animationOut: ['animate__animated', 'animate__fadeOut'],
+    dismiss: {
+      duration: 5000,
+      onScreen: true,
+      showIcon: true
+    }
+  };
+  const { t } = useTranslation('landing');
 
   const handleInputChange = (event) => {
     setFormData({ ...formData, [event.target.id]: event.target.value });
@@ -38,33 +38,32 @@ const { t } = useTranslation('landing');
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-try {
-  const {name,email,message,phone} = formData
-  console.log('Sending ', formData);
-    const res = await fetch('/api/send-email', {
-      method: 'POST',
-      body: JSON.stringify({
-        name,
-        email,
-        message,
-        phone
-      }),
-      headers: {
-        'content-type': 'application/json',
-      },
-    })
+    try {
+      const { name, email, message, phone } = formData;
+      console.log('Sending ', formData);
+      const res = await fetch('/api/send-email', {
+        method: 'POST',
+        body: JSON.stringify({
+          name,
+          email,
+          message,
+          phone
+        }),
+        headers: {
+          'content-type': 'application/json'
+        }
+      });
       if (res.status === 200) {
-        setFormData({name:'',email:'', phone:'',message:''})
+        setFormData({ name: '', email: '', phone: '', message: '' });
         Store.addNotification({
           title: 'Success !',
           message: 'Message was sent successfully! Wait for a confirmation from us.',
           type: 'success',
           ...notification
         });
-
       }
     } catch (err) {
-      console.error('Err', err)
+      console.error('Err', err);
     }
   };
   return (
@@ -72,9 +71,7 @@ try {
       <GridContainer justifyContent='center'>
         <GridItem cs={12} sm={8} md={8}>
           <h2 className={classes.title}>{t('bookTitle')}</h2>
-          <h4 className={classes.description}>
-            {t('bookDesc')}
-          </h4>
+          <h4 className={classes.description}>{t('bookDesc')}</h4>
           <form onSubmit={handleSubmit}>
             <GridContainer>
               <GridItem xs={12} sm={6} md={6}>

@@ -18,5 +18,15 @@
   "bookDesc": "Te brindamos la oportunidad de reservar un lugar de estacionamiento para tu auto con anticipación, para que no tengas que preocuparte por encontrar un lugar sobre la marcha. Además, nos permitirá estar mejor preparados para tu llegada y satisfacer tus necesidades.",
   "send": "Enviar mensaje",
   "language": "Idioma",
-  "featureHeading":"Un lugar agradable y seguro para tu camper o coche. Puedes quedarte durante algunas horas, todo el día o incluso toda la noche."
+  "featuresHeading": "Porque es un lugar agradable y seguro para tu caravana o auto. Puedes quedarte un par de horas, todo el día o incluso toda la noche.",
+  "featuresTitle": "Por supuesto que puedes simplemente estacionar tu auto aquí",
+  "electricityTitle": "Corriente continua",
+  "electricityDesc": "Tienes electricidad gratuita para usar mientras te quedas",
+  "cleaningTitle": "O dale un pequeño refresco a tu caravana.",
+  "cleaningSubtitle": "Limpieza profesional",
+  "cleaningHeading": "Dale un pequeño refresco a tu furgoneta.",
+  "cleaningBtn": "Ver detalles",
+  "cleaningDesc": "Ofrecemos servicios de limpieza profesional para las caravanas. Puedes hacerlo tú mismo gratis o dejarnos hacerlo por ti mientras haces turismo.",
+  "alert": "ALERTA DE APERTURA",
+  "alertDesc": "El estacionamiento aún está en construcción, la estancia es posible solo cuando se reserva con anticipación."
 }
